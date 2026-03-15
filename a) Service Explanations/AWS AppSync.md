@@ -1,11 +1,5 @@
 # AWS AppSync
 
-## Title
-
-AWS AppSync – Cloud Practitioner Study Note
-
-## Simple Definition
-
 AWS AppSync is a fully managed AWS service that helps you build GraphQL APIs and real-time application APIs.
 
 It lets an application get data from one or more sources through a single API endpoint.
