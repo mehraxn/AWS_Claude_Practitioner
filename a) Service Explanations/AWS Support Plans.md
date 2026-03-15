@@ -1,251 +1,272 @@
 # AWS Support Plans README
 
-## What this file covers
+## What this README covers
 
-This README is a separate study note about the four classic AWS Support plans that are commonly tested in AWS Cloud Practitioner-style questions
+This study note explains the **four classic AWS Support plans** that often appear in AWS Cloud Practitioner questions:
 
-1. Basic
-2. Developer
-3. Business
-4. Enterprise
+* **Basic**
+* **Developer**
+* **Business**
+* **Enterprise**
 
- Important exam note AWS has introduced newer support offerings and is transitioning some older plans. But many exam questions and study materials still use the classic 4-plan comparison. That is why this README focuses on those four plans.
+> **Exam note:** AWS has introduced newer support offerings, but many exam questions and study materials still use this classic 4-plan model. That is why this README focuses on these four plans.
 
 ---
 
 ## Simple definition
 
-AWS Support plans are service levels that decide how much help you get from AWS, when you can get that help, and what extra support tools and guidance are included.
+**AWS Support plans** decide:
 
-Think of them like support tiers
-
- Basic = free, limited help
- Developer = help for building and testing
- Business = help for production workloads
- Enterprise = highest level, with proactive guidance and a dedicated TAM
+* how much help you get from AWS
+* when you can get that help
+* how quickly AWS responds
+* whether you get extra guidance such as a **Technical Account Manager (TAM)**
 
 ---
 
 ## Core idea in plain English
 
-The more critical your workload is, the stronger support plan you need.
+As your workload becomes more important, your support plan should become stronger.
 
- If you are just learning or using AWS casually, Basic may be enough.
- If you are building or testing applications, Developer may fit.
- If your application is running in production, AWS usually expects Business or higher.
- If your company runs business-critical systems and needs deep guidance, Enterprise is the best fit.
-
----
-
-# The 4 AWS Support plans
-
-## 1) AWS Basic Support
-
-### Best for
-
- All AWS customers by default
- Beginners
- Very small projects
- Non-critical workloads
-
-### Main features
-
- Included at no extra cost
- 247 access to
-
-   account and billing support
-   AWS documentation
-   whitepapers
-   AWS rePost community
- AWS Health dashboard access
- Basic Trusted Advisor access (core checks  limited checks)
- Service quota increase requests
-
-### What it does not include
-
- No technical support cases for architecture or service problems
- No direct technical help from AWS support engineers for troubleshooting your workload
- No phonechat technical support
-
-### Easy memory line
-
-Basic = billing, docs, health, and community — not technical troubleshooting.
+* **Basic** is for self-service help.
+* **Developer** is for building and testing.
+* **Business** is for production workloads.
+* **Enterprise** is for business-critical workloads that need proactive guidance and a dedicated TAM.
 
 ---
 
-## 2) AWS Developer Support
+# 1) AWS Basic Support
 
-### Best for
+## Best for
 
- Early development
- Testing
- Proof of concept work
- Non-production workloads
+* learners
+* personal projects
+* very small workloads
+* non-critical use cases
 
-### Main features
+## Main features
 
- Everything in Basic, plus
- Business-hours access to Cloud Support Engineers by email
- General architectural guidance
- Unlimited technical support cases
- One primary contact can open cases
- AWS Health
- Trusted Advisor access beyond Basic core support level
- AWS Support Automation Workflows
+* included for all AWS customers
+* account and billing support
+* AWS documentation, whitepapers, and AWS re:Post
+* AWS Health Dashboard access
+* limited Trusted Advisor checks
+* service quota increase requests
 
-### Typical response times
+## What it does **not** include
 
- System impaired less than 12 business hours
- General guidance less than 24 business hours
+* no technical support cases for troubleshooting your workload
+* no phone, chat, or email access to AWS engineers for technical issues
+* no TAM
 
-### What to remember
+## Easy memory line
 
- Good for development, not for serious production needs
- Support is business hours, not full 247 engineer access for technical issues
- Usually email-based technical support
-
-### Easy memory line
-
-Developer = technical help while building, but only during business hours.
+**Basic = self-service support only.**
 
 ---
 
-## 3) AWS Business Support
+# 2) AWS Developer Support
 
-### Best for
+## Best for
 
- Production workloads
- Companies that need fast help during incidents
- Teams that want 247 access to AWS support engineers
+* developers building apps
+* testing environments
+* proof-of-concept work
+* non-production workloads
 
-### Main features
+## Main features
 
- Everything in Developer, plus
- 247 access to Cloud Support Engineers
- Support by phone, chat, email, and web
- Unlimited cases and contacts
- Full Trusted Advisor checks
- AWS Support API
- Third-party software support guidance
- Architectural guidance
- Support Automation Workflows
- Faster response times for production incidents
+* everything in Basic
+* technical support cases
+* support from Cloud Support Engineers during **business hours**
+* general architectural guidance
+* one primary contact
+* support automation workflows
+* more support features than Basic
 
-### Typical response times
+## Typical response times
 
- Production system down less than 1 hour
- Production system impaired less than 4 hours
- System impaired less than 12 hours
- General guidance less than 24 hours
+* **System impaired:** less than 12 business hours
+* **General guidance:** less than 24 business hours
 
-### What it does not include
+## What to remember
 
- No dedicated Technical Account Manager (TAM)
- Less proactive and strategic than Enterprise
+* good for **development and testing**
+* not the normal answer for serious production workloads
+* technical support is available during **business hours**, not full 24/7 coverage
 
-### Easy memory line
+## Easy memory line
 
-Business = production support, 247 engineers, but no dedicated TAM.
+**Developer = technical help while building.**
 
 ---
 
-## 4) AWS Enterprise Support
+# 3) AWS Business Support
 
-### Best for
+## Best for
 
- Business-critical workloads
- Large organizations
- Mission-critical applications
- Companies that want both reactive and proactive support
+* production workloads
+* teams that need faster incident help
+* companies that want **24/7 access** to AWS support engineers
 
-### Main features
+## Main features
 
- Everything in Business, plus
- Designated Technical Account Manager (TAM)
- Fastest standard response times
- Proactive guidance and strategic support
- Help with architecture reviews and operational planning
- Stronger support for events, launches, and critical workloads
- Concierge-style help for billing and account matters
- Access to advanced proactive services
- Full Trusted Advisor access and deeper operational guidance
+* everything in Developer
+* **24/7** access to Cloud Support Engineers
+* support by **email, phone, chat, and web**
+* unlimited cases and contacts
+* full Trusted Advisor checks
+* AWS Support API
+* support for common third-party software questions
+* architectural guidance
+* support automation workflows
 
-### Typical response times
+## Typical response times
 
- Business-critical system down less than 15 minutes
- Production system down less than 1 hour
- Production system impaired less than 4 hours
- System impaired less than 12 hours
- General guidance less than 24 hours
+* **Production system down:** less than 1 hour
+* **Production system impaired:** less than 4 hours
+* **System impaired:** less than 12 hours
+* **General guidance:** less than 24 hours
 
-### What makes it special
+## What it does **not** include
 
-The biggest difference is the dedicated TAM.
+* no dedicated TAM
+* less proactive than Enterprise
 
-A TAM is not just a support agent. A TAM helps your company with
+## Easy memory line
 
- planning
- best practices
- architectural guidance
- risk reduction
- long-term AWS strategy
-
-### Easy memory line
-
-Enterprise = highest support level, with a TAM and proactive guidance.
+**Business = production support with 24/7 access, but no TAM.**
 
 ---
 
-# Quick comparison table
+# 4) AWS Enterprise Support
 
- Feature                                Basic                  Developer                                Business                    Enterprise                            
- -------------------------------------  ---------------------  ---------------------------------------  --------------------------  ------------------------------------- 
- Cost                                   Free                   Paid                                     Paid                        Highest paid                          
- Account and billing support            Yes                    Yes                                      Yes                         Yes                                   
- Documentation  rePost  whitepapers  Yes                    Yes                                      Yes                         Yes                                   
- AWS Health                             Yes                    Yes                                      Yes                         Yes                                   
- Technical support cases                No                     Yes                                      Yes                         Yes                                   
- Technical support hours                No technical cases     Business hours                           247                        247                                  
- Contact methods for technical help     None                   Email                                    Phone, chat, email, web     Phone, chat, email, web               
- Best for production workloads          No                     No                                       Yes                         Yes                                   
- Full Trusted Advisor                   No                     No  limited compared with higher plans  Yes                         Yes                                   
- Third-party software support           No                     Limited  not main focus                 Yes                         Yes                                   
- AWS Support API                        No                     No                                       Yes                         Yes                                   
- Dedicated TAM                          No                     No                                       No                          Yes                                   
- Proactive strategic guidance           No                     Low                                      Medium                      High                                  
- Fastest response for critical issues   No technical response  12 business hours for system impaired    1 hour for production down  15 minutes for business-critical down 
+## Best for
+
+* business-critical workloads
+* large organizations
+* mission-critical systems
+* companies that want proactive and strategic AWS guidance
+
+## Main features
+
+* everything in Business
+* **dedicated Technical Account Manager (TAM)**
+* fastest response times
+* proactive guidance and planning
+* architecture and operational reviews
+* launch and event planning support
+* concierge-style billing and account help
+* stronger long-term strategic support
+
+## Typical response times
+
+* **Business-critical system down:** less than 15 minutes
+* **Production system down:** less than 1 hour
+* **Production system impaired:** less than 4 hours
+* **System impaired:** less than 12 hours
+* **General guidance:** less than 24 hours
+
+## What makes it special
+
+The biggest keyword is **TAM**.
+
+A TAM helps with:
+
+* planning
+* architecture guidance
+* best practices
+* reducing risk
+* long-term AWS strategy
+
+## Easy memory line
+
+**Enterprise = highest support level, plus a dedicated TAM.**
 
 ---
 
-# Compare them directly
+# Quick plan summary
+
+| Plan           | Best use                        | Technical support | Hours          | TAM |
+| -------------- | ------------------------------- | ----------------- | -------------- | --- |
+| **Basic**      | Learning, billing, self-service | No                | N/A            | No  |
+| **Developer**  | Development and testing         | Yes               | Business hours | No  |
+| **Business**   | Production workloads            | Yes               | 24/7           | No  |
+| **Enterprise** | Business-critical workloads     | Yes               | 24/7           | Yes |
+
+---
+
+# Feature comparison
+
+## A. Access and support channels
+
+| Feature                               | Basic                | Developer      | Business                | Enterprise              |
+| ------------------------------------- | -------------------- | -------------- | ----------------------- | ----------------------- |
+| Cost level                            | Free                 | Paid           | Paid                    | Highest paid            |
+| Account and billing support           | Yes                  | Yes            | Yes                     | Yes                     |
+| Documentation / whitepapers / re:Post | Yes                  | Yes            | Yes                     | Yes                     |
+| AWS Health                            | Yes                  | Yes            | Yes                     | Yes                     |
+| Technical support cases               | No                   | Yes            | Yes                     | Yes                     |
+| Technical support hours               | No technical support | Business hours | 24/7                    | 24/7                    |
+| Technical contact methods             | None                 | Email          | Email, phone, chat, web | Email, phone, chat, web |
+
+## B. Workload fit and operations
+
+| Feature                       | Basic                 | Developer                                       | Business | Enterprise |
+| ----------------------------- | --------------------- | ----------------------------------------------- | -------- | ---------- |
+| Best for production workloads | No                    | No                                              | Yes      | Yes        |
+| Trusted Advisor level         | Limited / core checks | More than Basic, but not full like higher plans | Full     | Full       |
+| Third-party software support  | No                    | Limited                                         | Yes      | Yes        |
+| AWS Support API               | No                    | No                                              | Yes      | Yes        |
+| Unlimited contacts            | No                    | No                                              | Yes      | Yes        |
+| Dedicated TAM                 | No                    | No                                              | No       | Yes        |
+
+## C. Guidance and urgency
+
+| Feature                      | Basic                 | Developer                             | Business                   | Enterprise                            |
+| ---------------------------- | --------------------- | ------------------------------------- | -------------------------- | ------------------------------------- |
+| Proactive strategic guidance | No                    | Low                                   | Medium                     | High                                  |
+| Fastest critical response    | No technical response | 12 business hours for system impaired | 1 hour for production down | 15 minutes for business-critical down |
+
+---
+
+# Direct comparison
 
 ## Basic vs Developer
 
- Basic is mostly self-service.
- Developer adds technical support for people who are building and testing.
- If you need AWS engineers to answer technical questions, choose Developer or above.
+| Point                             | Basic        | Developer               |
+| --------------------------------- | ------------ | ----------------------- |
+| Technical help from AWS engineers | No           | Yes                     |
+| Intended use                      | Self-service | Development and testing |
+| Technical support timing          | None         | Business hours          |
 
-Main difference Developer adds technical support cases.
+**Main idea:** Developer adds technical support cases. Basic does not.
 
 ---
 
 ## Developer vs Business
 
- Developer is for non-production and business-hours help.
- Business is for production and includes 247 access to AWS support engineers.
- Business also gives better incident response and more complete support features.
+| Point                    | Developer      | Business   |
+| ------------------------ | -------------- | ---------- |
+| Intended use             | Non-production | Production |
+| Technical support timing | Business hours | 24/7       |
+| Incident response        | Slower         | Faster     |
+| Contacts                 | Limited        | Unlimited  |
 
-Main difference Business is the normal answer for production workloads.
+**Main idea:** Business is the usual exam answer for **production workloads**.
 
 ---
 
 ## Business vs Enterprise
 
- Both support production systems.
- Business gives 247 technical support.
- Enterprise adds a dedicated TAM, more proactive planning, and stronger strategic support.
+| Point                  | Business   | Enterprise                           |
+| ---------------------- | ---------- | ------------------------------------ |
+| 24/7 technical support | Yes        | Yes                                  |
+| Dedicated TAM          | No         | Yes                                  |
+| Proactive guidance     | Medium     | High                                 |
+| Best fit               | Production | Business-critical / mission-critical |
 
-Main difference Enterprise is for organizations that need a long-term AWS partner, not just incident support.
+**Main idea:** Enterprise adds the **dedicated TAM** and deeper proactive support.
 
 ---
 
@@ -253,157 +274,158 @@ Main difference Enterprise is for organizations that need a long-term AWS partne
 
 ## Choose Basic when
 
- You only need billingaccount help
- You are learning AWS
- Your workload is not important or not in production
+* you only need billing and account help
+* you are learning AWS
+* you are okay using docs and re:Post instead of opening technical cases
 
 ## Choose Developer when
 
- You are building or testing
- You need technical help during development
- Your app is not a critical production system
+* you are building or testing an application
+* you need technical help from AWS
+* your environment is not a critical production system
 
 ## Choose Business when
 
- Your application runs in production
- You need 247 support access
- You need faster response during incidents
- You do not need a dedicated TAM
+* your application runs in production
+* you need **24/7 access** to AWS support engineers
+* you want faster incident response
+* you do **not** need a dedicated TAM
 
 ## Choose Enterprise when
 
- Your workloads are business-critical
- Downtime is very expensive
- You want strategic and proactive AWS guidance
- You need a dedicated TAM
+* your workloads are business-critical
+* downtime is very expensive
+* you want proactive planning and strategic guidance
+* you need a **dedicated TAM**
 
 ---
 
 # Common exam traps
 
-## Trap 1 Confusing Business and Enterprise
+## Trap 1: Confusing Business and Enterprise
 
-A question says
+If the question says:
 
- production workload
- 247 technical access
- no dedicated TAM needed
+* production workload
+* 24/7 access to AWS engineers
+* no dedicated TAM needed
 
-Answer Business
+The answer is usually **Business**.
 
-If the question says
+If the question says:
 
- dedicated TAM
- proactive guidance
- business-critical or mission-critical
+* dedicated TAM
+* strategic guidance
+* mission-critical or business-critical system
 
-Answer Enterprise
-
----
-
-## Trap 2 Thinking Basic includes technical troubleshooting
-
-It does not.
-
-Basic helps with
-
- billing
-  n- account
- documentation
- health info
- community support
-
-But it does not provide technical support cases.
+The answer is usually **Enterprise**.
 
 ---
 
-## Trap 3 Thinking Developer is good for production
+## Trap 2: Thinking Basic includes technical troubleshooting
 
-Usually no.
+It does **not**.
 
-Developer is mainly for
+Basic includes:
 
- learning
- building
- testing
- non-production workloads
+* billing support
+* account support
+* documentation
+* whitepapers
+* AWS Health
+* AWS re:Post
 
-For production, the safer exam answer is usually Business.
+But it does **not** include technical support cases for troubleshooting your architecture or workload.
 
 ---
 
-## Trap 4 Forgetting the TAM keyword
+## Trap 3: Thinking Developer is for production
 
-When you see TAM, think Enterprise.
+Usually not.
+
+Developer is mainly for:
+
+* building
+* learning
+* testing
+* non-production use
+
+For production workloads, the better exam answer is usually **Business**.
+
+---
+
+## Trap 4: Forgetting the TAM keyword
+
+When you see **TAM**, think **Enterprise**.
 
 ---
 
 # Real-world examples
 
-## Example 1 Small student project
+## Example 1: Student using AWS labs
 
-A student uses AWS for practice labs and needs only billing help and documentation.
+A student uses AWS for learning and only needs billing help, docs, and health information.
 
-Best plan Basic
+**Best plan:** Basic
 
-## Example 2 Startup building an app
+## Example 2: Startup building a prototype
 
-A startup is still testing a web app and wants technical help during development.
+A startup is still developing and testing a mobile app and wants technical guidance while building.
 
-Best plan Developer
+**Best plan:** Developer
 
-## Example 3 SaaS company with production incidents
+## Example 3: SaaS company with a live production app
 
-A SaaS company runs a live app and wants 247 access to AWS engineers, but does not need a TAM.
+A SaaS company runs a production workload and wants 24/7 access to AWS support engineers, but does not need a TAM.
 
-Best plan Business
+**Best plan:** Business
 
-## Example 4 Large bank running critical systems
+## Example 4: Bank running mission-critical systems
 
-A bank runs business-critical applications and wants strategic help, fast response, and a TAM.
+A bank needs fast incident response, proactive planning, and a dedicated TAM.
 
-Best plan Enterprise
+**Best plan:** Enterprise
 
 ---
 
 # Final summary
 
-AWS Support plans increase in value as your workload becomes more important
+AWS Support plans grow stronger as your workload becomes more important:
 
- Basic = free and self-service
- Developer = support for building and testing
- Business = 247 support for production
- Enterprise = top-tier support with a dedicated TAM
+* **Basic** = self-service and billing help
+* **Developer** = technical help for development and testing
+* **Business** = 24/7 technical support for production
+* **Enterprise** = top-tier support with a dedicated TAM
 
-For exam questions, the most important rule is
+The most important exam shortcut is:
 
- Production without TAM - Business
- Production with dedicated TAM  strategic guidance - Enterprise
+* **Production without TAM -> Business**
+* **Production with dedicated TAM -> Enterprise**
 
 ---
 
 # Short exam answer
 
-AWS Support plan cheat sheet
+**AWS Support plan cheat sheet:**
 
- Basic free, billingaccount, docs, health, no technical cases
- Developer business-hours technical support for development and testing
- Business 247 technical support for production workloads
- Enterprise Business features plus dedicated TAM and proactive strategic guidance
+* **Basic:** free plan with billing, account, docs, re:Post, and health support, but no technical cases
+* **Developer:** paid plan for development and testing with business-hours technical support
+* **Business:** paid plan for production workloads with 24/7 technical support
+* **Enterprise:** highest plan with Business features plus a dedicated TAM and proactive guidance
 
 ---
 
 # Memory trick
 
-Use this order
+Use this order:
 
-B-D-B-E
+**B -> D -> B -> E**
 
- Basic = Bare minimum
- Developer = During development
- Business = Business is live in production
- Enterprise = Everything plus TAM
+* **Basic** = Bare minimum
+* **Developer** = During development
+* **Business** = Business is live
+* **Enterprise** = Everything + TAM
 
-A simple sentence to remember
+A simple sentence to remember:
 
-“Build with Developer, run with Business, scale with Enterprise.”
+**Build with Developer, run with Business, scale with Enterprise.**
