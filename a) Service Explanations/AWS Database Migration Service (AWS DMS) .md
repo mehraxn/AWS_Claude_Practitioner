@@ -121,7 +121,7 @@ For migrations between different database engines, you may also need AWS Schema 
 
 If the question is about databases, think AWS DMS.
 
-If the question is about files, shared storage, or NFSSMB, think AWS DataSync.
+If the question is about files, shared storage, or NFS/SMB (Network File System /Server Message Block), think AWS DataSync.
 
 ### Trap 3 Forgetting the “minimal downtime” clue
 
