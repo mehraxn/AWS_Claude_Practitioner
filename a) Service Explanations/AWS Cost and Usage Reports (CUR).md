@@ -2,7 +2,7 @@
 
 ## Simple definition
 
-AWS Cost and Usage Reports is an AWS billing feature that gives([docs.aws.amazon.com](httpsdocs.aws.amazon.comcurlatestuserguidewhat-is-cur.htmlutm_source=chatgpt.com))ources and services you used, how much you used, and what those usages cost.
+AWS Cost and Usage Reports is an AWS billing feature that gives you details about the resources and services you used, how much you used, and what those usages cost.
 
 ## Core idea in plain English
 
