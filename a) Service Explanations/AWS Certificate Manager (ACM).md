@@ -2,7 +2,7 @@
 
 ## Simple definition
 
-AWS Certificate Manager (ACM) is an AWS service that helps you request, manage, and renew SSLTLS certificates for your websites and applications.
+AWS Certificate Manager (ACM) is an AWS service that helps you request, manage, and renew SSL/TLS (Secure Sockets Layer / Transport Layer Security) certificates for your websites and applications.
 
 These certificates are used to encrypt traffic between users and your application.
 
