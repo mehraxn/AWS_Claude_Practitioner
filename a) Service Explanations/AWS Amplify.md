@@ -1,6 +1,5 @@
 # AWS Amplify
 
-## Simple definition
 
 AWS Amplify is a set of tools and services that helps developers build and host full-stack web and mobile applications quickly.
 
