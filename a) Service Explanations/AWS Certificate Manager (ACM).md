@@ -222,8 +222,8 @@ ACM = HTTPS certificates made easy on AWS
 
 When you see a question about
 
- HTTPS
- SSLTLS certificates
+ HTTPS or 
+ SSL/TLS(Secure Sockets Layer / Transport Layer Security) certificates
  website padlock
  custom domain security
  automatic certificate renewal
