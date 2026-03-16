@@ -2,7 +2,7 @@
 
 ## Simple definition
 
-Volume Gateway (cached) is an AWS Storage Gateway option that gives your on-premises servers block storage volumes through iSCSI, while storing the main data in AWS.
+Volume Gateway (cached) is an AWS Storage Gateway option that gives your on-premises servers block storage volumes through iSCSI (Internet Small Computer Systems Interface), while storing the main data in AWS.
 
 It keeps frequently accessed data locally as a cache, so applications can still get fast access to commonly used data.
 
