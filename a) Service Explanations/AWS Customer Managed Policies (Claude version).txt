@@ -1,0 +1,211 @@
+# 📋 AWS Customer Managed Policies
+### AWS Certified Cloud Practitioner — Study Notes
+
+---
+
+## 📌 Simple Definition
+
+A Customer Managed Policy is a permissions policy that YOU create, manage, and control in AWS.
+
+It is written in JSON format and tells AWS
+- Who can do what
+- What actions are allowed or denied
+- On which resources
+
+---
+
+## 💡 Core Idea in Plain English
+
+Think of AWS permissions like a security badge system in a company.
+
+ AWS gives you some ready-made badges (AWS Managed Policies).
+ But sometimes you need a custom badge — one made specifically for YOUR company's rules.
+ That custom badge is a Customer Managed Policy.
+
+You write the rules. You control them. You can update them anytime.
+
+---
+
+## 🎯 Main Use Cases
+
+ Use Case  Example 
+-------------------
+ Fine-grained access control  Allow a developer to read from S3 but NOT delete 
+ Reusable permissions  Attach the same policy to 50 different users 
+ Company-specific rules  Restrict access to only your company's AWS region 
+ Least privilege enforcement  Give only the minimum permissions needed 
+ Compliance requirements  Meet security standards like SOC 2 or HIPAA 
+
+---
+
+## ⚙️ Key Features
+
+- ✅ You create them — written in JSON
+- ✅ Reusable — attach to multiple users, groups, or roles
+- ✅ Versioned — up to 5 versions stored; easy to roll back
+- ✅ Fully customizable — total control over permissions
+- ✅ Centrally managed — managed from IAM in one place
+- ✅ Auditable — tracked in AWS CloudTrail
+
+---
+
+## 🔧 How It Works
+
+```
+1. You write a policy in JSON (or use the visual editor)
+   ↓
+2. You save it in IAM as a Customer Managed Policy
+   ↓
+3. You attach the policy to
+      - A User
+      - A Group
+      - A Role
+   ↓
+4. AWS checks the policy when that identity tries to do something
+   ↓
+5. Access is ALLOWED or DENIED based on the policy rules
+```
+
+### Example JSON Policy (Read-Only S3 Access)
+```json
+{
+  Version 2012-10-17,
+  Statement [
+    {
+      Effect Allow,
+      Action [
+        s3GetObject,
+        s3ListBucket
+      ],
+      Resource 
+    }
+  ]
+}
+```
+ 📝 This policy allows listing and reading S3 objects — but NOT uploading or deleting.
+
+---
+
+## 🧠 Why It Is Important for the Exam
+
+The AWS CCP exam tests whether you understand
+
+1. The difference between Customer Managed, AWS Managed, and Inline policies
+2. When to use Customer Managed Policies vs. others
+3. The principle of least privilege — giving only the access needed
+4. IAM best practices — using policies to secure your AWS account
+
+ 🎓 The exam loves asking Which policy type gives you the MOST control
+ ✅ Answer Customer Managed Policy
+
+---
+
+## 🔄 Related AWS Services & Differences
+
+### The 3 Types of IAM Policies — Side by Side
+
+ Feature  AWS Managed Policy  Customer Managed Policy  Inline Policy 
+------------------------------------------------------------------
+ Who creates it  AWS  YOU  YOU 
+ Reusable  ✅ Yes  ✅ Yes  ❌ No (1-to-1 only) 
+ Versioning  ❌ No  ✅ Yes (up to 5)  ❌ No 
+ Customizable  ❌ Limited  ✅ Fully  ✅ Fully 
+ Best for  Quick setup  Fine-grained control  Special one-off cases 
+ Recommended  For beginners  ✅ Best practice  Only when necessary 
+
+### Related Services to Know
+- IAM (Identity and Access Management) — where all policies live
+- AWS Organizations — use SCPs (Service Control Policies) alongside IAM policies
+- CloudTrail — logs all policy-related actions for auditing
+- AWS Config — checks if your policies comply with rules
+
+---
+
+## ⚠️ Common Exam Traps
+
+### 🪤 Trap 1 Confusing policy types
+ AWS Managed Policies are good enough for everything.
+ ❌ Wrong — they can't be customized for your specific needs.
+
+### 🪤 Trap 2 Thinking inline policies are reusable
+ I'll use an inline policy and attach it to 20 users.
+ ❌ Wrong — inline policies are embedded in one identity. Not reusable.
+
+### 🪤 Trap 3 More permissions = more secure
+ I'll give full admin access to be safe.
+ ❌ Wrong — least privilege means giving ONLY the permissions needed.
+
+### 🪤 Trap 4 Forgetting versioning
+ Customer Managed Policies support up to 5 versions.
+ You can roll back to a previous version if something breaks.
+
+### 🪤 Trap 5 Confusing IAM Policies with Resource Policies
+ IAM Policies are attached to identities (users, groups, roles).
+ Resource Policies are attached to resources (like S3 bucket policies).
+
+---
+
+## 🌍 Easy Real-World Example
+
+### Scenario A startup with 3 teams
+
+ Team  What they need 
+---------------------
+ Developers  Readwrite to S3, launch EC2 
+ Finance  Read-only access to billing dashboard 
+ Security  View all logs in CloudTrail, but change nothing 
+
+Solution with Customer Managed Policies
+
+1. Create a `DeveloperPolicy` → attach to all developers
+2. Create a `FinanceReadOnlyPolicy` → attach to finance team
+3. Create a `SecurityAuditPolicy` → attach to security team
+
+ One policy. Many users. Total control. Easy to update later.
+
+---
+
+## ✅ Final Summary
+
+ Point  Detail 
+---------------
+ What is it  A custom permission policy YOU create in IAM 
+ Who controls it  You — the AWS account owner 
+ Where is it stored  In IAM 
+ Can it be reused  Yes — attach to many users, groups, roles 
+ Best practice  Yes — preferred over inline policies 
+ Key principle  Least Privilege — only give what's needed 
+
+---
+
+## 📝 Short Exam Answer
+
+ A Customer Managed Policy is a custom IAM policy created and managed by the customer. It is reusable, supports versioning, and gives full control over permissions. It is the recommended approach for applying fine-grained, least-privilege access control in AWS.
+
+---
+
+## 🧠 Memory Trick
+
+ Customer Managed = YOUR Custom Badge
+
+- 🏷️ AWS Managed = Badge from a catalogue (pre-made, limited options)
+- 🛠️ Customer Managed = Badge you designed yourself (custom, reusable, versioned)
+- 📎 Inline = Badge stapled to one person (not reusable, use rarely)
+
+---
+
+## 🔑 Quick Revision Checklist
+
+- [ ] I know what a Customer Managed Policy is
+- [ ] I can explain the difference between the 3 policy types
+- [ ] I understand least privilege
+- [ ] I know policies can be attached to users, groups, and roles
+- [ ] I know Customer Managed Policies support up to 5 versions
+- [ ] I can recognize exam traps about policy types
+
+---
+
+📚 Study Tip When you see most control, customizable, or reusable policy in an exam question — think Customer Managed Policy!
+
+---
+ 🎓 Good luck on your AWS CCP Exam! You've got this! ☁️
