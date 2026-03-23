@@ -17,6 +17,8 @@ The README should include:
 - Final summary
 - Short exam answer
 - Memory trick
+- you have to put yourself as an AWS exam tutor and indicate if you were as an examiner what do you ask about this service or toll (the title of this part is if i were an examiner ...)
+
 
 Writing style:
 - Simple English
