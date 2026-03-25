@@ -46,9 +46,9 @@ VPC private subnet ──► Internet   NAT Gateway (outbound only)
 VPC ──► S3  DynamoDB privately   Gateway VPC Endpoint
 VPC ──► other AWS services priv.  Interface VPC Endpoint  PrivateLink
 VPC ──► another VPC               VPC Peering (2 VPCs) or Transit Gateway (many)
-On-prem ──► AWS (encryptedcheap) Site-to-Site VPN
-On-prem ──► AWS (fastdedicated)  AWS Direct Connect
-Laptopemployee ──► AWS           AWS Client VPN
+On-prem ──► AWS (encrypted & cheap) Site-to-Site VPN
+On-prem ──► AWS (fast & dedicated)  AWS Direct Connect
+Laptop employee ──► AWS           AWS Client VPN
 ```
 
 ---
