@@ -1,4 +1,4 @@
-# AWS Networking – Complete Cloud Practitioner Study Guide (Corrected and Expanded)
+# AWS Networking – Complete Cloud Practitioner Study Guide 
 
 This README is written as an AWS exam coach would teach it: clearly, carefully, and with the exam traps explained before they hurt you.
 
