@@ -1,185 +1,252 @@
-# Amazon Textract — AWS Cloud Practitioner Study Note
+# Amazon Textract
 
 ## Simple definition
 
-Amazon Textract is an AWS service that reads text and data from scanned documents automatically.
+Amazon Textract is an AWS service that automatically reads text and structured data from scanned documents.
 
-It can pull out printed text, handwriting, tables, and form fields without needing you to build your own OCR system.
+It can extract printed text, handwriting, tables, and form fields without requiring you to build your own OCR solution.
+
+---
 
 ## Core idea in plain English
 
 Think of Amazon Textract as a smart document reader.
 
-If you upload a paper document like an invoice, receipt, tax form, or application form, Textract can look at the image or PDF and tell you what words are on the page and how the data is structured.
+If you upload a paper document such as an invoice, receipt, tax form, or application form, Textract can analyze the image or PDF and tell you what text appears on the page and how that data is organized.
 
-It does more than basic text scanning. It can understand that a value belongs to a label, or that numbers are inside a table.
+This is more advanced than simple OCR because Textract can also understand document structure, such as which value belongs to which label and which values are part of a table.
+
+---
 
 ## Main use cases
 
-Amazon Textract is commonly used for
+### 1. Invoice and receipt processing
 
- Reading invoices and receipts
- Extracting data from forms and applications
- Processing insurance claims documents
- Pulling text from scanned PDFs
- Digitizing paper records
- Automating document-heavy business workflows
+Textract can extract important fields such as invoice number, total amount, vendor name, and date from scanned financial documents.
+
+### 2. Form and application processing
+
+It can pull out key-value pairs from forms such as names, addresses, ID numbers, and submission dates.
+
+### 3. Insurance and claims document automation
+
+Companies can use Textract to read claim forms and supporting documents instead of entering the data manually.
+
+### 4. Scanned PDF text extraction
+
+Textract can read scanned PDFs and convert the document contents into machine-readable text.
+
+### 5. Table extraction from business documents
+
+It can detect rows, columns, and cell values in documents such as reports, statements, and spreadsheets saved as images or PDFs.
+
+### 6. Digitization of paper records
+
+Organizations can use Textract to turn large collections of paper documents into searchable digital information.
+
+### 7. Workflow automation
+
+Textract can feed extracted document data into applications, databases, approval systems, or analytics pipelines.
+
+---
 
 ## Key features
 
-### 1. Text extraction
+### 1. Printed text extraction
 
-Textract can detect printed text and handwriting from documents.
+Textract can detect and extract printed text from scanned images and PDF documents.
 
-### 2. Form data extraction
+### 2. Handwriting recognition
 
-It can identify key-value pairs such as
+It can also identify handwritten content in many document-processing scenarios.
 
- Name Maria Rossi
- Date 10022026
- Invoice Number INV-1001
+### 3. Form field detection
 
-### 3. Table extraction
+Textract can identify relationships between labels and values, such as `Name: Maria Rossi` or `Invoice Number: INV-1001`.
 
-It can detect rows, columns, and cell values from tables.
+### 4. Table detection
 
-### 4. Works with scanned documents
+It can recognize table structures and return data in rows and columns instead of as plain text only.
 
-It is useful when the file is an image or scanned PDF, not just digital text.
+### 5. Structured output
 
-### 5. Fully managed AWS service
+Textract does not just return text lines. It can return words, lines, key-value pairs, and table elements in a structured format.
 
-You do not manage servers or build OCR models yourself.
+### 6. Support for scanned documents
 
-### 6. Can be used in automation workflows
+It is designed for images and scanned PDFs, which makes it useful for real-world paper document workflows.
 
-You can combine Textract with other AWS services to build document processing pipelines.
+### 7. Fully managed service
+
+AWS manages the infrastructure, scaling, and availability, so you do not need to run your own OCR servers.
+
+### 8. Integration with other AWS services
+
+Textract can work with services such as Amazon S3, AWS Lambda, Step Functions, and Amazon Comprehend to build automated document workflows.
+
+---
 
 ## How it works
 
-### Step 1 Upload a document
+### Step 1. Upload a document
 
-You provide a scanned image or PDF, often stored in Amazon S3.
+You provide a scanned image or PDF, commonly stored in Amazon S3.
 
-### Step 2 Textract analyzes the document
+### Step 2. Textract analyzes the content
 
-Textract reads the page and finds text, forms, and tables.
+Textract scans the document and identifies text, forms, and tables.
 
-### Step 3 Structured results are returned
+### Step 3. Structured results are returned
 
-Instead of only giving back raw text, Textract can return
+The service returns extracted data such as words, lines, key-value pairs, and table structure.
 
- Detected words and lines
- Key-value pairs
- Table structure
+### Step 4. Use the data in your application
 
-### Step 4 Use the result in your application
+Your application can store, search, validate, review, or process the extracted information further.
 
-Your app can store the extracted data, search it, review it, or send it into a business workflow.
+---
 
 ## Why it is important for the exam
 
-For the AWS Certified Cloud Practitioner exam, the important point is this
+For the AWS Certified Cloud Practitioner exam, the main point is this:
 
-Amazon Textract is for extracting text and structured data from scanned documents.
+**Amazon Textract is the AWS service used to extract text and structured data from scanned documents.**
 
-You should recognize Textract when a question mentions
+You should think of Textract when the exam mentions:
 
- OCR-like document processing
- Forms
- invoices
- receipts
- tables in documents
- scanned PDFs
- document digitization
+* OCR-like document processing
+* invoices
+* receipts
+* scanned forms
+* tables in documents
+* scanned PDFs
+* document digitization
+* extracting data from paper-based files
 
-The exam usually tests whether you can choose the correct service for the job.
+The exam often tests whether you can choose the correct service based on the type of content being processed.
 
-If the question is about understanding documents automatically, Textract is often the right answer.
+---
 
 ## Related AWS services and differences
 
 ### Amazon Textract vs Amazon Rekognition
 
- Textract is for documents and text extraction
- Rekognition is for image and video analysis, such as faces, objects, and scenes
+* **Textract** is for reading documents and extracting text, forms, and tables.
+* **Rekognition** is for analyzing images and videos, such as faces, objects, scenes, and unsafe content.
 
-Use Textract for forms, invoices, and scanned pages.
+Use Textract for invoices, forms, and scanned pages.
 Use Rekognition for people, objects, labels, and image moderation.
 
 ### Amazon Textract vs Amazon Comprehend
 
- Textract extracts text and document structure
- Comprehend understands the meaning of text
+* **Textract** extracts text and document structure.
+* **Comprehend** analyzes the meaning of text, such as sentiment, entities, and key phrases.
 
-A common pattern is
+A common pattern is:
 
- Textract reads the document
- Comprehend analyzes the extracted text
+* Textract reads the document.
+* Comprehend analyzes the extracted text.
 
 ### Amazon Textract vs Amazon Kendra
 
- Textract gets text out of documents
- Kendra helps users search across document content intelligently
+* **Textract** pulls text out of documents.
+* **Kendra** helps users search across documents intelligently.
 
 ### Amazon Textract vs Amazon Transcribe
 
- Textract works on documents and images
- Transcribe converts speech to text
+* **Textract** works with documents and images.
+* **Transcribe** converts speech into text.
 
 ### Amazon Textract vs Amazon Polly
 
- Textract reads text from documents
- Polly converts text into speech
+* **Textract** reads text from documents.
+* **Polly** converts text into speech.
+
+---
 
 ## Common exam traps
 
-### Trap 1 Confusing Textract with Rekognition
+### 1. Confusing Textract with Rekognition
 
-If the question is about a scanned form or invoice, choose Textract, not Rekognition.
+This is a common mistake. If the question is about a scanned form, invoice, or document image, the correct choice is usually Textract, not Rekognition.
 
-### Trap 2 Confusing extraction with understanding
+### 2. Confusing text extraction with text understanding
 
-If the task is to pull text from a document, choose Textract.
-If the task is to find sentiment, entities, or language meaning, that is Comprehend.
+Textract extracts the text and document structure. If the question asks about sentiment analysis, entity recognition, or language understanding, the correct service is more likely Amazon Comprehend.
 
-### Trap 3 Confusing documents with audio
+### 3. Confusing documents with audio processing
 
-If the source is speech or recorded calls, that is Transcribe, not Textract.
+If the source is recorded speech, calls, or audio files, the answer is Amazon Transcribe, not Textract.
 
-### Trap 4 Thinking Textract is only basic OCR
+### 4. Thinking Textract is only basic OCR
 
-Textract is stronger than simple OCR because it can also identify tables and form fields.
+Textract does more than simply detect characters. It can also identify form fields and tables, which makes it more powerful than plain OCR in exam scenarios.
 
-### Trap 5 Picking a storage service instead of a processing service
+### 5. Choosing a storage service instead of a processing service
 
-Amazon S3 stores documents.
-Amazon Textract extracts data from documents.
+Amazon S3 stores files. Amazon Textract processes files to extract information from them.
+
+### 6. Mixing up extraction and search
+
+Textract extracts content from documents. Amazon Kendra is used when the goal is intelligent search across many documents.
+
+---
+
+## AWS exam keywords for Amazon Textract
+
+Watch for these keywords and phrases in exam questions:
+
+* scanned documents
+* OCR
+* document text extraction
+* extract text from PDF
+* forms
+* form fields
+* key-value pairs
+* invoices
+* receipts
+* tables
+* handwritten text
+* digitize paper records
+* document processing
+* structured data from documents
+* scanned image analysis
+* read text from image
+
+If the question focuses on **extracting text or structure from a document**, Amazon Textract is a strong answer.
+
+---
 
 ## Easy real-world example
 
 A company receives thousands of invoice PDFs every month.
 
-Instead of employees opening each file and typing the invoice number, date, and total amount into a system, the company uploads the invoices to Amazon S3.
+Instead of employees opening each file and manually typing the invoice number, date, and total amount into a system, the company uploads the invoices to Amazon S3.
 
 Amazon Textract reads each invoice and extracts the important fields automatically.
 
-This saves time, reduces manual work, and lowers errors.
+This saves time, reduces manual work, and lowers the number of human errors.
+
+---
 
 ## Final summary
 
 Amazon Textract is AWS’s document text extraction service.
 
-It helps businesses read scanned documents automatically and pull out useful information such as text, form fields, and tables.
+It helps businesses read scanned documents automatically and extract useful information such as text, form fields, and tables.
 
-For the exam, remember it as the AWS service for document OCR and structured data extraction.
+For the exam, remember it as the AWS service for **document OCR and structured data extraction**.
+
+---
 
 ## Short exam answer
 
 Amazon Textract is a fully managed AWS service that extracts printed text, handwriting, tables, and form data from scanned documents.
 
+---
+
 ## Memory trick
 
-Textract = Text + Extract
+**Textract = Text + Extract**
 
-If AWS needs to extract text from documents, think Textract.
+If AWS needs to extract text from documents, think **Textract**.
