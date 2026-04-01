@@ -7,9 +7,9 @@ AWS Organizations is a service that helps you manage multiple AWS accounts from 
 
 It lets you
 
- group accounts
- apply governance rules
- use consolidated billing
+ ### 1 group accounts
+ ### 2 apply governance rules
+ ### 3 use consolidated billing
 
 ### AWS Control Tower
 
@@ -27,10 +27,10 @@ Think of AWS Organizations as the basic structure and control layer for many AWS
 
 It gives you the building blocks
 
- multiple accounts
- organizational units (OUs)
- policy guardrails
- consolidated billing
+ ### 1 multiple accounts
+ ### 2 organizational units (OUs)
+ ### 3 policy guardrails
+ ### 4 consolidated billing
 
 ### AWS Control Tower
 
@@ -38,10 +38,10 @@ Think of AWS Control Tower as the easier setup-and-governance layer built on top
 
 It uses AWS Organizations underneath, but adds
 
- automation
- account provisioning
- built-in controls
- a ready-made landing zone
+ ### 1 automation
+ ### 2 account provisioning
+ ### 3 built-in controls
+ ### 4 a ready-made landing zone
 
 ---
 
@@ -53,10 +53,10 @@ The main purpose is to centrally manage multiple AWS accounts.
 
 You use it to
 
- organize accounts into groups
- apply governance with policies such as SCPs
- manage billing centrally
- separate workloads like dev, test, and production
+ ### 1 organize accounts into groups
+ ### 2 apply governance with policies such as SCPs
+ ### 3 manage billing centrally
+ ### 4 separate workloads like dev, test, and production
 
 ### AWS Control Tower
 
@@ -64,10 +64,10 @@ The main purpose is to quickly set up and govern a secure multi-account AWS envi
 
 You use it to
 
- build a landing zone
- automate account setup
- apply built-in controls
- standardize governance across accounts
+ ### 1 build a landing zone
+ ### 2 automate account setup
+ ### 3 apply built-in controls
+ ### 4 standardize governance across accounts
 
 ---
 
