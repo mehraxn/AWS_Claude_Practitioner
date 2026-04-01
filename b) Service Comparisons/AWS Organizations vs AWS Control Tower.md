@@ -1,10 +1,5 @@
 # AWS Organizations vs AWS Control Tower
 
-A clean study note for the AWS Certified Cloud Practitioner exam.
-
----
-
-## Simple definition of each service
 
 ### AWS Organizations
 
