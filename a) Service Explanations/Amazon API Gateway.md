@@ -13,42 +13,125 @@ In simple words, it is the front door that lets apps, users, or systems send req
 Think of Amazon API Gateway like a receptionist in front of your application.
 
 Clients send requests to API Gateway.
-API Gateway then sends those requests to the correct backend, such as
+API Gateway then sends those requests to the correct backend, such as:
 
- AWS Lambda
- Amazon EC2
- containers running on Amazon ECS or EKS
- applications behind a load balancer
- other AWS services
+* AWS Lambda
+* Amazon EC2
+* containers running on Amazon ECS or Amazon EKS
+* applications behind a load balancer
+* other AWS services
 
-It also helps control who can access the API, how many requests are allowed, and how the requests are monitored.
+It also helps control who can access the API, how many requests are allowed, and how requests are monitored.
 
 ---
 
 ## Main use cases
 
- Create APIs for mobile apps and web apps
- Build serverless applications with AWS Lambda
- Expose backend services securely to customers or internal teams
- Create microservices communication endpoints
- Build real-time applications with WebSocket APIs
- Manage traffic, authentication, and throttling for APIs
+### 1. Create APIs for mobile and web applications
+
+API Gateway is commonly used when apps need a secure and managed way to communicate with backend systems.
+
+It gives developers a single front door for application requests.
+
+### 2. Build serverless applications with AWS Lambda
+
+One of the most common uses of API Gateway is to expose Lambda functions as API endpoints.
+
+This is a very popular serverless design pattern in AWS.
+
+### 3. Expose backend services securely
+
+A company may want to let customers, partners, or internal teams access backend services through APIs.
+
+API Gateway helps secure and control this access.
+
+### 4. Support microservices architectures
+
+In a microservices environment, different services often need a clean and managed API layer.
+
+API Gateway can act as the entry point for these services.
+
+### 5. Build real-time applications
+
+API Gateway supports WebSocket APIs, which are useful for two-way real-time communication.
+
+Examples include chat apps, live dashboards, and real-time notifications.
+
+### 6. Manage traffic and protect backends
+
+API Gateway can throttle requests and help protect backend services from too many incoming calls.
+
+This is useful for both performance and stability.
 
 ---
 
 ## Key features
 
- Fully managed API service
- Supports REST APIs, HTTP APIs, and WebSocket APIs
- Works well with AWS Lambda
- Authentication and authorization support
- Throttling to control request rates
- Monitoring with Amazon CloudWatch
- Request validation for some API types
- Caching for performance improvement
- Stages such as dev, test, and prod
- Custom domain names
- Can connect to public, regional, or private backends depending on setup
+### 1. Fully managed API service
+
+AWS manages the infrastructure behind API Gateway.
+
+This means you do not need to provision or manage servers just to expose APIs.
+
+### 2. Supports multiple API types
+
+API Gateway supports REST APIs, HTTP APIs, and WebSocket APIs.
+
+This gives flexibility depending on whether you need advanced features, lower-cost APIs, or real-time communication.
+
+### 3. Strong Lambda integration
+
+API Gateway works very naturally with AWS Lambda.
+
+This makes it a core service in many serverless application designs.
+
+### 4. Authentication and authorization support
+
+API Gateway can help control who is allowed to call your APIs.
+
+This is important for protecting backend systems and sensitive application functions.
+
+### 5. Throttling and traffic control
+
+API Gateway can limit how many requests clients can send.
+
+This helps protect backends from overload and supports fair API usage.
+
+### 6. Monitoring with Amazon CloudWatch
+
+You can monitor API performance and usage through CloudWatch.
+
+This helps teams observe API health and troubleshoot issues.
+
+### 7. Request validation and API management features
+
+Some API types support features such as request validation, API keys, and usage plans.
+
+These features are especially important in more advanced API management scenarios.
+
+### 8. Caching support
+
+API Gateway can cache responses in some cases to improve performance.
+
+This can reduce calls to backend systems and lower response times.
+
+### 9. Deployment stages
+
+You can create stages such as dev, test, and prod.
+
+This helps teams manage different versions and environments of an API.
+
+### 10. Custom domain names
+
+API Gateway supports custom domain names for APIs.
+
+This gives applications a more professional and user-friendly API endpoint.
+
+### 11. Flexible backend integration
+
+API Gateway can connect to Lambda, EC2-based apps, containers, load-balanced apps, and some AWS service integrations.
+
+This makes it useful in many architectures, not only serverless ones.
 
 ---
 
@@ -65,10 +148,10 @@ It also helps control who can access the API, how many requests are allowed, and
 
 ### Example backend targets
 
- Lambda function
- Application running on EC2
- Containerized service
- AWS service integration
+* AWS Lambda function
+* application running on Amazon EC2
+* containerized service
+* AWS service integration
 
 ### API types you should know
 
@@ -76,125 +159,143 @@ It also helps control who can access the API, how many requests are allowed, and
 
 This is the more feature-rich API type.
 
-Use it when you need advanced API management features such as
+Use it when you need advanced API management features such as:
 
- API keys
- usage plans
- request validation
- some advanced controls
+* API keys
+* usage plans
+* request validation
+* more advanced controls
 
 #### 2. HTTP API
 
 This is a simpler and lower-cost option for many modern APIs.
 
-Use it when you want
+Use it when you want:
 
- simple API proxying
- low latency
- serverless integrations
- JWT or basic modern API use cases
+* simple API proxying
+* low latency
+* serverless integrations
+* common modern API use cases
 
 #### 3. WebSocket API
 
 Use this for two-way real-time communication.
 
-Examples
+Examples:
 
- chat applications
- live dashboards
- real-time notifications
+* chat applications
+* live dashboards
+* real-time notifications
 
 ---
 
 ## Why it is important for the exam
 
-Amazon API Gateway is important because AWS exam questions often test whether you understand
+Amazon API Gateway is important because AWS exam questions often test whether you understand:
 
- which AWS service exposes APIs securely
- which service works naturally with Lambda for serverless APIs
- the difference between API Gateway and services like Elastic Load Balancing
- when to use API Gateway for mobile, web, and microservices access
- when WebSocket APIs are needed for real-time communication
+* which AWS service exposes APIs securely
+* which service works naturally with Lambda for serverless APIs
+* the difference between API Gateway and services like Elastic Load Balancing
+* when to use API Gateway for mobile, web, and microservices access
+* when WebSocket APIs are needed for real-time communication
 
 For Cloud Practitioner, the exam usually tests the main purpose of API Gateway, not deep developer configuration.
 
-The key exam idea is
+The key exam idea is:
 
-API Gateway is used to create, publish, secure, monitor, and manage APIs.
+**API Gateway is used to create, publish, secure, monitor, and manage APIs.**
 
 ---
 
 ## Related AWS services and differences
 
-### AWS Lambda
+### API Gateway vs AWS Lambda
 
- Lambda runs the code
- API Gateway receives API requests and sends them to Lambda or other backends
+* Lambda runs the code.
+* API Gateway receives API requests and sends them to Lambda or other backends.
 
-Easy memory line
-API Gateway is the front door, Lambda is the worker behind the door.
+**Easy memory line:**
+API Gateway is the front door. Lambda is the worker behind the door.
 
-### Elastic Load Balancing (ELB)
+### API Gateway vs Elastic Load Balancing
 
- ELB distributes traffic across servers or targets
- API Gateway is specifically for creating and managing APIs
+* Elastic Load Balancing distributes traffic across targets.
+* API Gateway is specifically for creating and managing APIs.
 
-Exam trap
+**Exam trap:**
 If the question is about publishing and managing APIs, choose API Gateway, not ELB.
 
-### AWS AppSync
+### API Gateway vs AWS AppSync
 
- AppSync is mainly for GraphQL APIs
- API Gateway is for REST, HTTP, and WebSocket APIs
+* AppSync is mainly for GraphQL APIs.
+* API Gateway is for REST, HTTP, and WebSocket APIs.
 
-### Amazon CloudFront
+### API Gateway vs Amazon CloudFront
 
- CloudFront is a content delivery network
- API Gateway manages API requests
+* CloudFront is a content delivery network.
+* API Gateway manages API requests.
 
 They can work together, but they are not the same service.
 
-### AWS WAF
+### API Gateway vs AWS WAF
 
- WAF protects web applications and APIs from common web exploits
- API Gateway manages the API itself
+* AWS WAF protects web applications and APIs from common web exploits.
+* API Gateway manages the API itself.
 
-### Amazon Cognito
+### API Gateway vs Amazon Cognito
 
- Cognito helps with user authentication and identity
- API Gateway can use authentication methods and protect access to APIs
+* Cognito helps with user authentication and identity.
+* API Gateway can use authentication methods and protect access to APIs.
 
 ---
 
 ## Common exam traps
 
-### Trap 1 Confusing API Gateway with Lambda
+### 1. Confusing API Gateway with AWS Lambda
 
-API Gateway does not replace Lambda.
-It often sits in front of Lambda.
+This is one of the most common mistakes.
 
-### Trap 2 Confusing API Gateway with ELB
+API Gateway does not run your business logic. It receives the request and sends it to a backend such as Lambda.
 
-If the goal is to route API calls and manage APIs, the answer is API Gateway.
-If the goal is to distribute network or application traffic across servers, the answer is ELB.
+### 2. Confusing API Gateway with Elastic Load Balancing
 
-### Trap 3 Thinking API Gateway is only for serverless
+These services can both sit in front of applications, but they are used for different purposes.
 
-It is strongly used with Lambda, but it can also connect to other backend systems.
+If the question is about creating, publishing, securing, and managing APIs, think of API Gateway.
+If the question is about distributing traffic across servers or targets, think of ELB.
 
-### Trap 4 Forgetting WebSocket support
+### 3. Thinking API Gateway is only for serverless applications
 
-API Gateway is not only for normal request-response APIs.
-It can also support real-time two-way communication with WebSocket APIs.
+API Gateway is strongly associated with Lambda, but it is not limited to Lambda.
 
-### Trap 5 Mixing REST API and HTTP API
+It can also connect to EC2-based apps, containers, and other backend systems.
 
-For Cloud Practitioner, remember this simple rule
+### 4. Forgetting WebSocket support
 
- REST API = more features
- HTTP API = simpler and usually cheaperlower latency for common use cases
+Some learners only remember REST-style APIs.
 
-You usually do not need deep detail beyond that for the exam.
+But API Gateway also supports WebSocket APIs for real-time two-way communication such as chat systems and live updates.
+
+### 5. Mixing REST API and HTTP API
+
+For Cloud Practitioner, remember this simple rule:
+
+* REST API = more features and more advanced API management
+* HTTP API = simpler, lower cost, and often lower latency for common use cases
+
+You usually do not need very deep detail beyond that for this exam.
+
+### 6. Thinking API Gateway and CloudFront do the same job
+
+CloudFront focuses on content delivery and caching closer to users.
+
+API Gateway focuses on handling and managing API requests.
+
+### 7. Forgetting security and traffic control features
+
+API Gateway is not only about routing requests.
+
+It also helps with throttling, authorization, monitoring, and controlling API access.
 
 ---
 
@@ -202,21 +303,21 @@ You usually do not need deep detail beyond that for the exam.
 
 Imagine a food delivery app.
 
-The mobile app needs to
+The mobile app needs to:
 
- log in users
- show restaurants
- place orders
- track order status
+* log in users
+* show restaurants
+* place orders
+* track order status
 
 The app sends requests to Amazon API Gateway.
-API Gateway sends each request to the right backend service or Lambda function.
+API Gateway sends each request to the correct backend service or Lambda function.
 
-So
+So:
 
- `restaurants` gets restaurant data
- `orders` creates an order
- `tracking` returns delivery status
+* `/restaurants` gets restaurant data
+* `/orders` creates an order
+* `/tracking` returns delivery status
 
 API Gateway helps secure the APIs, limit traffic, and monitor usage.
 
@@ -224,43 +325,74 @@ API Gateway helps secure the APIs, limit traffic, and monitor usage.
 
 ## If I were an examiner ...
 
-Here are the kinds of questions I would ask to test your understanding
+Here are the kinds of questions I would ask to test your understanding.
 
 ### Question 1
 
-Which AWS service is used to create, publish, maintain, monitor, and secure APIs
+Which AWS service is used to create, publish, maintain, monitor, and secure APIs?
 
-Expected answer Amazon API Gateway
+**Expected answer:** Amazon API Gateway
 
 ### Question 2
 
-A company wants to build a serverless backend for a mobile application. Which AWS service can expose Lambda functions as API endpoints
+A company wants to build a serverless backend for a mobile application. Which AWS service can expose Lambda functions as API endpoints?
 
-Expected answer Amazon API Gateway
+**Expected answer:** Amazon API Gateway
 
 ### Question 3
 
-Which API Gateway API type is used for real-time two-way communication such as chat apps
+Which API Gateway API type is used for real-time two-way communication such as chat applications?
 
-Expected answer WebSocket API
+**Expected answer:** WebSocket API
 
 ### Question 4
 
-A company wants a fully managed service that acts as the front door for backend services and applications. Which AWS service should they choose
+A company wants a fully managed service that acts as the front door for backend services and applications. Which AWS service should they choose?
 
-Expected answer Amazon API Gateway
+**Expected answer:** Amazon API Gateway
 
 ### Question 5
 
-What is the main difference between API Gateway and Elastic Load Balancing
+What is the main difference between API Gateway and Elastic Load Balancing?
 
-Expected answer API Gateway is for creating and managing APIs, while ELB distributes traffic across targets.
+**Expected answer:** API Gateway is for creating and managing APIs, while ELB distributes traffic across targets.
 
 ### Question 6
 
-A question mentions API keys, usage plans, and advanced API management. Which API Gateway type should you think about first
+A question mentions API keys, usage plans, and advanced API management. Which API Gateway type should you think about first?
 
-Expected answer REST API
+**Expected answer:** REST API
+
+---
+
+## Exam keywords to remember
+
+These are important keywords and phrases that may appear in AWS exam questions about API Gateway:
+
+* create APIs
+* publish APIs
+* manage APIs
+* secure APIs
+* monitor APIs
+* front door for applications
+* API endpoint
+* serverless API
+* Lambda integration
+* REST API
+* HTTP API
+* WebSocket API
+* real-time communication
+* chat application
+* throttling
+* authentication
+* authorization
+* usage plans
+* API keys
+* request validation
+* CloudWatch monitoring
+* custom domain name
+* backend integration
+* expose services through APIs
 
 ---
 
@@ -271,12 +403,12 @@ Amazon API Gateway is the AWS service used to build and manage APIs.
 It acts like the front door for applications and backend services.
 It accepts requests from clients, applies security and traffic controls, sends requests to the correct backend, and returns responses.
 
-For the exam, remember these big ideas
+For the exam, remember these big ideas:
 
- API Gateway is for APIs
- it is commonly used with Lambda
- it supports REST, HTTP, and WebSocket APIs
- it helps with security, monitoring, and traffic control
+* API Gateway is for APIs
+* it is commonly used with Lambda
+* it supports REST, HTTP, and WebSocket APIs
+* it helps with security, monitoring, and traffic control
 
 ---
 
@@ -288,9 +420,9 @@ Amazon API Gateway is a fully managed AWS service for creating, publishing, secu
 
 ## Memory trick
 
-API Gateway = the gate for API traffic
+**API Gateway = the gate for API traffic**
 
-Or even simpler
+Or even simpler:
 
 Clients knock on the gate. API Gateway decides where the request goes.
 
@@ -298,16 +430,16 @@ Clients knock on the gate. API Gateway decides where the request goes.
 
 ## One last exam coach tip
 
-When you see words like
+When you see words like:
 
- create APIs
- publish APIs
- secure APIs
- monitor APIs
- front door for applications
- expose Lambda through an API
- WebSocket chat app
+* create APIs
+* publish APIs
+* secure APIs
+* monitor APIs
+* front door for applications
+* expose Lambda through an API
+* WebSocket chat application
 
-Your mind should quickly go to
+Your mind should quickly go to:
 
-Amazon API Gateway
+**Amazon API Gateway**
