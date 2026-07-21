@@ -43,11 +43,11 @@ This index describes consolidated existing material; it does not claim complete 
 | Amazon S3 | [`05-storage/amazon-s3/01-overview.md`](../05-storage/amazon-s3/01-overview.md) | Review | Review | Existing material consolidated | See category 15 |
 | Amazon S3 | [`05-storage/amazon-s3/02-storage-classes.md`](../05-storage/amazon-s3/02-storage-classes.md) | Review | Review | Existing material consolidated | See category 15 |
 | Amazon S3 | [`05-storage/amazon-s3/03-lifecycle-policies.md`](../05-storage/amazon-s3/03-lifecycle-policies.md) | Review | Review | Existing material consolidated | See category 15 |
-| Aws Storage Gateway | [`05-storage/aws-storage-gateway/01-file-gateway.md`](../05-storage/aws-storage-gateway/01-file-gateway.md) | Review | Review | Existing material consolidated | See category 15 |
 | Aws Storage Gateway | [`05-storage/aws-storage-gateway/01-overview.md`](../05-storage/aws-storage-gateway/01-overview.md) | Review | Review | Existing material consolidated | See category 15 |
-| Aws Storage Gateway | [`05-storage/aws-storage-gateway/02-volume-gateway-cached.md`](../05-storage/aws-storage-gateway/02-volume-gateway-cached.md) | Review | Review | Existing material consolidated | See category 15 |
-| Aws Storage Gateway | [`05-storage/aws-storage-gateway/03-volume-gateway-stored.md`](../05-storage/aws-storage-gateway/03-volume-gateway-stored.md) | Review | Review | Existing material consolidated | See category 15 |
-| Aws Storage Gateway | [`05-storage/aws-storage-gateway/04-tape-gateway.md`](../05-storage/aws-storage-gateway/04-tape-gateway.md) | Review | Review | Existing material consolidated | See category 15 |
+| Aws Storage Gateway | [`05-storage/aws-storage-gateway/02-file-gateway.md`](../05-storage/aws-storage-gateway/02-file-gateway.md) | Review | Review | Existing material consolidated | See category 15 |
+| Aws Storage Gateway | [`05-storage/aws-storage-gateway/03-volume-gateway-cached.md`](../05-storage/aws-storage-gateway/03-volume-gateway-cached.md) | Review | Review | Existing material consolidated | See category 15 |
+| Aws Storage Gateway | [`05-storage/aws-storage-gateway/04-volume-gateway-stored.md`](../05-storage/aws-storage-gateway/04-volume-gateway-stored.md) | Review | Review | Existing material consolidated | See category 15 |
+| Aws Storage Gateway | [`05-storage/aws-storage-gateway/05-tape-gateway.md`](../05-storage/aws-storage-gateway/05-tape-gateway.md) | Review | Review | Existing material consolidated | See category 15 |
 | Ec2 Instance Store | [`05-storage/ec2-instance-store/01-overview.md`](../05-storage/ec2-instance-store/01-overview.md) | Review | Review | Existing material consolidated | See category 15 |
 | Amazon Aurora | [`06-databases/amazon-aurora/01-overview.md`](../06-databases/amazon-aurora/01-overview.md) | Review | Review | Existing material consolidated | See category 15 |
 | Amazon Aurora | [`06-databases/amazon-aurora/02-provisioned.md`](../06-databases/amazon-aurora/02-provisioned.md) | Review | Review | Existing material consolidated | See category 15 |

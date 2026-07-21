@@ -241,31 +241,31 @@ Families were formed semantically from both legacy and numbered-tree notes. Each
 
 ## Aws Storage Gateway
 
-- Canonical target: `05-storage/aws-storage-gateway/01-file-gateway.md`
-- Sources: 2
-- Review: repeated definitions removed where a merge was required; distinct features, examples, comparisons, and exam guidance retained.
-
-## Aws Storage Gateway
-
 - Canonical target: `05-storage/aws-storage-gateway/01-overview.md`
 - Sources: 2
 - Review: repeated definitions removed where a merge was required; distinct features, examples, comparisons, and exam guidance retained.
 
 ## Aws Storage Gateway
 
-- Canonical target: `05-storage/aws-storage-gateway/02-volume-gateway-cached.md`
+- Canonical target: `05-storage/aws-storage-gateway/02-file-gateway.md`
 - Sources: 2
 - Review: repeated definitions removed where a merge was required; distinct features, examples, comparisons, and exam guidance retained.
 
 ## Aws Storage Gateway
 
-- Canonical target: `05-storage/aws-storage-gateway/03-volume-gateway-stored.md`
+- Canonical target: `05-storage/aws-storage-gateway/03-volume-gateway-cached.md`
 - Sources: 2
 - Review: repeated definitions removed where a merge was required; distinct features, examples, comparisons, and exam guidance retained.
 
 ## Aws Storage Gateway
 
-- Canonical target: `05-storage/aws-storage-gateway/04-tape-gateway.md`
+- Canonical target: `05-storage/aws-storage-gateway/04-volume-gateway-stored.md`
+- Sources: 2
+- Review: repeated definitions removed where a merge was required; distinct features, examples, comparisons, and exam guidance retained.
+
+## Aws Storage Gateway
+
+- Canonical target: `05-storage/aws-storage-gateway/05-tape-gateway.md`
 - Sources: 2
 - Review: repeated definitions removed where a merge was required; distinct features, examples, comparisons, and exam guidance retained.
 

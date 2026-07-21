@@ -43,11 +43,11 @@ The checkpoint commit `70818e2` preserves every exact source. The two provenance
 | `05-storage/amazon-s3/01-overview.md` | 3 | Reviewed | Preserved where useful | Reviewed/queued | Verified | Yes |
 | `05-storage/amazon-s3/02-storage-classes.md` | 2 | Reviewed | Preserved where useful | Reviewed/queued | Verified | Yes |
 | `05-storage/amazon-s3/03-lifecycle-policies.md` | 2 | Reviewed | Preserved where useful | Reviewed/queued | Verified | Yes |
-| `05-storage/aws-storage-gateway/01-file-gateway.md` | 2 | Reviewed | Preserved where useful | Reviewed/queued | Verified | Yes |
 | `05-storage/aws-storage-gateway/01-overview.md` | 2 | Reviewed | Preserved where useful | Reviewed/queued | Verified | Yes |
-| `05-storage/aws-storage-gateway/02-volume-gateway-cached.md` | 2 | Reviewed | Preserved where useful | Reviewed/queued | Verified | Yes |
-| `05-storage/aws-storage-gateway/03-volume-gateway-stored.md` | 2 | Reviewed | Preserved where useful | Reviewed/queued | Verified | Yes |
-| `05-storage/aws-storage-gateway/04-tape-gateway.md` | 2 | Reviewed | Preserved where useful | Reviewed/queued | Verified | Yes |
+| `05-storage/aws-storage-gateway/02-file-gateway.md` | 2 | Reviewed | Preserved where useful | Reviewed/queued | Verified | Yes |
+| `05-storage/aws-storage-gateway/03-volume-gateway-cached.md` | 2 | Reviewed | Preserved where useful | Reviewed/queued | Verified | Yes |
+| `05-storage/aws-storage-gateway/04-volume-gateway-stored.md` | 2 | Reviewed | Preserved where useful | Reviewed/queued | Verified | Yes |
+| `05-storage/aws-storage-gateway/05-tape-gateway.md` | 2 | Reviewed | Preserved where useful | Reviewed/queued | Verified | Yes |
 | `05-storage/ec2-instance-store/01-overview.md` | 2 | Reviewed | Preserved where useful | Reviewed/queued | Verified | Yes |
 | `06-databases/amazon-aurora/01-overview.md` | 2 | Reviewed | Preserved where useful | Reviewed/queued | Verified | Yes |
 | `06-databases/amazon-aurora/02-provisioned.md` | 2 | Reviewed | Preserved where useful | Reviewed/queued | Verified | Yes |

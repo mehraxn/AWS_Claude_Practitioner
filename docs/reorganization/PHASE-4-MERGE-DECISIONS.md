@@ -525,7 +525,7 @@ Canonical target exists, is non-empty, has a unique lesson number, and is repres
 
 ### Canonical target
 
-`05-storage/aws-storage-gateway/04-tape-gateway.md`
+`05-storage/aws-storage-gateway/05-tape-gateway.md`
 
 ### Unique information preserved from each source
 
@@ -557,7 +557,7 @@ Canonical target exists, is non-empty, has a unique lesson number, and is repres
 
 ### Canonical target
 
-`05-storage/aws-storage-gateway/02-volume-gateway-cached.md`
+`05-storage/aws-storage-gateway/03-volume-gateway-cached.md`
 
 ### Unique information preserved from each source
 

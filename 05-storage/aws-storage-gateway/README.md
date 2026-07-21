@@ -6,11 +6,11 @@ This directory contains the canonical lesson sequence for Aws Storage Gateway.
 
 ## Lesson Order
 
-1. [File Gateway](01-file-gateway.md)
-2. [Overview](01-overview.md)
-3. [Volume Gateway Cached](02-volume-gateway-cached.md)
-4. [Volume Gateway Stored](03-volume-gateway-stored.md)
-5. [Tape Gateway](04-tape-gateway.md)
+1. [Overview](01-overview.md)
+2. [File Gateway](02-file-gateway.md)
+3. [Volume Gateway Cached](03-volume-gateway-cached.md)
+4. [Volume Gateway Stored](04-volume-gateway-stored.md)
+5. [Tape Gateway](05-tape-gateway.md)
 
 ## Certification Relevance
 
