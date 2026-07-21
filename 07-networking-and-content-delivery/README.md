@@ -1,25 +1,20 @@
-# Networking and Content Delivery
+# Networking And Content Delivery
 
-![CPP](https://img.shields.io/badge/CPP-Cloud%20Practitioner-2EA44F?style=for-the-badge&logo=amazonaws&logoColor=white)
-![SAA](https://img.shields.io/badge/SAA-Solutions%20Architect-0969DA?style=for-the-badge&logo=amazonaws&logoColor=white)
-
-VPC networking, DNS, content delivery, acceleration, and hybrid connectivity.
-
-**Certifications covered:** CPP and SAA, with depth determined per topic.
-
-> [!NOTE]
-> Phase 3 migrated all 14 mapped files into this category. Content review and identified coverage gaps remain pending.
-
-## Planned Topics
+Canonical lessons in this category. Certification relevance is conservative and remains subject to the Phase 5 official exam-guide audit.
 
 | Topic | CPP | SAA | Status |
-|---|---:|---:|---|
-| [Amazon CloudFront](amazon-cloudfront/) | Yes | Yes | Migrated; content review pending |
-| [Amazon Route 53](amazon-route-53/) | Yes | Yes | Migrated; content review pending |
-| [Amazon VPC](amazon-vpc/) | Yes | Yes | Migrated; content review pending |
-| [AWS Direct Connect](aws-direct-connect/) | Yes | Yes | Migrated; content review pending |
-| [AWS Global Accelerator](aws-global-accelerator/) | Yes | Yes | Migrated; content review pending |
-| [AWS Transit Gateway](aws-transit-gateway/) | Yes | No | Migrated; content review pending |
-| [Networking study guide](networking-guide/) | Yes | No | Migrated; content review pending |
-
-[Back to repository home](../README.md)
+|---|:---:|:---:|---|
+| [Amazon Cloudfront](amazon-cloudfront/01-overview.md) | Review | Review | Consolidated |
+| [Amazon Route 53](amazon-route-53/01-overview.md) | Review | Review | Consolidated |
+| [Security Groups](amazon-vpc/02-security-groups.md) | Review | Review | Consolidated |
+| [Flow Logs](amazon-vpc/03-flow-logs.md) | Review | Review | Consolidated |
+| [Endpoint Services](amazon-vpc/04-endpoint-services.md) | Review | Review | Consolidated |
+| [Vpc Peering](amazon-vpc/05-vpc-peering.md) | Review | Review | Consolidated |
+| [Customer Gateway](amazon-vpc/06-customer-gateway.md) | Review | Review | Consolidated |
+| [Virtual Private Gateway](amazon-vpc/07-virtual-private-gateway.md) | Review | Review | Consolidated |
+| [Nat Gateway](amazon-vpc/08-nat-gateway.md) | Review | Review | Consolidated |
+| [Aws Direct Connect](aws-direct-connect/01-overview.md) | Review | Review | Consolidated |
+| [Aws Global Accelerator](aws-global-accelerator/01-overview.md) | Review | Review | Consolidated |
+| [Static Ip Addresses](aws-global-accelerator/02-static-ip-addresses.md) | Review | Review | Consolidated |
+| [Aws Transit Gateway](aws-transit-gateway/01-overview.md) | Review | Review | Consolidated |
+| [Cloud Practitioner Study Guide](networking-guide/01-cloud-practitioner-study-guide.md) | Review | Review | Consolidated |

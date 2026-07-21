@@ -1,29 +1,29 @@
-# Billing, Pricing, and Support
+# Billing Pricing And Support
 
-![CPP](https://img.shields.io/badge/CPP-Cloud%20Practitioner-2EA44F?style=for-the-badge&logo=amazonaws&logoColor=white)
-![SAA](https://img.shields.io/badge/SAA-Solutions%20Architect-0969DA?style=for-the-badge&logo=amazonaws&logoColor=white)
-
-AWS cost management, pricing models, quotas, recommendations, and support.
-
-**Certifications covered:** CPP and SAA, with depth determined per topic.
-
-> [!NOTE]
-> Phase 3 migrated 13 of 17 mapped files into this category. Service Quotas and Support Plans duplicates remain pending.
-
-## Planned Topics
+Canonical lessons in this category. Certification relevance is conservative and remains subject to the Phase 5 official exam-guide audit.
 
 | Topic | CPP | SAA | Status |
-|---|---:|---:|---|
-| [AWS Billing and Cost Management](aws-billing-and-cost-management/) | Yes | No | Migrated; content review pending |
-| [AWS Billing Conductor](aws-billing-conductor/) | Yes | No | Migrated; content review pending |
-| [AWS Budgets](aws-budgets/) | Yes | No | Migrated; content review pending |
-| [AWS Cost Allocation Tags](aws-cost-allocation-tags/) | Yes | No | Migrated; content review pending |
-| [AWS Cost and Usage Reports](aws-cost-and-usage-reports/) | Yes | No | Migrated; content review pending |
-| [AWS Cost Explorer](aws-cost-explorer/) | Yes | No | Migrated; content review pending |
-| [AWS Pricing Calculator](aws-pricing-calculator/) | Yes | No | Migrated; content review pending |
-| [AWS Savings Plans](aws-savings-plans/) | Yes | No | Migrated; content review pending |
-| AWS Service Quotas | Yes | No | Duplicate consolidation pending |
-| [AWS Support](aws-support/) | Yes | No | Partially migrated |
-| [AWS Trusted Advisor](aws-trusted-advisor/) | Yes | No | Migrated; content review pending |
-
-[Back to repository home](../README.md)
+|---|:---:|:---:|---|
+| [Aws Billing And Cost Management](aws-billing-and-cost-management/01-overview.md) | Review | Review | Consolidated |
+| [Study Guide](aws-billing-and-cost-management/02-study-guide.md) | Review | Review | Consolidated |
+| [Data Transfer Costs](aws-billing-and-cost-management/03-data-transfer-costs.md) | Review | Review | Consolidated |
+| [Rightsizing](aws-billing-and-cost-management/04-rightsizing.md) | Review | Review | Consolidated |
+| [Aws Billing Conductor](aws-billing-conductor/01-overview.md) | Review | Review | Consolidated |
+| [Aws Budgets](aws-budgets/01-overview.md) | Review | Review | Consolidated |
+| [Aws Cost Allocation Tags](aws-cost-allocation-tags/01-overview.md) | Review | Review | Consolidated |
+| [Aws Cost And Usage Reports](aws-cost-and-usage-reports/01-overview.md) | Review | Review | Consolidated |
+| [Aws Cost Explorer](aws-cost-explorer/01-overview.md) | Review | Review | Consolidated |
+| [Aws Health Dashboard](aws-health-dashboard/01-overview.md) | Review | Review | Consolidated |
+| [Aws Pricing Calculator](aws-pricing-calculator/01-overview.md) | Review | Review | Consolidated |
+| [Aws Repost](aws-repost/01-overview.md) | Review | Review | Consolidated |
+| [Study Guide](aws-savings-plans/02-study-guide.md) | Review | Review | Consolidated |
+| [Aws Support](aws-support/01-overview.md) | Review | Review | Consolidated |
+| [Support Plans](aws-support/02-support-plans.md) | Review | Review | Consolidated |
+| [Aws Trusted Advisor](aws-trusted-advisor/01-overview.md) | Review | Review | Consolidated |
+| [Study Guide](customer-enablement/aws-guidance/01-study-guide.md) | Review | Review | Consolidated |
+| [Aws Managed Services](customer-enablement/aws-managed-services/01-overview.md) | Review | Review | Consolidated |
+| [Aws Partner Network](customer-enablement/aws-partner-network/01-overview.md) | Review | Review | Consolidated |
+| [Aws Prescriptive Guidance](customer-enablement/aws-prescriptive-guidance/01-overview.md) | Review | Review | Consolidated |
+| [Aws Professional Services](customer-enablement/aws-professional-services/01-overview.md) | Review | Review | Consolidated |
+| [Study Guide](customer-enablement/aws-recommendation-resources/01-study-guide.md) | Review | Review | Consolidated |
+| [Aws Trust And Safety](customer-enablement/aws-trust-and-safety/01-overview.md) | Review | Review | Consolidated |

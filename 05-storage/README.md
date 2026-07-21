@@ -1,23 +1,19 @@
 # Storage
 
-![CPP](https://img.shields.io/badge/CPP-Cloud%20Practitioner-2EA44F?style=for-the-badge&logo=amazonaws&logoColor=white)
-![SAA](https://img.shields.io/badge/SAA-Solutions%20Architect-0969DA?style=for-the-badge&logo=amazonaws&logoColor=white)
-
-Object, block, file, and high-performance storage services.
-
-**Certifications covered:** CPP and SAA, with depth determined per topic.
-
-> [!NOTE]
-> Phase 3 migrated 3 of 12 mapped files into this category. Overview collisions remain preserved for duplicate consolidation.
-
-## Planned Topics
+Canonical lessons in this category. Certification relevance is conservative and remains subject to the Phase 5 official exam-guide audit.
 
 | Topic | CPP | SAA | Status |
-|---|---:|---:|---|
-| Amazon EBS | Yes | Yes | Duplicate consolidation pending |
-| Amazon EFS | Yes | Yes | Duplicate consolidation pending |
-| Amazon FSx for Lustre | Yes | Yes | Duplicate consolidation pending |
-| [Amazon FSx for Windows File Server](amazon-fsx-for-windows-file-server/) | Yes | Yes | Migrated; content review pending |
-| [Amazon S3](amazon-s3/) | Yes | Yes | Partially migrated |
-
-[Back to repository home](../README.md)
+|---|:---:|:---:|---|
+| [Amazon Ebs](amazon-ebs/01-overview.md) | Review | Review | Consolidated |
+| [Amazon Efs](amazon-efs/01-overview.md) | Review | Review | Consolidated |
+| [Amazon Fsx For Lustre](amazon-fsx-for-lustre/01-overview.md) | Review | Review | Consolidated |
+| [Amazon Fsx For Windows File Server](amazon-fsx-for-windows-file-server/01-overview.md) | Review | Review | Consolidated |
+| [Amazon S3](amazon-s3/01-overview.md) | Review | Review | Consolidated |
+| [Storage Classes](amazon-s3/02-storage-classes.md) | Review | Review | Consolidated |
+| [Lifecycle Policies](amazon-s3/03-lifecycle-policies.md) | Review | Review | Consolidated |
+| [File Gateway](aws-storage-gateway/01-file-gateway.md) | Review | Review | Consolidated |
+| [Aws Storage Gateway](aws-storage-gateway/01-overview.md) | Review | Review | Consolidated |
+| [Volume Gateway Cached](aws-storage-gateway/02-volume-gateway-cached.md) | Review | Review | Consolidated |
+| [Volume Gateway Stored](aws-storage-gateway/03-volume-gateway-stored.md) | Review | Review | Consolidated |
+| [Tape Gateway](aws-storage-gateway/04-tape-gateway.md) | Review | Review | Consolidated |
+| [Ec2 Instance Store](ec2-instance-store/01-overview.md) | Review | Review | Consolidated |

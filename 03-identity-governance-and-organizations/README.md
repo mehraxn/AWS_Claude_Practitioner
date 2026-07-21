@@ -1,25 +1,23 @@
-# Identity, Governance, and Organizations
+# Identity Governance And Organizations
 
-![CPP](https://img.shields.io/badge/CPP-Cloud%20Practitioner-2EA44F?style=for-the-badge&logo=amazonaws&logoColor=white)
-![SAA](https://img.shields.io/badge/SAA-Solutions%20Architect-0969DA?style=for-the-badge&logo=amazonaws&logoColor=white)
-
-Identity, multi-account governance, directories, and resource controls.
-
-**Certifications covered:** CPP and SAA, with depth determined per topic.
-
-> [!NOTE]
-> Phase 3 migrated 16 of 18 mapped files into this category. Duplicate consolidation and content review remain pending.
-
-## Planned Topics
+Canonical lessons in this category. Certification relevance is conservative and remains subject to the Phase 5 official exam-guide audit.
 
 | Topic | CPP | SAA | Status |
-|---|---:|---:|---|
-| [AWS Control Tower](aws-control-tower/) | Yes | Yes | Migrated; content review pending |
-| [AWS Directory Service](aws-directory-service/) | Yes | No | Migrated; content review pending |
-| [AWS IAM](aws-iam/) | Yes | Yes | Partially migrated |
-| [AWS IAM Identity Center](aws-iam-identity-center/) | Yes | Yes | Migrated; content review pending |
-| [AWS Organizations](aws-organizations/) | Yes | Yes | Migrated; content review pending |
-| [AWS Resource Access Manager](aws-resource-access-manager/) | Yes | No | Migrated; content review pending |
-| [AWS Service Catalog](aws-service-catalog/) | Yes | No | Migrated; content review pending |
-
-[Back to repository home](../README.md)
+|---|:---:|:---:|---|
+| [Aws Control Tower](aws-control-tower/01-overview.md) | Review | Review | Consolidated |
+| [Aws Directory Service](aws-directory-service/01-overview.md) | Review | Review | Consolidated |
+| [Aws Iam](aws-iam/01-overview.md) | Review | Review | Consolidated |
+| [Users](aws-iam/02-users.md) | Review | Review | Consolidated |
+| [Groups](aws-iam/03-groups.md) | Review | Review | Consolidated |
+| [Roles](aws-iam/04-roles.md) | Review | Review | Consolidated |
+| [Customer Managed Policies](aws-iam/05-customer-managed-policies.md) | Review | Review | Consolidated |
+| [Inline Policies](aws-iam/06-inline-policies.md) | Review | Review | Consolidated |
+| [Read Only Access Policy](aws-iam/07-read-only-access-policy.md) | Review | Review | Consolidated |
+| [Administrator Access Policy](aws-iam/08-administrator-access-policy.md) | Review | Review | Consolidated |
+| [Access Analyzer](aws-iam/09-access-analyzer.md) | Review | Review | Consolidated |
+| [Root User](aws-iam/10-root-user.md) | Review | Review | Consolidated |
+| [Aws Iam Identity Center](aws-iam-identity-center/01-overview.md) | Review | Review | Consolidated |
+| [Aws Organizations](aws-organizations/01-overview.md) | Review | Review | Consolidated |
+| [Service Control Policies](aws-organizations/02-service-control-policies.md) | Review | Review | Consolidated |
+| [Aws Resource Access Manager](aws-resource-access-manager/01-overview.md) | Review | Review | Consolidated |
+| [Aws Service Catalog](aws-service-catalog/01-overview.md) | Review | Review | Consolidated |

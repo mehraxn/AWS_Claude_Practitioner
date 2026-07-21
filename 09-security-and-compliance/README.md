@@ -1,35 +1,22 @@
-# Security and Compliance
+# Security And Compliance
 
-![CPP](https://img.shields.io/badge/CPP-Cloud%20Practitioner-2EA44F?style=for-the-badge&logo=amazonaws&logoColor=white)
-![SAA](https://img.shields.io/badge/SAA-Solutions%20Architect-0969DA?style=for-the-badge&logo=amazonaws&logoColor=white)
-
-Threat detection, data protection, encryption, identity-adjacent security, and compliance.
-
-**Certifications covered:** CPP and SAA, with depth determined per topic.
-
-> [!NOTE]
-> Phase 3 migrated 13 of 20 mapped files into this category. Duplicate and manual-review files remain in legacy locations.
-
-## Planned Topics
+Canonical lessons in this category. Certification relevance is conservative and remains subject to the Phase 5 official exam-guide audit.
 
 | Topic | CPP | SAA | Status |
-|---|---:|---:|---|
-| [Amazon Cognito](amazon-cognito/) | Yes | No | Migrated; content review pending |
-| [Amazon GuardDuty](amazon-guardduty/) | Yes | Yes | Migrated; content review pending |
-| [Amazon Inspector](amazon-inspector/) | Yes | No | Migrated; content review pending |
-| [Amazon Macie](amazon-macie/) | Yes | No | Migrated; content review pending |
-| [Amazon Verified Permissions](amazon-verified-permissions/) | No | Yes | Migrated; content review pending |
-| [AWS Artifact](aws-artifact/) | Yes | No | Migrated; content review pending |
-| AWS Audit Manager | Yes | No | Duplicate consolidation pending |
-| [AWS Certificate Manager](aws-certificate-manager/) | Yes | No | Migrated; content review pending |
-| [AWS Compliance Programs](aws-compliance-programs/) | Yes | No | Migrated; content review pending |
-| AWS KMS | Yes | Yes | Duplicate consolidation pending |
-| [AWS Network Firewall](aws-network-firewall/) | Yes | No | Migrated; content review pending |
-| [AWS Secrets Manager](aws-secrets-manager/) | Yes | No | Migrated; content review pending |
-| AWS security and compliance reference | Yes | No | Manual review required |
-| [AWS Security Hub](aws-security-hub/) | Yes | No | Migrated; content review pending |
-| [AWS Shield](aws-shield/) | Yes | Yes | Migrated; content review pending |
-| AWS Trust and Safety | Yes | No | Manual review required |
-| [AWS WAF](aws-waf/) | Yes | Yes | Migrated; content review pending |
-
-[Back to repository home](../README.md)
+|---|:---:|:---:|---|
+| [Amazon Cognito](amazon-cognito/01-overview.md) | Review | Review | Consolidated |
+| [Amazon Guardduty](amazon-guardduty/01-overview.md) | Review | Review | Consolidated |
+| [Amazon Inspector](amazon-inspector/01-overview.md) | Review | Review | Consolidated |
+| [Amazon Macie](amazon-macie/01-overview.md) | Review | Review | Consolidated |
+| [Amazon Verified Permissions](amazon-verified-permissions/01-overview.md) | Review | Review | Consolidated |
+| [Aws Artifact](aws-artifact/01-overview.md) | Review | Review | Consolidated |
+| [Aws Audit Manager](aws-audit-manager/01-overview.md) | Review | Review | Consolidated |
+| [Aws Certificate Manager](aws-certificate-manager/01-overview.md) | Review | Review | Consolidated |
+| [Aws Compliance Programs](aws-compliance-programs/01-overview.md) | Review | Review | Consolidated |
+| [Aws Kms](aws-kms/01-overview.md) | Review | Review | Consolidated |
+| [Aws Network Firewall](aws-network-firewall/01-overview.md) | Review | Review | Consolidated |
+| [Aws Secrets Manager](aws-secrets-manager/01-overview.md) | Review | Review | Consolidated |
+| [Aws Security Hub](aws-security-hub/01-overview.md) | Review | Review | Consolidated |
+| [Aws Shield](aws-shield/01-overview.md) | Review | Review | Consolidated |
+| [Aws Waf](aws-waf/01-overview.md) | Review | Review | Consolidated |
+| [Security And Compliance Overview](security-and-compliance-overview/01-overview.md) | Review | Review | Consolidated |

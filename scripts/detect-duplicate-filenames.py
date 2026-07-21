@@ -39,47 +39,36 @@ def report_group(label: str, paths: list[Path]) -> None:
 
 
 def main() -> int:
-    """Scan and report candidates without selecting canonical content."""
+    """Detect active version markers and per-directory canonical collisions."""
     if hasattr(sys.stdout, "reconfigure"):
         sys.stdout.reconfigure(encoding="utf-8", errors="backslashreplace")
     paths = files()
     groups: list[tuple[str, list[Path]]] = []
-    for label, key in (
-        ("Case-only filename difference", lambda path: path.name.casefold()),
-        ("Trailing-space filename difference", lambda path: path.name.rstrip().casefold()),
-    ):
-        bucket: dict[str, list[Path]] = defaultdict(list)
-        for path in paths:
-            bucket[key(path)].append(path)
-        for members in bucket.values():
-            distinct = {path.name for path in members}
-            if len(members) > 1 and len(distinct) > 1:
-                groups.append((label, members))
-    normalized_groups: dict[str, list[Path]] = defaultdict(list)
-    for path in paths:
-        if path.name != "README.md":
-            normalized_groups[normalized(path.name)].append(path)
-    for members in normalized_groups.values():
-        if len(members) > 1:
-            groups.append(("Same normalized filename", members))
-    for path in paths:
+    active = [path for path in paths if path.relative_to(ROOT).parts and re.match(r"^(?:0[1-9]|1[0-6])-", path.relative_to(ROOT).parts[0])]
+    for path in active:
         if VERSION_RE.search(path.name):
-            groups.append(("Version-suffixed filename", [path]))
-    names: dict[str, Path] = {}
-    for path in paths:
-        key = normalized(path.name)
-        if len(key) >= 8 and key not in names:
-            names[key] = path
-    keys = sorted(names)
-    similar_seen: set[tuple[str, str]] = set()
-    for index, left in enumerate(keys):
-        for right in keys[index + 1:]:
-            if left == right:
-                continue
-            ratio = difflib.SequenceMatcher(None, left, right).ratio()
-            if ratio >= 0.88 and (left, right) not in similar_seen:
-                similar_seen.add((left, right))
-                groups.append((f"Similar filenames ({ratio:.0%})", [names[left], names[right]]))
+            groups.append(("Version-suffixed active filename", [path]))
+    by_directory: dict[Path, list[Path]] = defaultdict(list)
+    for path in active:
+        if path.suffix.lower() == ".md" and path.name != "README.md":
+            by_directory[path.parent].append(path)
+    for members in by_directory.values():
+        normalized_groups: dict[str, list[Path]] = defaultdict(list)
+        numbers: dict[str, list[Path]] = defaultdict(list)
+        for path in members:
+            normalized_groups[normalized(path.name)].append(path)
+            match = re.match(r"^(\d{2})-", path.name)
+            if match:
+                numbers[match.group(1)].append(path)
+        for same in normalized_groups.values():
+            if len(same) > 1:
+                groups.append(("Same normalized filename in one directory", same))
+        for same in numbers.values():
+            if len(same) > 1:
+                groups.append(("Duplicate lesson number in one directory", same))
+        overviews = [path for path in members if path.name.endswith("overview.md")]
+        if len(overviews) > 1:
+            groups.append(("Multiple overview files in one service directory", overviews))
     if groups:
         for label, members in groups:
             report_group(label, members)

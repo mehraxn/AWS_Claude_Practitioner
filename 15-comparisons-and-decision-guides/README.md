@@ -1,19 +1,16 @@
-# Comparisons and Decision Guides
+# Comparisons And Decision Guides
 
-![CPP](https://img.shields.io/badge/CPP-Cloud%20Practitioner-2EA44F?style=for-the-badge&logo=amazonaws&logoColor=white)
-![SAA](https://img.shields.io/badge/SAA-Solutions%20Architect-0969DA?style=for-the-badge&logo=amazonaws&logoColor=white)
-
-Cross-service comparisons organized around selection criteria and trade-offs.
-
-**Certifications covered:** CPP and SAA, with depth determined per topic.
-
-> [!NOTE]
-> Phase 3 migrated all 10 mapped comparison files. Their content has not yet been consolidated or quality-reviewed.
-
-## Planned Topics
+Canonical lessons in this category. Certification relevance is conservative and remains subject to the Phase 5 official exam-guide audit.
 
 | Topic | CPP | SAA | Status |
-|---|---:|---:|---|
-| [Cross-service comparisons](cross-service/) | Yes | Yes | Migrated; content review pending |
-
-[Back to repository home](../README.md)
+|---|:---:|:---:|---|
+| [Emr Vs Redshift](analytics/01-emr-vs-redshift.md) | Review | Review | Consolidated |
+| [Root User Vs Iam](identity-and-governance/01-root-user-vs-iam.md) | Review | Review | Consolidated |
+| [Organizations Vs Control Tower](identity-and-governance/02-organizations-vs-control-tower.md) | Review | Review | Consolidated |
+| [Users Groups And Roles](identity-and-governance/03-users-groups-and-roles.md) | Review | Review | Consolidated |
+| [Datasync Vs Dms](migration/01-datasync-vs-dms.md) | Review | Review | Consolidated |
+| [Snowball Edge Vs Outposts](migration/02-snowball-edge-vs-outposts.md) | Review | Review | Consolidated |
+| [Cloudfront Vs Global Accelerator](networking/01-cloudfront-vs-global-accelerator.md) | Review | Review | Consolidated |
+| [Vpc Connectivity Options](networking/02-vpc-connectivity-options.md) | Review | Review | Consolidated |
+| [File Gateway Vs Volume Gateway](storage/01-file-gateway-vs-volume-gateway.md) | Review | Review | Consolidated |
+| [Storage Gateway Family](storage/02-storage-gateway-family.md) | Review | Review | Consolidated |

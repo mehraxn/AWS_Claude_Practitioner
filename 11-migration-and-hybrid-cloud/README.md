@@ -1,25 +1,13 @@
-# Migration and Hybrid Cloud
+# Migration And Hybrid Cloud
 
-![CPP](https://img.shields.io/badge/CPP-Cloud%20Practitioner-2EA44F?style=for-the-badge&logo=amazonaws&logoColor=white)
-![SAA](https://img.shields.io/badge/SAA-Solutions%20Architect-0969DA?style=for-the-badge&logo=amazonaws&logoColor=white)
-
-Discovery, transfer, migration, edge, and hybrid storage services.
-
-**Certifications covered:** CPP and SAA, with depth determined per topic.
-
-> [!NOTE]
-> Phase 3 migrated 9 of 13 mapped files into this category. Storage Gateway duplicate versions remain in legacy locations.
-
-## Planned Topics
+Canonical lessons in this category. Certification relevance is conservative and remains subject to the Phase 5 official exam-guide audit.
 
 | Topic | CPP | SAA | Status |
-|---|---:|---:|---|
-| [AWS Application Discovery Service](aws-application-discovery-service/) | Yes | No | Migrated; content review pending |
-| [AWS Database Migration Service](aws-database-migration-service/) | Yes | Yes | Migrated; content review pending |
-| [AWS DataSync](aws-datasync/) | Yes | Yes | Migrated; content review pending |
-| [AWS Migration Hub](aws-migration-hub/) | Yes | No | Migrated; content review pending |
-| [AWS Outposts](aws-outposts/) | Yes | No | Migrated; content review pending |
-| [AWS Snowball Edge](aws-snowball-edge/) | Yes | No | Migrated; content review pending |
-| [AWS Storage Gateway](aws-storage-gateway/) | Yes | No | Partially migrated |
-
-[Back to repository home](../README.md)
+|---|:---:|:---:|---|
+| [Aws Application Discovery Service](aws-application-discovery-service/01-overview.md) | Review | Review | Consolidated |
+| [Aws Database Migration Service](aws-database-migration-service/01-overview.md) | Review | Review | Consolidated |
+| [Aws Datasync](aws-datasync/01-overview.md) | Review | Review | Consolidated |
+| [Aws Migration Hub](aws-migration-hub/01-overview.md) | Review | Review | Consolidated |
+| [Aws Outposts](aws-outposts/01-overview.md) | Review | Review | Consolidated |
+| [Aws Schema Conversion Tool](aws-schema-conversion-tool/01-overview.md) | Review | Review | Consolidated |
+| [Aws Snowball Edge](aws-snowball-edge/01-overview.md) | Review | Review | Consolidated |

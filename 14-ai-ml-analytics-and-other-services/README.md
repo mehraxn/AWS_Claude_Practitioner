@@ -1,47 +1,23 @@
-# AI, ML, Analytics, and Other Services
+# Ai Ml Analytics And Other Services
 
-![CPP](https://img.shields.io/badge/CPP-Cloud%20Practitioner-2EA44F?style=for-the-badge&logo=amazonaws&logoColor=white)
-![SAA](https://img.shields.io/badge/SAA-Solutions%20Architect-0969DA?style=for-the-badge&logo=amazonaws&logoColor=white)
-
-Scoped analytics, AI/ML, IoT, application, and AWS guidance services.
-
-**Certifications covered:** CPP and SAA, with depth determined per topic.
-
-> [!NOTE]
-> Phase 3 migrated 20 of 32 mapped files into this category. Duplicate, terminology, and manual-review notes remain preserved in legacy locations.
-
-## Planned Topics
+Canonical lessons in this category. Certification relevance is conservative and remains subject to the Phase 5 official exam-guide audit.
 
 | Topic | CPP | SAA | Status |
-|---|---:|---:|---|
-| Amazon Alexa | Yes | No | Manual review required |
-| [Amazon Athena](amazon-athena/) | Yes | No | Migrated; content review pending |
-| Amazon Chime | Yes | No | Manual review required |
-| Amazon Comprehend | Yes | No | Duplicate consolidation pending |
-| [Amazon Connect](amazon-connect/) | Yes | No | Migrated; content review pending |
-| Amazon Elastic Transcoder | Yes | No | Manual review required |
-| Amazon EMR | Yes | No | Duplicate consolidation pending |
-| [Amazon Kendra](amazon-kendra/) | Yes | No | Migrated; content review pending |
-| [Amazon Kinesis Video Streams](amazon-kinesis-video-streams/) | Yes | No | Migrated; content review pending |
-| [Amazon Lex](amazon-lex/) | Yes | No | Migrated; content review pending |
-| [Amazon Polly](amazon-polly/) | Yes | No | Migrated; content review pending |
-| [Amazon QuickSight](amazon-quicksight/) | Yes | No | Migrated; content review pending |
-| [Amazon Redshift](amazon-redshift/) | Yes | No | Migrated; content review pending |
-| [Amazon Rekognition](amazon-rekognition/) | Yes | No | Migrated; content review pending |
-| [Amazon Textract](amazon-textract/) | Yes | No | Migrated; content review pending |
-| [Amazon Translate](amazon-translate/) | Yes | No | Migrated; content review pending |
-| AWS Amplify | Yes | No | Duplicate consolidation pending |
-| [AWS Glue](aws-glue/) | Yes | No | Migrated; content review pending |
-| [AWS Guidance](aws-guidance/) | Yes | No | Migrated; content review pending |
-| AWS Health | Yes | No | Manual review required |
-| [AWS IoT](aws-iot/) | Yes | No | Migrated; content review pending |
-| [AWS IoT Greengrass](aws-iot-greengrass/) | Yes | No | Migrated; content review pending |
-| [AWS Partner Network](aws-partner-network/) | Yes | No | Migrated; content review pending |
-| [AWS Prescriptive Guidance](aws-prescriptive-guidance/) | Yes | No | Migrated; content review pending |
-| AWS Professional Services | Yes | No | Manual review required |
-| [AWS Recommendation Services guide](aws-recommendation-services-complete-study-guide/) | Yes | No | Migrated; content review pending |
-| [AWS re:Post](aws-repost/) | Yes | No | Migrated; content review pending |
-| AWS re:Post Knowledge Center | Yes | No | Manual review required |
-| [AWS Schema Conversion Tool](aws-schema-conversion-tool-aws-sct/) | Yes | No | Migrated; content review pending |
-
-[Back to repository home](../README.md)
+|---|:---:|:---:|---|
+| [Amazon Athena](analytics/amazon-athena/01-overview.md) | Review | Review | Consolidated |
+| [Amazon Emr](analytics/amazon-emr/01-overview.md) | Review | Review | Consolidated |
+| [Amazon Kinesis Video Streams](analytics/amazon-kinesis-video-streams/01-overview.md) | Review | Review | Consolidated |
+| [Amazon Quicksight](analytics/amazon-quicksight/01-overview.md) | Review | Review | Consolidated |
+| [Amazon Redshift](analytics/amazon-redshift/01-overview.md) | Review | Review | Consolidated |
+| [Aws Glue](analytics/aws-glue/01-overview.md) | Review | Review | Consolidated |
+| [Amazon Comprehend](artificial-intelligence-and-machine-learning/amazon-comprehend/01-overview.md) | Review | Review | Consolidated |
+| [Amazon Kendra](artificial-intelligence-and-machine-learning/amazon-kendra/01-overview.md) | Review | Review | Consolidated |
+| [Amazon Lex](artificial-intelligence-and-machine-learning/amazon-lex/01-overview.md) | Review | Review | Consolidated |
+| [Amazon Polly](artificial-intelligence-and-machine-learning/amazon-polly/01-overview.md) | Review | Review | Consolidated |
+| [Amazon Rekognition](artificial-intelligence-and-machine-learning/amazon-rekognition/01-overview.md) | Review | Review | Consolidated |
+| [Amazon Textract](artificial-intelligence-and-machine-learning/amazon-textract/01-overview.md) | Review | Review | Consolidated |
+| [Amazon Translate](artificial-intelligence-and-machine-learning/amazon-translate/01-overview.md) | Review | Review | Consolidated |
+| [Amazon Connect](business-applications/amazon-connect/01-overview.md) | Review | Review | Consolidated |
+| [Aws Amplify](business-applications/aws-amplify/01-overview.md) | Review | Review | Consolidated |
+| [Aws Iot](internet-of-things/aws-iot/01-overview.md) | Review | Review | Consolidated |
+| [Aws Iot Greengrass](internet-of-things/aws-iot-greengrass/01-overview.md) | Review | Review | Consolidated |

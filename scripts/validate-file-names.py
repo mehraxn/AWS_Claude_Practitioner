@@ -92,6 +92,40 @@ def main() -> int:
     args = parser.parse_args()
     paths = foundation_paths() if args.foundation_only else all_paths()
     failures = [(path, validate(path, args.foundation_only)) for path in paths]
+    if args.all:
+        legacy_names = {
+            "a) Service Explanations", "b) Service Comparisons", "c) Keywords services",
+            "d) Tools & Policies", "e) AWS Claude Network & Gateways", "f) EC2",
+            "g)ELB & ASG", "h) RDS",
+        }
+        for name in legacy_names:
+            if (ROOT / name).exists():
+                failures.append((ROOT / name, ["legacy top-level directory remains"]))
+        for directory in (path for path in ROOT.rglob("*") if path.is_dir()):
+            rel = directory.relative_to(ROOT)
+            if not rel.parts or not is_category(rel.parts[0]):
+                continue
+            lessons = [item for item in directory.glob("*.md") if item.name != "README.md"]
+            numbers: dict[str, list[Path]] = {}
+            for lesson in lessons:
+                match = re.match(r"^(\d{2})-", lesson.name)
+                if match:
+                    numbers.setdefault(match.group(1), []).append(lesson)
+                if lesson.stat().st_size == 0:
+                    failures.append((lesson, ["empty Markdown file"]))
+                text = lesson.read_text(encoding="utf-8")
+                if re.search(r"^#{1,6}\s*$", text, re.MULTILINE):
+                    failures.append((lesson, ["empty lesson heading"]))
+                if "prompt" in lesson.name.casefold():
+                    failures.append((lesson, ["prompt template inside learning category"]))
+            for number, members in numbers.items():
+                if len(members) > 1:
+                    for member in members:
+                        failures.append((member, [f"duplicate lesson number {number} in directory"]))
+            if len([item for item in lessons if item.name.endswith("overview.md")]) > 1:
+                for item in lessons:
+                    if item.name.endswith("overview.md"):
+                        failures.append((item, ["multiple canonical overview files in one service directory"]))
     failures = [(path, errors) for path, errors in failures if errors]
     if failures:
         for path, errors in failures:
