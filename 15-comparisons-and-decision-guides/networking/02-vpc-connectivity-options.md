@@ -361,3 +361,92 @@ Think of three pictures
 Another easy memory line
 
 Door = Endpoint, Bridge = Peering, Hub = Transit Gateway
+
+## Batch 3 Hybrid and Multi-VPC Selection Supplement
+
+![CPP](https://img.shields.io/badge/CPP-Cloud%20Practitioner-2EA44F?style=for-the-badge&logo=amazonaws&logoColor=white)
+![SAA](https://img.shields.io/badge/SAA-Solutions%20Architect-0969DA?style=for-the-badge&logo=amazonaws&logoColor=white)
+
+### Expanded Decision Table
+
+| Option | Connects | Topology and routing | Availability | Cost and operations | Best signal |
+|---|---|---|---|---|---|
+| VPC endpoint / PrivateLink | Consumer to a specific supported service | No full transitive network routing | Interface endpoints can span selected AZs | Endpoint-hour/processing for interface endpoints; service-oriented policy/DNS work | Private service access, overlapping networks, limited exposure |
+| VPC peering | Two VPCs | One-to-one, non-transitive; routes on both sides; no overlapping CIDRs | Managed connection with no gateway appliance | No connection-hour charge; transfer and mesh administration grow | A small number of direct VPC relationships |
+| Transit Gateway | Many VPCs and hybrid attachments | Regional hub with attachment associations, propagation/static routes, and segmentation tables | Managed Regional router; attach VPC subnets in required AZs | Attachment and processing charges; centralized routing operations | Hub-and-spoke, transitive multi-account connectivity |
+| Site-to-Site VPN | On-premises customer gateway to a virtual private gateway or Transit Gateway | Static routes or BGP over encrypted IPsec tunnels | Configure both tunnels; add independent customer paths for stronger resilience | VPN time/transfer and customer-device operations | Fast encrypted hybrid connectivity over internet paths |
+| Direct Connect | Customer network to AWS through a dedicated connection and virtual interfaces | BGP; private/public/transit VIF choice; Direct Connect gateway for supported multi-Region access | Production designs need redundant connections, locations and devices | Port-hour, transfer, provider circuit and operations | Dedicated connectivity and consistent network performance |
+
+### VPC Peering
+
+Peering supports same-Region and inter-Region VPCs, including cross-account connections. The CIDRs must not overlap. Both sides add routes and permit traffic. Peering is one-to-one and non-transitive: if A peers with B and C, B cannot reach C through A. A peer also cannot use another VPC's internet gateway, NAT gateway, VPN, Direct Connect, or gateway endpoint through edge-to-edge routing.
+
+Use peering for a modest number of direct relationships where low topology complexity matters. A full mesh grows operationally as VPC count rises.
+
+### Transit Gateway
+
+Transit Gateway is a Regional virtual router. VPC, VPN, Direct Connect gateway, peering and other supported attachments connect to it. Transit Gateway route tables can segment environments: an attachment associates with one route table and can propagate routes to one or more tables. Static blackhole routes can intentionally drop matching traffic.
+
+Share a Transit Gateway across accounts with AWS Resource Access Manager. Inter-Region transit-gateway peering uses peering attachments and static routes. Centralized egress and inspection are possible but require symmetric routing, AZ-aware appliance design, and careful failure/cost analysis.
+
+### Site-to-Site VPN
+
+A customer gateway **device** is customer-managed hardware or software on premises; the AWS customer gateway **resource** represents it. The AWS-side target can be a virtual private gateway for one VPC or a Transit Gateway for hub connectivity. Configure both IPsec tunnels. BGP supports dynamic route exchange and is preferred where changing routes and failover behavior justify it.
+
+VPN is quick to establish and encrypted, but internet-path performance can vary. For stronger production resilience, use independent customer devices/paths or combine VPN with Direct Connect according to recovery requirements.
+
+### Direct Connect
+
+Direct Connect provides dedicated connectivity; it does not encrypt traffic by default. A private virtual interface reaches VPC resources through a virtual private gateway or supported Direct Connect gateway design. A transit virtual interface connects to Transit Gateway through a Direct Connect gateway. A public virtual interface reaches supported public AWS endpoints.
+
+Use resilient connections in separate locations and customer devices for critical workloads. Site-to-Site VPN can act as backup or can provide encryption over an appropriate Direct Connect design. Do not select Direct Connect merely because “private” appears in a question; compare lead time, redundancy, encryption, bandwidth consistency, and cost.
+
+### Architecture Patterns
+
+#### Multi-account hub and spoke
+
+Share Transit Gateway with workload accounts. Use separate route tables for production, non-production, and shared services. Propagate only intended prefixes and place inspection/egress services in dedicated VPCs when governance requires them.
+
+#### Hybrid connectivity
+
+Terminate VPN attachments on Transit Gateway for many VPCs or use Direct Connect gateway integration for dedicated connectivity. Advertise only planned prefixes, test route preference and failure, and design Route 53 Resolver endpoints/rules for hybrid DNS.
+
+#### Administrative access
+
+Use Systems Manager Session Manager when managed instances can be administered without inbound ports. Use Client VPN for authorized remote-user network access. A bastion host remains an option when protocol/tool requirements demand it, but it introduces an exposed host to harden, patch, log and scale.
+
+### Failure and Cost Scenarios
+
+- If a peering route or peer is removed, matching routes can become unusable; peering has no automatic transit alternative.
+- Transit Gateway centralizes routing, so incorrect association or propagation can isolate many networks. Separate change control and observability are essential.
+- A single Site-to-Site VPN connection provides two tunnels, but both may share customer-side dependencies. Redundant customer devices and connections address that risk.
+- A single Direct Connect connection is not a resilient architecture. Follow the Direct Connect Resiliency Toolkit model appropriate to the workload.
+- Centralized egress reduces distributed appliances/endpoints but can increase attachment, processing, inter-AZ and operational costs.
+
+### CPP Recognition
+
+- Two VPCs: peering.
+- Many VPCs/hybrid hub: Transit Gateway.
+- Encrypted tunnels over internet paths: Site-to-Site VPN.
+- Dedicated customer-to-AWS connectivity: Direct Connect.
+- One private service without full routing: PrivateLink.
+
+### SAA Knowledge Check
+
+1. Why can B not reach C when both peer only with A? **Peering is non-transitive.**
+2. Which service supplies transitive hub routing for many VPCs? **Transit Gateway.**
+3. Are Direct Connect frames encrypted by the service by default? **No; add an appropriate encryption design when required.**
+4. Why configure both VPN tunnels? **To survive an AWS tunnel endpoint outage or maintenance event.**
+5. What prevents peering between otherwise suitable VPCs? **Overlapping CIDRs.**
+
+### Official References
+
+- [What is VPC peering?](https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html)
+- [VPC peering limitations](https://docs.aws.amazon.com/vpc/latest/peering/vpc-peering-basics.html)
+- [How Transit Gateway works](https://docs.aws.amazon.com/vpc/latest/tgw/how-transit-gateways-work.html)
+- [How Site-to-Site VPN works](https://docs.aws.amazon.com/vpn/latest/s2svpn/how_it_works.html)
+- [Site-to-Site VPN customer gateway devices](https://docs.aws.amazon.com/vpn/latest/s2svpn/your-cgw.html)
+- [AWS Direct Connect concepts](https://docs.aws.amazon.com/directconnect/latest/UserGuide/Welcome.html)
+- [Direct Connect resiliency recommendations](https://docs.aws.amazon.com/directconnect/latest/UserGuide/resiliency_toolkit.html)
+
+Official references checked: 2026-07-23.

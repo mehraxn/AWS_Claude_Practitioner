@@ -15,3 +15,4 @@ Canonical lessons in this category. Certification relevance is conservative and 
 | [File Gateway Vs Volume Gateway](storage/01-file-gateway-vs-volume-gateway.md) | Review | Review | Consolidated |
 | [Storage Gateway Family](storage/02-storage-gateway-family.md) | Review | Review | Consolidated |
 | [Core Compute and Storage Selection](compute-and-storage/01-core-selection-guide.md) | Yes | Yes | Batch 2 complete |
+| [Database Selection Guide](databases/01-database-selection-guide.md) | Yes | Yes | Batch 4 complete |

@@ -7,8 +7,8 @@ The numbered hierarchy is the only active learning-material hierarchy. Legacy to
 - `03-identity-governance-and-organizations/` — 20 Markdown files
 - `04-compute/` — 15 Markdown files
 - `05-storage/` — 16 Markdown files
-- `06-databases/` — 6 Markdown files
-- `07-networking-and-content-delivery/` — 17 Markdown files
+- `06-databases/` — 10 Markdown files
+- `07-networking-and-content-delivery/` — 19 Markdown files
 - `08-serverless-and-application-integration/` — 5 Markdown files
 - `09-security-and-compliance/` — 17 Markdown files
 - `10-monitoring-management-and-deployment/` — 15 Markdown files
@@ -16,7 +16,7 @@ The numbered hierarchy is the only active learning-material hierarchy. Legacy to
 - `12-billing-pricing-and-support/` — 26 Markdown files
 - `13-architecture-and-design-patterns/` — 6 Markdown files
 - `14-ai-ml-analytics-and-other-services/` — 18 Markdown files
-- `15-comparisons-and-decision-guides/` — 15 Markdown files
+- `15-comparisons-and-decision-guides/` — 19 Markdown files
 - `16-exam-preparation/` — 1 Markdown files
 - `90-archive/` — 8 Markdown files
 
@@ -31,4 +31,4 @@ The numbered hierarchy is canonically organized and has been audited against the
 - [SAA coverage dashboard](certification-audit/SAA-COVERAGE-DASHBOARD.md)
 - [Phase 6 content backlog](certification-audit/PHASE-6-CONTENT-BACKLOG.csv)
 - [Phase 6 batch plan](certification-audit/PHASE-6-BATCH-PLAN.md)
-- [Phase 6 Batch 1 implementation records](content-implementation/README.md)
+- [Phase 6 implementation records](content-implementation/README.md)

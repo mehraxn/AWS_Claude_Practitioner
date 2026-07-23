@@ -190,3 +190,68 @@ A VPC endpoint service lets you **privately publish your own service** to other 
 Another memory line:
 
 **PrivateLink = private path to a service, not full network-to-network access.**
+
+## Batch 3 Endpoint Selection Supplement
+
+![CPP](https://img.shields.io/badge/CPP-Cloud%20Practitioner-2EA44F?style=for-the-badge&logo=amazonaws&logoColor=white)
+![SAA](https://img.shields.io/badge/SAA-Solutions%20Architect-0969DA?style=for-the-badge&logo=amazonaws&logoColor=white)
+
+### Gateway and Interface Endpoints
+
+| Dimension | Gateway endpoint | Interface endpoint |
+|---|---|---|
+| Connectivity | Supported gateway services | AWS services, endpoint services, Marketplace services, and other supported PrivateLink targets |
+| VPC implementation | Route-table target | Endpoint network interfaces with private IP addresses in selected subnets |
+| Security | Endpoint policy plus destination resource/IAM policies | Security groups on endpoint ENIs plus endpoint and service policies |
+| DNS | Service routes use destination prefix lists | Regional/zonal endpoint DNS; private DNS can map the normal Regional service name to endpoint ENIs |
+| Cost concept | No endpoint hourly or data-processing charge for the gateway endpoint itself under current pricing | Charged per endpoint AZ-hour and data processed; verify current pricing |
+| Availability | Associate required route tables | Select multiple AZs for resilient production access |
+
+Gateway endpoints currently support Amazon S3 and DynamoDB. They add service-prefix routes to associated route tables and do not use security groups. They are not reachable through VPC peering, Transit Gateway, VPN, or Direct Connect from another network; create appropriate endpoints or use a supported alternative in the network that needs access.
+
+Interface endpoints are powered by AWS PrivateLink. AWS creates an endpoint network interface in each selected subnet, one subnet per Availability Zone. Private DNS requires VPC DNS support and hostnames; when enabled for an AWS service, the ordinary Regional service hostname can resolve to the endpoint's private addresses inside the VPC.
+
+### PrivateLink Provider and Consumer
+
+For a privately published application, the provider places service targets behind a supported load balancer and creates an endpoint service. The provider grants principals permission and may require connection acceptance. A consumer creates an interface endpoint in its VPC and controls access with endpoint security groups and policies.
+
+PrivateLink exposes a specific service rather than providing full, transitive network connectivity. This reduces route exchange and overlapping-CIDR concerns compared with peering, but consumers still need DNS, authorization, resilient endpoint placement, and application-layer security.
+
+### Endpoint, NAT Gateway, or Peering
+
+- Choose a **gateway endpoint** for private access to a supported gateway service when its route-table model fits.
+- Choose an **interface endpoint** for a supported PrivateLink service, private API, partner service, or provider endpoint service.
+- Choose a **NAT gateway** when private workloads need broader outbound IPv4 access to public endpoints or the internet.
+- Choose **VPC peering or Transit Gateway** when workloads need routed access to many resources in another network rather than one published service.
+
+### Security and Resilience
+
+- Apply least-privilege endpoint policies, IAM and resource policies; an endpoint does not bypass service authorization.
+- Restrict interface endpoint security groups to intended clients and ports.
+- Use private DNS deliberately and test split-horizon/on-premises resolution with Route 53 Resolver where hybrid clients need access.
+- Place interface endpoint ENIs in multiple AZs when an AZ impairment must not remove access.
+- Monitor connection, application, DNS and Flow Log evidence; PrivateLink is not a packet-inspection service.
+
+### SAA Scenarios
+
+1. Private EC2 instances need S3 without NAT processing: use an S3 gateway endpoint and a least-privilege endpoint/bucket policy.
+2. An internal API must be shared across accounts without full network routing: publish an endpoint service and let consumers create interface endpoints.
+3. Hybrid clients must use an interface endpoint's private name: design Route 53 Resolver inbound endpoints/rules and verify DNS paths rather than assuming VPC-only DNS is visible on premises.
+4. A production service depends on an interface endpoint: select endpoint subnets in multiple AZs and use the Regional DNS name/private DNS behavior.
+
+### Knowledge Check
+
+1. Which endpoint type adds routes rather than ENIs? **Gateway endpoint.**
+2. Which endpoint type accepts security groups? **Interface endpoint.**
+3. Does PrivateLink create transitive VPC routing? **No; it provides service-oriented private connectivity.**
+4. Does a VPC endpoint replace IAM or resource policies? **No.**
+
+### Official References
+
+- [What is AWS PrivateLink?](https://docs.aws.amazon.com/vpc/latest/privatelink/index.html)
+- [Gateway endpoints](https://docs.aws.amazon.com/vpc/latest/privatelink/gateway-endpoints.html)
+- [Access AWS services through PrivateLink](https://docs.aws.amazon.com/vpc/latest/privatelink/privatelink-access-aws-services.html)
+- [Configure an interface endpoint](https://docs.aws.amazon.com/vpc/latest/privatelink/interface-endpoints.html)
+- [Create an endpoint service](https://docs.aws.amazon.com/vpc/latest/privatelink/create-endpoint-service.html)
+
+Official references checked: 2026-07-23.

@@ -13,6 +13,10 @@ FORBIDDEN_RE = re.compile(
     r"(?:^|[\s_.()\-])(v1|v2|final|new|claude[\s_-]+version|claude[\s_-]+code)(?:$|[\s_.()\-])",
     re.IGNORECASE,
 )
+MANDATED_CONTROL_RECORDS = {
+    "docs/content-implementation/PHASE-6-BATCH-2-FINAL-RECONCILIATION.csv",
+    "docs/content-implementation/PHASE-6-BATCH-2-FINAL-RECONCILIATION.md",
+}
 ROOT_FILES = {
     "README.md", "AGENTS.md", "CONTRIBUTING.md", ".gitattributes",
     ".gitignore", ".markdownlint.json",
@@ -67,7 +71,7 @@ def validate(path: Path, foundation_only: bool) -> list[str]:
             errors.append("parentheses in path")
         if "--" in part or "__" in part:
             errors.append("duplicate separator")
-        if FORBIDDEN_RE.search(part):
+        if FORBIDDEN_RE.search(part) and rel.as_posix() not in MANDATED_CONTROL_RECORDS:
             errors.append("forbidden version marker")
         canonical_segment = category_content and index > 0
         if canonical_segment and part != "README.md" and any(char.isupper() for char in part):

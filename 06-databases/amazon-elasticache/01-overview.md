@@ -280,3 +280,95 @@ Amazon ElastiCache is a fully managed in-memory caching service that improves ap
 So remember:
 
 **ElastiCache helps applications run faster by keeping popular data in memory.**
+
+## Batch 4 Caching Architecture Supplement
+
+![CPP](https://img.shields.io/badge/CPP-Cloud%20Practitioner-2EA44F?style=for-the-badge&logo=amazonaws&logoColor=white)
+![SAA](https://img.shields.io/badge/SAA-Solutions%20Architect-0969DA?style=for-the-badge&logo=amazonaws&logoColor=white)
+
+Checked against current official AWS documentation on 2026-07-23.
+
+### Current Engine Choices
+
+Amazon ElastiCache supports Valkey, Redis OSS, and Memcached engines. Prefer the current terms **ElastiCache for Valkey**, **ElastiCache for Redis OSS**, and **ElastiCache for Memcached** instead of treating “Redis” as the service name.
+
+| Dimension | Valkey or Redis OSS | Memcached |
+|---|---|---|
+| Data structures | Rich structures and commands | Simple key-value objects |
+| Replication | Replication groups and read replicas | No native replication between nodes |
+| Multi-AZ automatic failover | Available with the required replica topology | Not available |
+| Persistence/backup options | Engine/configuration-dependent snapshot and persistence capabilities | Cache is ephemeral; no native backup/replication |
+| Scaling style | Replicas and supported sharding/cluster modes | Add/remove nodes; client distributes keys |
+| Typical choice | HA cache, sessions, richer structures | Simple horizontally distributed cache |
+
+Cached data should normally be treated as disposable or reconstructable unless the selected Valkey capabilities and application design explicitly provide another durability model.
+
+### Caching Patterns
+
+**Cache-aside (lazy loading):** the application checks the cache; on a miss it reads the durable database and populates the cache. This keeps only requested data but creates miss latency and stale-data/invalidation decisions.
+
+**Write-through awareness:** the application or caching layer updates the cache along with the system of record. Reads can stay warm, but write complexity increases. The durable database—not the cache—remains the authority unless explicitly designed otherwise.
+
+Use TTLs to limit staleness and memory consumption. Expiration and eviction are different: expiration follows configured TTL, while eviction removes data under the engine's memory policy. Cache invalidation must align with business tolerance for stale data. A cache stampede can occur when many callers miss the same hot key; request coalescing, jittered TTLs, or controlled refresh can help.
+
+### Availability and Failure Behavior
+
+For Valkey and Redis OSS, a replication group with replicas across Availability Zones can use Multi-AZ automatic failover. Replication is asynchronous in the normal cache architecture, so recent cache changes may be lost during a failure. Clients must use the appropriate endpoints and reconnect/retry.
+
+Memcached nodes are independent. Losing a node loses the keys on that node until the application repopulates them. Design clients for misses and redistribution. In every engine, the application should remain correct when cache data is absent.
+
+### Security and Cost
+
+- Deploy cache resources in suitable subnet groups and restrict security groups to application clients.
+- Use supported in-transit and at-rest encryption, authentication/access controls, and least-privilege IAM for management operations.
+- Do not expose cache endpoints publicly; cache contents may include sensitive application data.
+- Monitor memory, evictions, hit rate, connections, replication lag, CPU/networking, and failover events.
+- Cost depends on node type, node count, replicas, shards, Serverless or node-based deployment choice where supported, backup storage, and data transfer.
+
+### ElastiCache versus DAX and Read Replicas
+
+- **DAX:** DynamoDB-compatible cache for eligible DynamoDB reads.
+- **ElastiCache:** general-purpose application cache and session/data-structure store.
+- **Database read replica:** durable database copy that can run queries; not an in-memory cache.
+
+### SAA Scenarios
+
+1. **Repeated product reads overload RDS:** use cache-aside with TTL/invalidation and retain RDS as the system of record.
+2. **Sessions need replication and automatic failover:** evaluate Valkey/Redis OSS with replicas and Multi-AZ.
+3. **A simple rebuildable object cache can tolerate node loss:** Memcached may fit.
+4. **DynamoDB eventually consistent reads need API-compatible acceleration:** prefer DAX.
+5. **Correctness requires the latest database value:** bypass/invalidate the cache or use an appropriate consistency path.
+
+### Common Mistakes
+
+- Treating a cache as an automatic durable database replacement.
+- Assuming Multi-AZ is available for Memcached.
+- Ignoring stale data, eviction, stampedes, and cache-miss failure paths.
+- Confusing DAX with a general-purpose cache or a read replica with a cache.
+
+### Knowledge Check
+
+1. Which engines support replication groups and Multi-AZ failover?
+2. What happens on a cache-aside miss?
+3. Why must applications tolerate an empty cache?
+4. When is DAX more direct than ElastiCache?
+5. Are TTL expiration and memory-pressure eviction the same event?
+
+<details><summary>Answers</summary>
+
+1. Valkey and Redis OSS with the required replica topology.
+2. The application reads the durable source and populates the cache.
+3. Cache nodes can fail, expire, evict, or be replaced; correctness must not depend on cached copies.
+4. When accelerating eligible DynamoDB reads through a DynamoDB-compatible API.
+5. No. TTL follows time; eviction follows memory policy/pressure.
+
+</details>
+
+### References
+
+- [What is Amazon ElastiCache?](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/WhatIs.html)
+- [ElastiCache engine and caching strategies](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/Strategies.html)
+- [ElastiCache Multi-AZ](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/AutoFailover.html)
+- [ElastiCache security](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/security.html)
+- [ElastiCache pricing](https://aws.amazon.com/elasticache/pricing/)
+- [DynamoDB Accelerator](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.html)
