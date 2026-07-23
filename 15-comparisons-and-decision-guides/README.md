@@ -14,3 +14,4 @@ Canonical lessons in this category. Certification relevance is conservative and 
 | [Vpc Connectivity Options](networking/02-vpc-connectivity-options.md) | Review | Review | Consolidated |
 | [File Gateway Vs Volume Gateway](storage/01-file-gateway-vs-volume-gateway.md) | Review | Review | Consolidated |
 | [Storage Gateway Family](storage/02-storage-gateway-family.md) | Review | Review | Consolidated |
+| [Core Compute and Storage Selection](compute-and-storage/01-core-selection-guide.md) | Yes | Yes | Batch 2 complete |

@@ -2,7 +2,7 @@
 
 ## Simple Definition
 
-AWS Personal Health Dashboard (AWS Health) is a service that shows the health status of AWS services and how AWS events may affect your specific AWS resources.
+AWS Health Dashboard (AWS Health) is a service that shows the health status of AWS services and how AWS events may affect your specific AWS resources.
 
 ## Core Idea in Plain English
 
@@ -49,7 +49,7 @@ Can integrate with
 1. AWS detects an operational event.
 2. AWS identifies which customers are affected.
 3. AWS Health creates an event notification.
-4. The event appears in your AWS Personal Health Dashboard.
+4. The event appears in your AWS Health Dashboard.
 5. You can view details and recommended actions.
 
 ## Why It Is Important for the Exam
@@ -57,7 +57,7 @@ Can integrate with
 You must understand the difference between
 
  AWS Service Health Dashboard → Global AWS service status
- AWS Personal Health Dashboard (AWS Health) → Events affecting your account specifically
+ AWS Health Dashboard (AWS Health) → Events affecting your account specifically
 
 Exam questions often test this difference.
 
@@ -67,7 +67,7 @@ Exam questions often test this difference.
 
 Shows global AWS outages across regions.
 
-### AWS Personal Health Dashboard
+### AWS Health Dashboard
 
 Shows events affecting your own resources.
 
@@ -115,15 +115,22 @@ You can prepare by restarting or migrating the instance.
 
 ## Final Summary
 
-AWS Personal Health Dashboard gives personalized alerts about AWS service issues affecting your resources.
+AWS Health Dashboard gives personalized alerts about AWS service issues affecting your resources.
 
 It helps you understand outages, maintenance, and operational events that may impact your AWS environment.
 
 ## Short Exam Answer
 
-AWS Personal Health Dashboard provides account‑specific alerts and guidance when AWS service events affect your resources.
+AWS Health Dashboard provides account‑specific alerts and guidance when AWS service events affect your resources.
 
 ## Memory Trick
 
-Service Health = Everyone
-Personal Health = Your Account
+Service health = broad AWS service availability
+Your account health = events relevant to your resources
+
+## References
+
+- [What is AWS Health?](https://docs.aws.amazon.com/health/latest/ug/what-is-aws-health.html)
+- [Viewing account events in the AWS Health Dashboard](https://docs.aws.amazon.com/health/latest/ug/aws-health-account-views.html)
+
+Terminology checked: **2026-07-22**.

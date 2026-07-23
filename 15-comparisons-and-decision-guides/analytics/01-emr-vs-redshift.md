@@ -286,7 +286,7 @@ S3 is storage, not analytics processing by itself.
  EMR = process data, often using data from S3
  Redshift = warehouse and analyze data
 
-### Amazon QuickSight
+### Amazon Quick Sight
 
 QuickSight is for visualization and dashboards.
 

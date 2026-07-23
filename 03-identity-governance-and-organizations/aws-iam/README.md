@@ -1,8 +1,8 @@
-# Aws Iam
+# AWS Identity and Access Management (IAM)
 
 ## Service Summary
 
-This directory contains the canonical lesson sequence for Aws Iam.
+This directory contains the canonical IAM lesson sequence. The overview provides the Batch 1 CPP foundation and SAA architecture treatment; focused lessons preserve additional examples and detail.
 
 ## Lesson Order
 
@@ -19,7 +19,7 @@ This directory contains the canonical lesson sequence for Aws Iam.
 
 ## Certification Relevance
 
-CPP and SAA relevance is recorded conservatively in the category index and will be checked against official exam guides in Phase 5.
+The overview supports CPP fundamentals and SAA identity-design decisions. Focused lessons retain conservative scope labels pending their later re-audit.
 
 ## Navigation
 

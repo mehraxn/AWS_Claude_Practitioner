@@ -1,5 +1,8 @@
 # AWS IAM (Identity and Access Management)
 
+![CPP](https://img.shields.io/badge/CPP-Cloud%20Practitioner-2EA44F?style=for-the-badge&logo=amazonaws&logoColor=white)
+![SAA](https://img.shields.io/badge/SAA-Solutions%20Architect-0969DA?style=for-the-badge&logo=amazonaws&logoColor=white)
+
 ## Simple definition
 
 AWS IAM is the AWS service that helps you control who can access AWS resources and what they are allowed to do.
@@ -208,6 +211,101 @@ It helps you securely manage identities and permissions by using
  MFA
 
 For the exam, remember that IAM is global, root user access should be limited, and roles are commonly used for temporary and secure access.
+
+## Policy Types and Permission Guardrails
+
+| Policy or control | Purpose | Grants permissions by itself? |
+|---|---|:---:|
+| AWS managed policy | Reusable policy created and maintained by AWS | Yes, when attached and applicable |
+| Customer managed policy | Reusable, customer-controlled policy | Yes, when attached and applicable |
+| Inline policy | One-to-one policy embedded in one identity | Yes, when applicable |
+| Identity-based policy | Defines what a user, group, or role may do | Yes |
+| Resource-based policy | Defines which principals may access a supported resource | Yes, subject to evaluation context |
+| Permissions boundary | Maximum an identity policy may grant to a user or role | No |
+| Service control policy (SCP) | Maximum available permissions in affected member accounts | No |
+
+Customer managed policies are preferable to inline policies when permissions should be reused, reviewed, and centrally updated. Resource-based policies, such as S3 bucket policies, attach to resources rather than identities.
+
+## Policy Evaluation
+
+Requests are implicitly denied by default. An applicable allow can grant access, but:
+
+> An explicit deny overrides an allow.
+
+Permissions boundaries, session policies, and SCPs can further limit effective permissions. A broad identity-policy allow cannot bypass a relevant explicit deny.
+
+## AWS STS, Temporary Credentials, and Role Assumption
+
+AWS Security Token Service (AWS STS) issues temporary security credentials. A role has a **trust policy** that identifies who may assume it and permissions policies that define what the resulting session may do.
+
+Use roles for EC2 applications, Lambda functions, federated workforce users, and cross-account access instead of embedding permanent access keys. Temporary credentials reduce long-term secret exposure, but the role still needs least-privilege permissions and secure session conditions.
+
+## Federation and IAM Identity Center
+
+Federation lets people authenticate with an external identity provider and obtain temporary AWS access. AWS IAM Identity Center is the preferred foundation for centrally managing workforce access to multiple AWS accounts and supported applications. It complements IAM roles and policies inside each account.
+
+## Cross-Account Access
+
+Prefer a trusted role or an appropriate resource-based policy instead of duplicate IAM users. Cross-account role assumption normally requires a target-role trust policy, source permission to call `sts:AssumeRole`, target-role permissions for the requested actions, and compliance with applicable conditions, boundaries, session policies, and SCPs.
+
+## AWS Organizations and SCPs
+
+AWS Organizations groups accounts for centralized governance. Organizational units (OUs) arrange accounts so controls can be applied consistently.
+
+An SCP is an organization-level permissions guardrail. It can restrict principals in affected member accounts, but it does not grant permissions. An IAM or resource-based policy must still allow the action.
+
+## SAA Architecture and Design
+
+| Requirement | Preferred starting point | Reasoning |
+|---|---|---|
+| Application on EC2 reads one S3 bucket | EC2 role with a narrow policy | Avoid embedded long-term keys |
+| Employees access many AWS accounts | IAM Identity Center and federation | Central lifecycle and temporary access |
+| Vendor needs temporary access to another account | Cross-account role with conditions | Auditable and revocable sessions |
+| Developers may create roles but not administrators | Permissions boundary plus controlled policies | Limits delegated maximum permissions |
+| Prohibit risky services in an OU | SCP plus necessary IAM allows | An SCP alone grants nothing |
+
+Protect the root user with MFA, do not create root access keys, and use root only for required tasks. Design controlled emergency access, log activity, and test policy changes before retiring existing access paths.
+
+## Additional Exam Traps
+
+- A permissions boundary does not grant permissions.
+- An SCP does not grant permissions.
+- A role is assumed; a group is a collection of IAM users.
+- AWS managed policies are not automatically least privilege.
+- Network controls such as security groups do not replace IAM authorization.
+
+## Knowledge Check
+
+1. Does a permissions boundary grant access?
+2. What happens when an applicable allow conflicts with an explicit deny?
+3. Which service centralizes workforce access across multiple AWS accounts?
+4. Does an SCP give a member-account role permission to call an API?
+5. Why should an EC2 workload use a role instead of stored access keys?
+
+<details>
+<summary>Show answers</summary>
+
+1. No. It limits the maximum permissions identity policies can grant.
+2. The request is denied.
+3. AWS IAM Identity Center.
+4. No. It limits permissions; an IAM or resource-based policy must allow the action.
+5. A role supplies temporary credentials and avoids distributing long-term secrets.
+
+</details>
+
+## References
+
+- [AWS IAM User Guide](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html)
+- [Security best practices in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)
+- [Root user best practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/root-user-best-practices.html)
+- [IAM policy evaluation logic](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic.html)
+- [Permissions boundaries](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_boundaries.html)
+- [Temporary credentials in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp.html)
+- [Service control policies](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html)
+- [CLF-C02 exam guide](https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02.html)
+- [SAA-C03 exam guide](https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-associate-03.html)
+
+Sources checked: **2026-07-22**.
 
 ## Short exam answer
 

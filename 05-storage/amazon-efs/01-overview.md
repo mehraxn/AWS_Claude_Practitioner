@@ -1,6 +1,7 @@
 # Amazon EFS
 
 ![CPP](https://img.shields.io/badge/CPP-Cloud%20Practitioner-2EA44F?style=for-the-badge&logo=amazonaws&logoColor=white)
+![SAA](https://img.shields.io/badge/SAA-Solutions%20Architect-0969DA?style=for-the-badge&logo=amazonaws&logoColor=white)
 
 <!-- Source provenance is maintained in docs/reorganization/PHASE-4-CANONICAL-SOURCE-MAP.csv. -->
 
@@ -147,6 +148,29 @@ One server may have a file that another server does not have.
 With Amazon EFS, all EC2 instances connect to the same shared file system.
 Now every server sees the same files.
 That makes the application easier to manage.
+
+## SAA File-System Design Supplement
+
+EFS is managed elastic NFS storage for Linux clients. A Regional file system stores data across AZs; One Zone storage classes trade AZ resilience for cost. Create mount targets in the AZs where clients run and control NFS traffic with security groups. EC2, containers, and supported on-premises clients can share one namespace through appropriate network connectivity.
+
+General Purpose performance fits most applications; other modes/options address specialized scale and throughput needs. Throughput modes let throughput scale with storage/activity or be configured according to current service options. Lifecycle policies move inactive files into eligible lower-cost classes; first-access latency and access charges may differ. Access points provide application-specific entry and identity settings.
+
+AWS manages infrastructure. Customers manage POSIX permissions, IAM where used, security groups, encryption/KMS permissions, backup, and classification. Cost depends on storage class, access, throughput option, and transfer. EBS is block storage for an AZ; FSx is chosen for specific Windows, Lustre, ONTAP, or OpenZFS compatibility.
+
+### Knowledge Check
+
+1. Which protocol does EFS use? **NFS.**
+2. Which design provides multi-AZ data resilience? **EFS Regional.**
+3. What enables AZ-local network access? **Mount targets.**
+
+## Official References
+
+- [What is Amazon EFS?](https://docs.aws.amazon.com/efs/latest/ug/whatisefs.html)
+- [EFS storage classes](https://docs.aws.amazon.com/efs/latest/ug/storage-classes.html)
+- [EFS performance](https://docs.aws.amazon.com/efs/latest/ug/performance.html)
+- [Mount targets and security groups](https://docs.aws.amazon.com/efs/latest/ug/accessing-fs.html)
+
+Official references checked: 2026-07-22.
 
 ## Final summary
 

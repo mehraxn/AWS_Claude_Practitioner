@@ -6,7 +6,7 @@ Canonical lessons in this category. Certification relevance is conservative and 
 |---|:---:|:---:|---|
 | [Aws Control Tower](aws-control-tower/01-overview.md) | Review | Review | Consolidated |
 | [Aws Directory Service](aws-directory-service/01-overview.md) | Review | Review | Consolidated |
-| [Aws Iam](aws-iam/01-overview.md) | Review | Review | Consolidated |
+| [AWS IAM](aws-iam/01-overview.md) | Core | Architecture | Batch 1 foundation completed |
 | [Users](aws-iam/02-users.md) | Review | Review | Consolidated |
 | [Groups](aws-iam/03-groups.md) | Review | Review | Consolidated |
 | [Roles](aws-iam/04-roles.md) | Review | Review | Consolidated |

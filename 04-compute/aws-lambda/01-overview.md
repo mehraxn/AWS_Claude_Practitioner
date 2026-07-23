@@ -1,5 +1,8 @@
 # AWS Lambda
 
+![CPP](https://img.shields.io/badge/CPP-Cloud%20Practitioner-2EA44F?style=for-the-badge&logo=amazonaws&logoColor=white)
+![SAA](https://img.shields.io/badge/SAA-Solutions%20Architect-0969DA?style=for-the-badge&logo=amazonaws&logoColor=white)
+
 ## Simple definition
 
 AWS Lambda is a serverless compute service that lets you run code without managing servers.
@@ -213,6 +216,31 @@ Why is this useful
 Because the code runs only when needed, scales automatically, and you do not manage servers.
 
 ---
+
+## Invocation and Architecture Supplement
+
+A function combines code, runtime, handler, resources, timeout, configuration, and an execution role. Synchronous callers wait. Asynchronous invocation queues events and can retry. Event source mappings poll streams or queues in batches. Retry rules vary, so use idempotency and supported destinations or dead-letter queues.
+
+Lambda creates ephemeral environments as concurrency grows, subject to controls. Environments may be reused, so durable state belongs externally. Cold starts are initialization latency. VPC attachment enables private access but needs correct networking. CloudWatch provides logs and metrics.
+
+AWS secures hosts. Customers secure code, dependencies, data, triggers, configuration, execution roles, and resource policies. The execution role grants outward access; the resource policy controls invocation. Pricing is conceptual: requests plus execution resources and related services.
+
+Automatic scaling does not remove concurrency limits or downstream bottlenecks. Lambda suits variable event-driven work; EC2 or containers may suit long-running, special-host, or steady workloads.
+
+### Knowledge Check
+
+1. What controls invocation permission? **A resource-based policy.**
+2. What polls SQS or streams? **An event source mapping.**
+3. Where should durable state live? **Outside the execution environment.**
+
+## Official References
+
+- [Lambda concepts](https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-concepts.html)
+- [Lambda invocation](https://docs.aws.amazon.com/lambda/latest/dg/lambda-invocation.html)
+- [Lambda concurrency](https://docs.aws.amazon.com/lambda/latest/dg/lambda-concurrency.html)
+- [Handling errors](https://docs.aws.amazon.com/lambda/latest/dg/invocation-retries.html)
+
+Official references checked: 2026-07-22.
 
 ## Final summary
 

@@ -45,7 +45,7 @@ This helps them study trends, patterns, and long-term performance.
 ### 4. Building dashboards for sales, finance, or operations
 
 Redshift can serve as the data warehouse behind dashboards.
-Services like Amazon QuickSight can visualize Redshift data.
+Services like Amazon Quick Sight can visualize Redshift data.
 
 ### 5. Running complex SQL queries across large datasets
 
@@ -97,7 +97,7 @@ Redshift works well with other AWS services, including:
 
 * Amazon S3
 * AWS Glue
-* Amazon QuickSight
+* Amazon Quick Sight
 * Amazon Kinesis
 * AWS IAM
 
@@ -192,7 +192,7 @@ Redshift is better when you need a dedicated analytics platform.
 
 If the question is about SQL analytics and reporting, Redshift is usually the better fit.
 
-### Amazon QuickSight vs Amazon Redshift
+### Amazon Quick Sight vs Amazon Redshift
 
 * **QuickSight** is a visualization and dashboard service.
 * **Redshift** is the data warehouse behind the analytics.
@@ -225,7 +225,7 @@ Redshift is better when you need a dedicated analytics warehouse.
 ### 3. Thinking Redshift creates dashboards
 
 Redshift does not mainly create visual dashboards.
-That job is more closely associated with Amazon QuickSight.
+That job is more closely associated with Amazon Quick Sight.
 Redshift is the analytics engine and warehouse behind the reporting.
 
 ### 4. Missing the phrase “data warehouse”
@@ -292,7 +292,7 @@ Management wants dashboards showing:
 This is a strong use case for Amazon Redshift.
 
 The company can load all that historical data into Redshift and run large SQL queries for reporting and analytics.
-Then tools like Amazon QuickSight can build dashboards on top of it.
+Then tools like Amazon Quick Sight can build dashboards on top of it.
 
 ---
 

@@ -1,5 +1,8 @@
 # Amazon EC2 Instance Store
 
+![CPP](https://img.shields.io/badge/CPP-Cloud%20Practitioner-2EA44F?style=for-the-badge&logo=amazonaws&logoColor=white)
+![SAA](https://img.shields.io/badge/SAA-Solutions%20Architect-0969DA?style=for-the-badge&logo=amazonaws&logoColor=white)
+
 ## Simple definition
 
 Amazon EC2 Instance Store is **temporary block storage** that is **physically attached to the host machine** running your EC2 instance.
@@ -246,6 +249,25 @@ That is a good case for **EC2 Instance Store**.
 But the final video should be saved in **Amazon S3**, because S3 is durable.
 
 ---
+
+## Failure and Design Supplement
+
+Instance store is physically attached to the host. Data survives a reboot but is lost when the instance stops, hibernates, terminates, or the underlying host fails. Therefore use it only for caches, buffers, scratch data, or replicated data that can be rebuilt. The application owns replication, rehydration, and fault-tolerant behavior.
+
+Instance store can offer high local performance without a separate volume charge, but only supported instance types provide it and its capacity follows the instance. EBS is network-attached, persists independently of an EC2 instance, and supports snapshots; choose EBS for boot volumes and durable application data.
+
+### Knowledge Check
+
+1. Does instance-store data survive reboot? **Yes.**
+2. Does it survive stop or host failure? **No.**
+3. What data fits it? **Disposable or replicated cache/scratch data.**
+
+## Official References
+
+- [Amazon EC2 instance store](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html)
+- [Instance store lifetime](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-store-lifetime.html)
+
+Official references checked: 2026-07-22.
 
 ## Final summary
 

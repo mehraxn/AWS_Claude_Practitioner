@@ -1,6 +1,6 @@
 # AWS CPP and SAA Study Notes
 
-Phase 4 canonical consolidation and legacy retirement is complete. Existing notes now live only in the numbered hierarchy; certification coverage has not yet been fully audited.
+Phase 4 canonical consolidation and legacy retirement is complete. Phase 5 audited the canonical hierarchy against the official CLF-C02 and SAA-C03 guides checked on 2026-07-21, and Phase 6 Batch 1 implemented the authorized critical foundations and terminology corrections. Batch 2 and later gaps remain in the Phase 6 backlog; full certification coverage is not claimed until the backlog is implemented and the repository is re-audited.
 
 ## Learning Map
 
@@ -27,3 +27,9 @@ Phase 4 canonical consolidation and legacy retirement is complete. Existing note
 - [Repository map](docs/repository-map.md)
 - [Service index](docs/service-index.md)
 - [Phase 4 reports](docs/reorganization/PHASE-4-CONSOLIDATION-LOG.md)
+- [Phase 5 official coverage audit](docs/certification-audit/PHASE-5-OFFICIAL-COVERAGE-AUDIT.md)
+- [CPP coverage dashboard](docs/certification-audit/CPP-COVERAGE-DASHBOARD.md)
+- [SAA coverage dashboard](docs/certification-audit/SAA-COVERAGE-DASHBOARD.md)
+- [Phase 6 content backlog](docs/certification-audit/PHASE-6-CONTENT-BACKLOG.csv)
+- [Phase 6 batch plan](docs/certification-audit/PHASE-6-BATCH-PLAN.md)
+- [Phase 6 Batch 1 implementation records](docs/content-implementation/README.md)

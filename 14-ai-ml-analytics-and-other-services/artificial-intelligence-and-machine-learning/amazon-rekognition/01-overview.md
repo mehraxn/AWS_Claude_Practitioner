@@ -81,7 +81,7 @@ Easy rule:
 * **Rekognition** analyzes visual media
 * **Transcribe** converts speech into text
 
-### Amazon Rekognition vs Amazon SageMaker
+### Amazon Rekognition vs Amazon SageMaker AI
 
 * **Rekognition** is prebuilt and managed for common computer vision tasks
 * **SageMaker** is for building, training, and deploying your own ML models

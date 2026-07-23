@@ -4,7 +4,7 @@ Canonical lessons in this category. Certification relevance is conservative and 
 
 | Topic | CPP | SAA | Status |
 |---|:---:|:---:|---|
-| [Amazon Ec2](amazon-ec2/01-overview.md) | Review | Review | Consolidated |
+| [Amazon EC2](amazon-ec2/01-overview.md) | Yes | Yes | Batch 2 expanded |
 | [Study Guide](amazon-ec2/02-study-guide.md) | Review | Review | Consolidated |
 | [Reserved Instances](amazon-ec2/03-reserved-instances.md) | Review | Review | Consolidated |
 | [Key Pairs](amazon-ec2/04-key-pairs.md) | Review | Review | Consolidated |
@@ -15,5 +15,7 @@ Canonical lessons in this category. Certification relevance is conservative and 
 | [Aws Batch](aws-batch/01-overview.md) | Review | Review | Consolidated |
 | [Aws Elastic Beanstalk](aws-elastic-beanstalk/01-overview.md) | Review | Review | Consolidated |
 | [Aws Fargate](aws-fargate/01-overview.md) | Review | Review | Consolidated |
-| [Aws Lambda](aws-lambda/01-overview.md) | Review | Review | Consolidated |
-| [Target Tracking Scaling](ec2-auto-scaling/01-target-tracking-scaling.md) | Review | Review | Consolidated |
+| [AWS Lambda](aws-lambda/01-overview.md) | Yes | Yes | Batch 2 expanded |
+| [EC2 Auto Scaling](ec2-auto-scaling/01-target-tracking-scaling.md) | Yes | Yes | Batch 2 expanded |
+| [Elastic Load Balancing](elastic-load-balancing/01-overview.md) | Yes | Yes | Batch 2 complete |
+| [ECS, EKS, Fargate, and ECR](containers/01-ecs-eks-and-fargate.md) | Yes | Yes | Batch 2 complete |

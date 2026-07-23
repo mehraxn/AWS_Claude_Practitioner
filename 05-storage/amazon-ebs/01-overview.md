@@ -1,6 +1,7 @@
 # Amazon EBS
 
 ![CPP](https://img.shields.io/badge/CPP-Cloud%20Practitioner-2EA44F?style=for-the-badge&logo=amazonaws&logoColor=white)
+![SAA](https://img.shields.io/badge/SAA-Solutions%20Architect-0969DA?style=for-the-badge&logo=amazonaws&logoColor=white)
 
 <!-- Source provenance is maintained in docs/reorganization/PHASE-4-CANONICAL-SOURCE-MAP.csv. -->
 
@@ -553,6 +554,36 @@ The EC2 instance needs
 
 They attach Amazon EBS volumes to the EC2 instance.
 Now the instance has cloud hard drives that keep data even if the instance is stopped.
+
+## SAA Performance and Recovery Supplement
+
+EBS is persistent block storage in one Availability Zone. An EC2 instance normally attaches a volume in the same AZ; create a volume from a snapshot in another AZ for recovery. Multi-Attach exists only for supported volume types and clustered applications and does not make an ordinary file system safe for concurrent writers.
+
+| Category | Selection signal |
+|---|---|
+| General Purpose SSD (gp) | Balanced price and performance for most workloads |
+| Provisioned IOPS SSD (io) | Consistent low latency and provisioned IOPS for critical databases |
+| Throughput Optimized HDD (st) | Large sequential, throughput-intensive data |
+| Cold HDD (sc) | Infrequently accessed sequential data at lower cost |
+
+IOPS measures operations per second; throughput measures bytes per second. Match both plus latency and workload pattern. Snapshots are point-in-time, stored incrementally at the service level, can create new volumes, and can be copied across Regions/accounts where supported. Encryption protects volume data, snapshots, and data moving between supported instances and EBS. Data Lifecycle Manager automates snapshot/AMI policies; Fast Snapshot Restore addresses initialization latency where justified.
+
+Customers manage IAM, KMS access, OS file systems, backups, and data classification. Cost reflects provisioned capacity/performance, snapshot storage, transfer/copies, and optional features.
+
+### Knowledge Check
+
+1. Can an EBS volume normally attach across AZs? **No.**
+2. What measures bytes per second? **Throughput.**
+3. How can a snapshot restore into another AZ? **Create a new volume there.**
+
+## Official References
+
+- [Amazon EBS volumes](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-volumes.html)
+- [EBS volume types](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-volume-types.html)
+- [Amazon EBS snapshots](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-snapshots.html)
+- [Amazon EBS encryption](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-encryption.html)
+
+Official references checked: 2026-07-22.
 
 ## Final summary
 

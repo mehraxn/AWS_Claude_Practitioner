@@ -178,7 +178,7 @@ Example 4 — Mixed DB engines
 Machine learning  SageMaker  ML instance usage  Any size, any region
 
 ### What it covers
-Amazon SageMaker ML instance usage across
+Amazon SageMaker AI ML instance usage across
 - 🧪 Notebooks (developmentexperimentation)
 - ⚙️ Processing jobs
 - 🏋️ Training jobs

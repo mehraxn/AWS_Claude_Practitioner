@@ -1,5 +1,8 @@
 # Amazon EC2 — AWS Cloud Practitioner Study Note
 
+![CPP](https://img.shields.io/badge/CPP-Cloud%20Practitioner-2EA44F?style=for-the-badge&logo=amazonaws&logoColor=white)
+![SAA](https://img.shields.io/badge/SAA-Solutions%20Architect-0969DA?style=for-the-badge&logo=amazonaws&logoColor=white)
+
 ## Simple definition
 
 Amazon EC2 stands for Amazon Elastic Compute Cloud. It is an AWS service that gives you virtual servers in the cloud.
@@ -233,6 +236,37 @@ When more customers visit during a holiday sale, you can add more EC2 instances 
 This is why EC2 is powerful it gives you a flexible server that can grow with your business.
 
 ---
+
+## SAA Design Supplement
+
+An instance moves through pending, running, stopping/stopped, and terminated states. An AMI is a Region-scoped launch template with a root-volume template, permissions, and block-device mappings; it may be public, private, Marketplace, or copied. User data bootstraps an instance, normally on first boot; metadata describes the running instance. Protect metadata with current IMDS controls.
+
+| Family | Workload signal |
+|---|---|
+| General purpose, including burstable | Balanced or variable CPU and memory |
+| Compute optimized | Sustained CPU work |
+| Memory optimized | Large in-memory data |
+| Storage optimized | High local I/O |
+| Accelerated computing | GPU or specialized accelerators |
+
+Right-size from CPU, memory, storage, and network measurements. An elastic network interface carries addresses and security groups. Use SSH/RDP only when required; consider EC2 Instance Connect or Systems Manager Session Manager. Deploy replaceable instances across AZs behind ELB and Auto Scaling. Cluster placement favors low latency, spread isolates instances, and partition creates grouped failure domains.
+
+AWS secures facilities and virtualization. Customers patch the guest OS and applications, configure security groups and IAM roles, and protect data. On-Demand avoids commitment; Savings Plans and Reserved Instances exchange commitment for discounts; Spot has interruption risk; Dedicated options address isolation/licensing; Capacity Reservations assure capacity. Include storage, transfer, addresses, and operations in total cost.
+
+### Knowledge Check
+
+1. Which family suits an in-memory database? **Memory optimized.**
+2. Who patches the guest OS? **The customer.**
+3. Does an AMI replace a backup strategy? **No.**
+
+## Official References
+
+- [What is Amazon EC2?](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html)
+- [EC2 instance types](https://docs.aws.amazon.com/ec2/latest/instancetypes/instance-types.html)
+- [Amazon Machine Images](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html)
+- [EC2 purchasing options](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-purchasing-options.html)
+
+Official references checked: 2026-07-22.
 
 ## Final summary
 

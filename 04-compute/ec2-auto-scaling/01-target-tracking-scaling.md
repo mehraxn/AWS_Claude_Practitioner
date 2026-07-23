@@ -1,5 +1,8 @@
 # AWS Target Tracking Scaling Policy 
 
+![CPP](https://img.shields.io/badge/CPP-Cloud%20Practitioner-2EA44F?style=for-the-badge&logo=amazonaws&logoColor=white)
+![SAA](https://img.shields.io/badge/SAA-Solutions%20Architect-0969DA?style=for-the-badge&logo=amazonaws&logoColor=white)
+
 ## Title
 
 **AWS Target Tracking Scaling Policy**
@@ -374,6 +377,28 @@ If you see phrases like these, target tracking is often the right answer:
 * “application traffic changes throughout the day”
 
 ---
+
+## Auto Scaling Group Design Supplement
+
+An Auto Scaling group uses a launch template and maintains **minimum**, **desired**, and **maximum** capacity. Scaling out adds instances; scaling in removes them. Target tracking follows a target, step scaling responds by alarm severity, scheduled scaling anticipates known timing, and predictive scaling can forecast recurring demand. Instance warmup prevents new instances from distorting metrics.
+
+Spread the group across AZs and attach an ELB target group. EC2 or load-balancer health checks can trigger replacement. Auto Scaling supplies capacity; ELB routes traffic; multi-AZ deployment improves availability. None alone guarantees application fault tolerance, especially with local state.
+
+Choose a metric proportional to per-instance load and test scale-in. Minimum capacity improves readiness but costs more; aggressive scale-in risks disruption; launch time affects spike response.
+
+### Knowledge Check
+
+1. What is the current target size? **Desired capacity.**
+2. What policy suits a known weekday peak? **Scheduled scaling.**
+3. Does an ASG alone make stateful software fault tolerant? **No.**
+
+## Official References
+
+- [What is Amazon EC2 Auto Scaling?](https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html)
+- [Dynamic scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scale-based-on-demand.html)
+- [Health checks](https://docs.aws.amazon.com/autoscaling/ec2/userguide/health-checks-overview.html)
+
+Official references checked: 2026-07-22.
 
 ## Final Summary
 

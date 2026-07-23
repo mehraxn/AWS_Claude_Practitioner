@@ -7,7 +7,7 @@ Canonical lessons in this category. Certification relevance is conservative and 
 | [Amazon Athena](analytics/amazon-athena/01-overview.md) | Review | Review | Consolidated |
 | [Amazon Emr](analytics/amazon-emr/01-overview.md) | Review | Review | Consolidated |
 | [Amazon Kinesis Video Streams](analytics/amazon-kinesis-video-streams/01-overview.md) | Review | Review | Consolidated |
-| [Amazon Quicksight](analytics/amazon-quicksight/01-overview.md) | Review | Review | Consolidated |
+| [Amazon Quick Sight](analytics/amazon-quicksight/01-overview.md) | Review | Review | Consolidated |
 | [Amazon Redshift](analytics/amazon-redshift/01-overview.md) | Review | Review | Consolidated |
 | [Aws Glue](analytics/aws-glue/01-overview.md) | Review | Review | Consolidated |
 | [Amazon Comprehend](artificial-intelligence-and-machine-learning/amazon-comprehend/01-overview.md) | Review | Review | Consolidated |

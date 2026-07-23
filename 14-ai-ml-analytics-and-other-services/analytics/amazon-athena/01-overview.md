@@ -136,7 +136,7 @@ Glue can help define metadata. Athena can use that metadata to run queries.
 
 If the question says simple SQL analysis with no cluster management, Athena is usually the better answer.
 
-### Athena vs Amazon QuickSight
+### Athena vs Amazon Quick Sight
 
  Athena query service
  QuickSight visualization and dashboard service

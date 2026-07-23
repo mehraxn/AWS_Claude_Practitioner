@@ -153,7 +153,7 @@ The **AWS Snow Family** provides physical edge devices from AWS for storage, com
 * **Snow Family = physical edge hardware/appliance**
 * **Greengrass = edge software platform/runtime**
 
-### Amazon SageMaker / ML in cloud vs Greengrass ML inference
+### Amazon SageMaker AI / ML in cloud vs Greengrass ML inference
 
 Model training usually happens in the cloud.
 

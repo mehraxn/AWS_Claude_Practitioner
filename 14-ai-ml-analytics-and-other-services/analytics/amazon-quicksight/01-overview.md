@@ -1,8 +1,12 @@
-# Amazon QuickSight
+# Amazon Quick Sight
 
 ## Simple definition
 
-Amazon QuickSight is an AWS business intelligence (BI) service that helps you turn data into charts, dashboards, and reports.
+Amazon Quick Sight is an AWS business intelligence (BI) service that helps you turn data into charts, dashboards, and reports.
+
+## Current terminology
+
+Amazon QuickSight was rebranded to **Amazon Quick** in October 2025. The business-intelligence capabilities taught in this lesson continue as **Amazon Quick Sight**, a component of the broader Amazon Quick analytics and AI platform. Older exam guides and source material may still use **Amazon QuickSight**.
 
 ---
 
@@ -97,7 +101,7 @@ QuickSight is the AWS service for business intelligence and dashboards.
 
 For the Cloud Practitioner exam, the important idea is simple:
 
-If the question is about analyzing business data, building dashboards, or creating visual reports, think **Amazon QuickSight**.
+If the question is about analyzing business data, building dashboards, or creating visual reports, think **Amazon Quick Sight**.
 
 You usually do not need deep technical details for the exam, but you should clearly know that QuickSight is used for visual analytics, not for storing data or running big ETL jobs.
 
@@ -105,28 +109,28 @@ You usually do not need deep technical details for the exam, but you should clea
 
 ## Related AWS services and differences
 
-### Amazon QuickSight vs Amazon Athena
+### Amazon Quick Sight vs Amazon Athena
 
 * **QuickSight** visualizes data in dashboards.
 * **Athena** runs SQL queries on data, especially in Amazon S3.
 
 Athena helps you query the data. QuickSight helps you visualize the results.
 
-### Amazon QuickSight vs Amazon Redshift
+### Amazon Quick Sight vs Amazon Redshift
 
 * **QuickSight** is for BI dashboards and reporting.
 * **Redshift** is a data warehouse for storing and analyzing large structured datasets.
 
 Redshift stores and processes data. QuickSight presents it visually.
 
-### Amazon QuickSight vs AWS Glue
+### Amazon Quick Sight vs AWS Glue
 
 * **QuickSight** is for analysis and dashboards.
 * **AWS Glue** is for data integration and ETL.
 
 Glue moves and prepares data. QuickSight shows insights from the data.
 
-### Amazon QuickSight vs Amazon CloudWatch
+### Amazon Quick Sight vs Amazon CloudWatch
 
 * **QuickSight** is for business analytics dashboards.
 * **CloudWatch** is for monitoring AWS resources and applications.
@@ -159,7 +163,7 @@ If the exam question mentions dashboards, charts, BI, reporting, visual analytic
 
 ---
 
-## AWS exam keywords for Amazon QuickSight
+## AWS exam keywords for Amazon Quick Sight
 
 These are common words and ideas that may appear in AWS exam questions about QuickSight:
 
@@ -196,13 +200,13 @@ Managers want to see:
 * Sales by country
 * Monthly trends
 
-Instead of reading raw data tables, they use Amazon QuickSight to create a dashboard with charts and filters. Now managers can understand performance in seconds.
+Instead of reading raw data tables, they use Amazon Quick Sight to create a dashboard with charts and filters. Now managers can understand performance in seconds.
 
 ---
 
 ## Final summary
 
-Amazon QuickSight is AWS’s business intelligence service.
+Amazon Quick Sight is AWS’s business intelligence service.
 
 It helps organizations connect to data, build dashboards, create visual reports, and share insights with others.
 
@@ -212,12 +216,19 @@ For the exam, remember QuickSight as the AWS service for data visualization and 
 
 ## Short exam answer
 
-Amazon QuickSight is AWS’s business intelligence service used to create dashboards, visualizations, and reports from data.
+Amazon Quick Sight is AWS’s business intelligence service used to create dashboards, visualizations, and reports from data.
 
 ---
 
 ## Memory trick
 
-**QuickSight = quick view of business insights.**
+**Quick Sight = quick view of business insights.**
 
-If you need fast dashboards and visual reports from data, think **QuickSight**.
+If you need fast dashboards and visual reports from data, think **Quick Sight**.
+
+## References
+
+- [Amazon Quick User Guide](https://docs.aws.amazon.com/quick/latest/userguide/what-is.html)
+- [Amazon Quick document history and rebrand notice](https://docs.aws.amazon.com/quick/latest/userguide/doc-history.html)
+
+Terminology checked: **2026-07-22**.

@@ -2,6 +2,9 @@
 
 
 
+![CPP](https://img.shields.io/badge/CPP-Cloud%20Practitioner-2EA44F?style=for-the-badge&logo=amazonaws&logoColor=white)
+![SAA](https://img.shields.io/badge/SAA-Solutions%20Architect-0969DA?style=for-the-badge&logo=amazonaws&logoColor=white)
+
 <!-- Source provenance is maintained in docs/reorganization/PHASE-4-CANONICAL-SOURCE-MAP.csv. -->
 
 Exam Topic Storage  Difficulty Beginner  Exam Weight High
@@ -224,6 +227,32 @@ Bucket 🪣 → holds → Objects 📦 → identified by → Keys 🔑
 ---
 
 🎯 Focus areas Storage Classes, Security, Use Cases, Durability vs Availability
+
+## SAA Security and Resilience Supplement
+
+S3 is Regional object storage designed to sustain failures across multiple Availability Zones for its general-purpose classes. Availability and durability are different: availability is access when requested; durability is retaining the object. Versioning preserves object versions and supports recovery from overwrite or deletion. Object Lock adds retention controls for versioned buckets.
+
+Block Public Access is the primary guardrail against unintended public exposure; combine it with least-privilege IAM and bucket policies. ACLs are legacy or limited-use controls. Customers classify data, select encryption and keys, configure access, lifecycle, and logging, and can use VPC endpoints for private VPC access. An S3 website endpoint does not directly provide HTTPS; CloudFront is a common HTTPS front end.
+
+Same-Region and Cross-Region Replication copy eligible objects asynchronously and require versioning at source and destination. Replication is not a backup substitute because changes may propagate. Event notifications can invoke supported destinations, but consumers should tolerate duplicates and ordering characteristics. Use prefixes and parallel requests based on current guidance rather than old random-prefix rules.
+
+Cost depends on storage class/capacity, requests, retrieval, lifecycle transitions, transfer, and optional features. Choose Standard, Intelligent-Tiering, infrequent-access, or archive classes from access pattern, retrieval time, resilience, and minimum-duration considerations.
+
+### Knowledge Check
+
+1. What must be enabled for replication? **Versioning on source and destination.**
+2. Does an S3 website endpoint provide HTTPS directly? **No.**
+3. Are replication and backup identical? **No.**
+
+## Official References
+
+- [Amazon S3 data protection](https://docs.aws.amazon.com/AmazonS3/latest/userguide/DataDurability.html)
+- [Blocking public access](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-control-block-public-access.html)
+- [S3 Versioning](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Versioning.html)
+- [Replicating objects](https://docs.aws.amazon.com/AmazonS3/latest/userguide/replication.html)
+- [S3 Event Notifications](https://docs.aws.amazon.com/AmazonS3/latest/userguide/EventNotifications.html)
+
+Official references checked: 2026-07-22.
 
 ## Additional Distinct Source Material
 

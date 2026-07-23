@@ -1,5 +1,8 @@
 # AWS Well-Architected Framework
 
+![CPP](https://img.shields.io/badge/CPP-Cloud%20Practitioner-2EA44F?style=for-the-badge&logo=amazonaws&logoColor=white)
+![SAA](https://img.shields.io/badge/SAA-Solutions%20Architect-0969DA?style=for-the-badge&logo=amazonaws&logoColor=white)
+
 ## Simple definition
 
 AWS Well-Architected Framework is a set of AWS best practices that helps you design and review cloud workloads so they are secure, reliable, efficient, cost-conscious, and sustainable.
@@ -185,6 +188,102 @@ Using the Well-Architected Framework, the team reviews the system
  Sustainability they reduce waste by using resources more efficiently
 
 Now the store is stronger, cheaper, and easier to operate.
+
+## Pillars as Architecture Decisions
+
+| Pillar | Architecture question | Example implication |
+|---|---|---|
+| Operational Excellence | Can the team run, observe, and improve the workload? | Operations as code, reversible changes, runbooks, and telemetry |
+| Security | Are data, systems, identities, and assets protected? | Strong identity, traceability, defense in depth, and incident readiness |
+| Reliability | Can the workload recover from disruption? | Remove single points of failure, back up, and test recovery |
+| Performance Efficiency | Are resources efficient as demand changes? | Measure, experiment, select suitable resources, and evolve |
+| Cost Optimization | Does spending support business outcomes? | Rightsize, match supply to demand, and measure total cost |
+| Sustainability | Is resource use minimized for the required outcome? | Increase utilization and remove idle resources |
+
+The pillars influence one another. Redundancy can improve reliability while increasing cost and resource use. Caching can improve performance while adding invalidation complexity. Security and Operational Excellence should be foundational rather than optional trade-offs.
+
+## Architecture Foundations
+
+- Design for failure with health checks, redundancy, automated replacement, and tested recovery.
+- Remove single points of failure across the entire request and data path.
+- Automate repeatable infrastructure and deployments with review and rollback controls.
+- Prefer managed services when they meet requirements, while evaluating constraints and shared responsibility.
+- Scale horizontally and elastically when application state and consistency permit.
+- Decouple components while designing for retries, ordering, idempotency, and observability.
+- Collect actionable metrics, logs, traces, events, and business indicators.
+- Make data-driven decisions and revisit them as the workload changes.
+
+## Review Process and Milestones
+
+1. Define the workload, owners, business outcomes, and measurable requirements.
+2. Include architecture, operations, security, and business stakeholders.
+3. Answer pillar questions using evidence.
+4. Record risks and improvement actions.
+5. Prioritize work by business impact, effort, and risk.
+6. Create milestones and repeat reviews as the workload evolves.
+
+AWS describes the review as lightweight, collaborative, and blame-free. It is a conversation, not a formal audit. The useful output is a prioritized improvement plan, not merely a completed questionnaire.
+
+## Trade-Off Reasoning
+
+| Decision | Potential benefit | Potential cost or risk |
+|---|---|---|
+| Multi-Region active-active | Regional resilience and geographic latency | Cost, consistency, routing, deployment, and operational complexity |
+| Aggressive caching | Lower latency and origin demand | Stale data and invalidation complexity |
+| Managed database | Reduced platform administration | Service constraints, migration effort, and different cost profile |
+| Serverless design | Elastic scaling and less server management | Runtime constraints and distributed debugging |
+| Higher redundancy | Improved availability and recovery | More resources, replication, and testing effort |
+
+State the requirement, compare valid approaches, document the trade-off, and measure whether it produces the intended outcome.
+
+## SAA Architecture and Design
+
+SAA questions require applying the pillars, not merely naming them. Identify requirements, failure boundaries, data flows, operational ownership, security constraints, and total cost.
+
+- Use multiple AZs for an AZ-failure requirement; add multiple Regions only for a regional requirement.
+- Apply least privilege, encryption, traceability, and layered controls.
+- Select services from measured workload patterns.
+- Include labor, transfer, resilience, licensing, and recovery in cost decisions.
+- Automate deployments, observe failure behavior, and test recovery.
+- Remove idle capacity without violating performance or reliability requirements.
+
+## Additional Exam Traps
+
+- There are six pillars, not five.
+- The Framework is guidance; the Well-Architected Tool records reviews.
+- A review is not a compliance audit or pass/fail certification.
+- Trusted Advisor checks do not replace a workload-context review.
+- Managed services and automation do not guarantee a good architecture.
+
+## Knowledge Check
+
+1. Name the six pillars.
+2. What is the difference between the Framework and the Well-Architected Tool?
+3. Why is Multi-Region not automatically the best reliability design?
+4. Which pillars are directly affected by permanent overprovisioning?
+5. What should a review produce besides answers?
+
+<details>
+<summary>Show answers</summary>
+
+1. Operational Excellence, Security, Reliability, Performance Efficiency, Cost Optimization, and Sustainability.
+2. The Framework supplies principles and questions; the Tool records and tracks reviews.
+3. It adds cost and data, routing, deployment, and operational complexity.
+4. Performance Efficiency, Cost Optimization, and Sustainability, with possible effects on other pillars.
+5. Evidence-backed risks, prioritized actions, owners, and follow-up milestones.
+
+</details>
+
+## References
+
+- [AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html)
+- [Definitions and the six pillars](https://docs.aws.amazon.com/wellarchitected/latest/framework/definitions.html)
+- [The Well-Architected review process](https://docs.aws.amazon.com/wellarchitected/latest/framework/the-review-process.html)
+- [AWS Well-Architected Tool User Guide](https://docs.aws.amazon.com/wellarchitected/latest/userguide/intro.html)
+- [CLF-C02 Domain 1: Cloud Concepts](https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02-domain1.html)
+- [SAA-C03 exam guide](https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-associate-03.html)
+
+Sources checked: **2026-07-22**.
 
 ## Final summary
 

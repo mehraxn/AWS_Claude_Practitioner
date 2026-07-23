@@ -1,5 +1,8 @@
 # AWS Storage Gateway
 
+![CPP](https://img.shields.io/badge/CPP-Cloud%20Practitioner-2EA44F?style=for-the-badge&logo=amazonaws&logoColor=white)
+![SAA](https://img.shields.io/badge/SAA-Solutions%20Architect-0969DA?style=for-the-badge&logo=amazonaws&logoColor=white)
+
 ## Simple definition
 
 AWS Storage Gateway is a hybrid cloud storage service that connects your on-premises environment to AWS storage services.
@@ -216,6 +219,32 @@ A company has office users who need a shared folder.
 They use File Gateway so users still access files like a normal file share, but the data is backed by AWS storage.
 
 ---
+
+## Current Gateway Selection Supplement
+
+- **Amazon S3 File Gateway** exposes NFS or SMB while storing files as S3 objects; use it for object-backed file workflows, backup, and migration.
+- **FSx File Gateway** provides low-latency on-premises access to FSx for Windows File Server where the current service supports the design.
+- **Volume Gateway cached mode** keeps primary data in AWS with frequently used blocks cached locally. **Stored mode** keeps the full primary data set locally and asynchronously backs it up to AWS as EBS snapshots.
+- **Tape Gateway** presents virtual tape-library interfaces for backup applications and stores virtual tapes in AWS.
+
+The gateway runs on premises or in a supported environment, uses local cache/upload buffer, and needs reliable connectivity. Plan bandwidth, cache capacity, offline behavior, recovery procedures, and monitoring. AWS manages cloud components; customers manage the gateway appliance/VM, local network, access, encryption choices, backup policy, and restore testing.
+
+Cost depends on gateway type, stored data, requests, snapshots or tapes, retrieval, and transfer. Storage Gateway is ongoing hybrid access; DataSync is commonly chosen for online transfer automation, and Snow Family for constrained/offline bulk movement.
+
+### Knowledge Check
+
+1. Which type presents virtual tapes? **Tape Gateway.**
+2. Which Volume mode keeps primary data in AWS? **Cached mode.**
+3. What must a hybrid design test? **Connectivity loss and recovery/restore procedures.**
+
+## Official References
+
+- [What is AWS Storage Gateway?](https://docs.aws.amazon.com/storagegateway/latest/userguide/WhatIsStorageGateway.html)
+- [S3 File Gateway](https://docs.aws.amazon.com/filegateway/latest/files3/what-is-file-s3.html)
+- [Volume Gateway](https://docs.aws.amazon.com/storagegateway/latest/vgw/WhatIsStorageGateway.html)
+- [Tape Gateway](https://docs.aws.amazon.com/storagegateway/latest/tgw/WhatIsStorageGateway.html)
+
+Official references checked: 2026-07-22.
 
 ## Final summary
 

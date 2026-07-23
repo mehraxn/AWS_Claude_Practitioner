@@ -36,7 +36,7 @@ No additional signup required — it activates the moment you create an AWS acco
 - Access to AWS documentation, whitepapers, and best-practice guides
 - Access to AWS rePost (community Q&A forum, formerly AWS Forums)
 - Access to AWS Service Health Dashboard (global service status)
-- Access to Personal Health Dashboard (your account's specific service health)
+- Access to AWS Health Dashboard (your account's specific service health)
 - 7 core AWS Trusted Advisor checks (basic security + service limits only)
   - S3 Bucket Permissions
   - Security Groups – Specific Ports Unrestricted
@@ -69,7 +69,7 @@ Example 3 — Internal Tool with No SLA
 
  🪤 Trap 2 You can call AWS support for billing issues on Basic. ✅ TRUE — billing and account support are always included regardless of plan. Exams try to trick you here.
 
- 🪤 Trap 3 Personal Health Dashboard is only available on paid plans. ❌ WRONG — it's available to everyone, including Basic.
+ 🪤 Trap 3 AWS Health Dashboard is only available on paid plans. ❌ WRONG — it's available to everyone, including Basic.
 
  🪤 Trap 4 AWS rePost is AWS official support. ❌ WRONG — it's a community forum, not official AWS engineer support.
 
@@ -355,13 +355,13 @@ Trusted Advisor scans your AWS account for best practices across 5 categories
 
 ---
 
-### AWS Personal Health Dashboard vs. Service Health Dashboard
+### AWS Health Dashboard vs. Service Health Dashboard
 
  Dashboard  Available To  Shows
 ---------
  Service Health Dashboard  Everyone (public)  Global AWS service status
- Personal Health Dashboard  All AWS accounts (free)  Events affecting your specific resources
- AWS Health API  Business+ plans  Programmatic access to Personal Health Dashboard data
+ AWS Health Dashboard  All AWS accounts (free)  Events affecting your specific resources
+ AWS Health API  Business+ plans  Programmatic access to AWS Health Dashboard data
 
  🪤 Exam Trap The AWS Health API requires Enterprise Support. ❌ WRONG — it requires Business Support minimum.
 
@@ -494,7 +494,7 @@ Business = Big League — 247 phonechatemail starts at Business
 - AWS documentation
 - AWS rePost community
 - Service Health Dashboard
-- Personal Health Dashboard
+- AWS Health Dashboard
 - 7 core Trusted Advisor checks
 - Billing support (not technical)
 
@@ -526,7 +526,7 @@ Business = Big League — 247 phonechatemail starts at Business
  11  The fastest SLA in AWS is 30 minutes  ❌ Enterprise offers  15 minutes
  12  Developer Support is appropriate for production  ❌ Business is minimum for production
  13  3rd-party software support starts at Enterprise  ❌ Starts at Business
- 14  Personal Health Dashboard requires a paid plan  ❌ Available to all accounts free
+ 14  AWS Health Dashboard requires a paid plan  ❌ Available to all accounts free
  15  Enterprise On-Ramp and Business have the same SLAs  ❌ On-Ramp adds  30-min business-critical SLA
  16  TAM is a salesperson  ❌ TAM is a senior technical resource
  17  Support plan costs are flat monthly fees  ❌ You pay the greater of flat fee or % of usage
