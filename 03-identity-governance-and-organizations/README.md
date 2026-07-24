@@ -21,3 +21,7 @@ Canonical lessons in this category. Certification relevance is conservative and 
 | [Service Control Policies](aws-organizations/02-service-control-policies.md) | Review | Review | Consolidated |
 | [Aws Resource Access Manager](aws-resource-access-manager/01-overview.md) | Review | Review | Consolidated |
 | [Aws Service Catalog](aws-service-catalog/01-overview.md) | Review | Review | Consolidated |
+
+## Batch 6 Architecture
+
+- [Multi-account governance](../13-architecture-and-design-patterns/security/02-multi-account-governance.md)

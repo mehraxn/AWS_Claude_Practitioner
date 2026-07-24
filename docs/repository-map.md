@@ -9,14 +9,14 @@ The numbered hierarchy is the only active learning-material hierarchy. Legacy to
 - `05-storage/` — 16 Markdown files
 - `06-databases/` — 10 Markdown files
 - `07-networking-and-content-delivery/` — 19 Markdown files
-- `08-serverless-and-application-integration/` — 5 Markdown files
+- `08-serverless-and-application-integration/` — 7 Markdown files
 - `09-security-and-compliance/` — 17 Markdown files
 - `10-monitoring-management-and-deployment/` — 15 Markdown files
 - `11-migration-and-hybrid-cloud/` — 8 Markdown files
 - `12-billing-pricing-and-support/` — 26 Markdown files
-- `13-architecture-and-design-patterns/` — 6 Markdown files
+- `13-architecture-and-design-patterns/` — 9 Markdown files
 - `14-ai-ml-analytics-and-other-services/` — 18 Markdown files
-- `15-comparisons-and-decision-guides/` — 19 Markdown files
+- `15-comparisons-and-decision-guides/` — 25 Markdown files
 - `16-exam-preparation/` — 1 Markdown files
 - `90-archive/` — 8 Markdown files
 

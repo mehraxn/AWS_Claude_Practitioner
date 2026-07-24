@@ -16,3 +16,6 @@ Canonical lessons in this category. Certification relevance is conservative and 
 | [Storage Gateway Family](storage/02-storage-gateway-family.md) | Review | Review | Consolidated |
 | [Core Compute and Storage Selection](compute-and-storage/01-core-selection-guide.md) | Yes | Yes | Batch 2 complete |
 | [Database Selection Guide](databases/01-database-selection-guide.md) | Yes | Yes | Batch 4 complete |
+| [SQS vs SNS vs EventBridge](application-integration/01-sqs-vs-sns-vs-eventbridge.md) | Yes | Yes | Batch 5 complete |
+| [AWS Security Service Selection](security/01-security-service-selection.md) | Yes | Yes | Batch 6 complete |
+| [CloudWatch vs CloudTrail vs AWS Config](operations/01-cloudwatch-vs-cloudtrail-vs-config.md) | Yes | Yes | Batch 6 complete |

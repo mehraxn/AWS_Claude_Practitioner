@@ -47,3 +47,13 @@ No record in this directory by itself proves certification completeness. Complet
 - [Coverage delta](PHASE-6-BATCH-2-COVERAGE-DELTA.md)
 - [Batch 2 changelog](PHASE-6-BATCH-2-CHANGELOG.md)
 - [Batch 2 recovery changelog](PHASE-6-BATCH-2-RECOVERY-CHANGELOG.md)
+
+## Phase 6 Batch 5
+
+- [Scope ledger](PHASE-6-BATCH-5-SCOPE.csv)
+- [Pre-implementation manifest](PHASE-6-BATCH-5-PRE-IMPLEMENTATION.csv)
+- [Post-implementation manifest](PHASE-6-BATCH-5-POST-IMPLEMENTATION.csv)
+- [Content decisions](PHASE-6-BATCH-5-CONTENT-DECISIONS.md)
+- [Fact corrections](PHASE-6-BATCH-5-FACT-CORRECTIONS.md)
+- [Coverage delta](PHASE-6-BATCH-5-COVERAGE-DELTA.md)
+- [Batch 5 changelog](PHASE-6-BATCH-5-CHANGELOG.md)

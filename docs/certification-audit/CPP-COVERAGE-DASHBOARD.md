@@ -1,5 +1,9 @@
 # CPP Coverage Dashboard
 
+## Phase 6 Batch 5 affected-requirement delta — 2026-07-23
+
+AWS-031 through AWS-034 now meet their required CPP fundamental or awareness depth. This records four affected criteria and does not claim whole-repository completion.
+
 Audit date: **2026-07-21**. Scores are evidence metrics, not guaranteed exam-readiness scores.
 
 Scoring: complete 1.0, partial 0.5, mention-only 0.1, wrong-depth 0.25, missing 0.0; outdated is capped at 0.25.

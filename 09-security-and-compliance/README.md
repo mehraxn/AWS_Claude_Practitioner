@@ -20,3 +20,8 @@ Canonical lessons in this category. Certification relevance is conservative and 
 | [Aws Shield](aws-shield/01-overview.md) | Review | Review | Consolidated |
 | [Aws Waf](aws-waf/01-overview.md) | Review | Review | Consolidated |
 | [Security And Compliance Overview](security-and-compliance-overview/01-overview.md) | Review | Review | Consolidated |
+
+## Batch 6 Decision Guides
+
+- [AWS security service selection](../15-comparisons-and-decision-guides/security/01-security-service-selection.md)
+- [Data protection patterns](../13-architecture-and-design-patterns/security/01-data-protection-patterns.md)

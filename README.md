@@ -1,6 +1,6 @@
 # AWS CPP and SAA Study Notes
 
-Phase 4 canonical consolidation and legacy retirement is complete. Phase 5 audited the canonical hierarchy against the official CLF-C02 and SAA-C03 guides checked on 2026-07-21. Phase 6 Batches 1 through 4 implemented authorized foundations, core compute and storage, networking and content delivery, and databases and caching. Batch 5 and later gaps remain in the Phase 6 backlog; full certification coverage is not claimed until the backlog is implemented and the repository is re-audited.
+Phase 4 canonical consolidation and legacy retirement is complete. Phase 5 audited the canonical hierarchy against the official CLF-C02 and SAA-C03 guides checked on 2026-07-21. Phase 6 Batches 1 through 6 implemented authorized foundations, core compute and storage, networking and content delivery, databases and caching, serverless application integration, and security, monitoring, and governance. Batch 7 and later gaps remain in the Phase 6 backlog; full certification coverage is not claimed until the backlog is implemented and the repository is re-audited.
 
 ## Learning Map
 

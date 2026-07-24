@@ -45,6 +45,15 @@ Depth is based on lesson bodies. A service mention does not count as coverage.
 | Amazon SNS | awareness | fundamental | architecture-and-design | architecture-and-design | Verify task-level completeness | Expand existing or create mapped backlog lesson |
 | Amazon EventBridge | awareness | fundamental | scenario-ready | architecture-and-design | Verify task-level completeness | Expand existing or create mapped backlog lesson |
 | AWS Step Functions | awareness | fundamental | scenario-ready | architecture-and-design | Verify task-level completeness | Expand existing or create mapped backlog lesson |
+
+### Phase 6 Batch 5 implementation update — 2026-07-23
+
+| Topic | CPP depth now evidenced | SAA depth now evidenced | Canonical evidence |
+|---|---|---|---|
+| SQS, SNS, EventBridge selection | fundamental | architecture-and-design | `15-comparisons-and-decision-guides/application-integration/01-sqs-vs-sns-vs-eventbridge.md` |
+| Amazon EventBridge | awareness | scenario-ready | `08-serverless-and-application-integration/amazon-eventbridge/01-overview.md` |
+| AWS Step Functions | awareness | scenario-ready | `08-serverless-and-application-integration/aws-step-functions/01-overview.md` |
+| Amazon API Gateway | awareness | scenario-ready | `08-serverless-and-application-integration/amazon-api-gateway/01-overview.md` |
 | AWS KMS | awareness | fundamental | scenario-ready | architecture-and-design | Verify task-level completeness | Expand existing or create mapped backlog lesson |
 | AWS Secrets Manager | awareness | fundamental | architecture-and-design | architecture-and-design | Verify task-level completeness | Expand existing or create mapped backlog lesson |
 | Amazon CloudWatch | awareness | fundamental | architecture-and-design | architecture-and-design | Verify task-level completeness | Expand existing or create mapped backlog lesson |
