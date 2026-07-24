@@ -1,5 +1,9 @@
 # SAA Coverage Dashboard
 
+## Phase 6 Batch 6 affected-requirement delta — 2026-07-24
+
+AWS-035 through AWS-039 add scenario-ready data-protection, threat-detection, multi-account governance, observability, and operations evidence. Seven directly affected secure-architecture criteria are now complete; the combined service-quota and observability criterion remains partial because Batch 6 did not implement quota design.
+
 ## Phase 6 Batch 5 affected-requirement delta — 2026-07-23
 
 AWS-031 through AWS-034 now have scenario-ready SAA evidence. This records four affected criteria and does not claim whole-repository completion.

@@ -67,3 +67,13 @@ Depth is based on lesson bodies. A service mention does not count as coverage.
 | Billing | awareness | fundamental | architecture-and-design | architecture-and-design | Verify task-level completeness | Expand existing or create mapped backlog lesson |
 | Pricing | fundamental | fundamental | architecture-and-design | architecture-and-design | Verify task-level completeness | Expand existing or create mapped backlog lesson |
 | AWS Support | fundamental | fundamental | scenario-ready | architecture-and-design | Verify task-level completeness | Expand existing or create mapped backlog lesson |
+
+### Phase 6 Batch 6 implementation update — 2026-07-24
+
+| Topic | CPP depth now evidenced | SAA depth now evidenced | Canonical evidence |
+|---|---|---|---|
+| Data protection architecture | fundamental | scenario-ready | `13-architecture-and-design-patterns/security/01-data-protection-patterns.md` |
+| Security service selection | fundamental | architecture-and-design | `15-comparisons-and-decision-guides/security/01-security-service-selection.md` |
+| Monitoring and audit selection | fundamental | scenario-ready | `15-comparisons-and-decision-guides/operations/01-cloudwatch-vs-cloudtrail-vs-config.md` |
+| Multi-account governance | awareness | scenario-ready | `13-architecture-and-design-patterns/security/02-multi-account-governance.md` |
+| AWS Systems Manager | awareness | architecture-and-design | `10-monitoring-management-and-deployment/aws-systems-manager/01-overview.md` |

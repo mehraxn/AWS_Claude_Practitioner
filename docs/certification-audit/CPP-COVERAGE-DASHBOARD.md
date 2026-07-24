@@ -1,5 +1,9 @@
 # CPP Coverage Dashboard
 
+## Phase 6 Batch 6 affected-requirement delta — 2026-07-24
+
+AWS-035 through AWS-039 add fundamental CPP evidence for encryption, logging and auditing, governance, security-service selection, observability, and operations management. Four directly affected partial criteria are now complete; this is an affected-row delta, not a whole-repository rescore.
+
 ## Phase 6 Batch 5 affected-requirement delta — 2026-07-23
 
 AWS-031 through AWS-034 now meet their required CPP fundamental or awareness depth. This records four affected criteria and does not claim whole-repository completion.
