@@ -12,9 +12,17 @@ AWS CPP and SAA Study Notes
 
 `f24d1b6 update`
 
-## Working-Tree Status
+## Original Handoff Working-Tree Status
 
 Dirty by design and unstaged. The final manifest is the authority for the exact changed and untracked paths.
+
+## Full Pull-Request Reconciliation
+
+The original 36-row manifest described only the final-handoff delta. It has now been expanded to classify the complete multi-phase PR: 456 paths present before this reconciliation plus the two new merge-readiness records. Every approved PR path has concrete Phase 1-7, repository, or commit evidence.
+
+`ba25dd3e75c181a960b161651029868bf079eaed` is the original verified final-QA release commit. `c85985ef5885c7159a41c91000bb8f72139e6ea4` is an accepted cleanup commit that deletes only `.tmp_phase7_inventory.py` and `.tmp_phase7_qa_csvs.py`. Those helper contents remain excluded from the release, and their deletions remove no required functionality.
+
+The final head may include one reconciliation commit containing six release-evidence files and one narrowly scoped filename-validator allowlist update. Neither the cleanup nor reconciliation changes AWS learning content. The final GitHub PR diff, reconciled to the expanded manifest, is the release-scope authority rather than any outdated single commit hash.
 
 ## Release-Candidate Scope
 
@@ -94,8 +102,8 @@ None.
 
 ## Human Actions Required
 
-Review high-risk files and the complete diff, confirm excluded artifacts and target branch, approve and create the commit, push the branch, create the pull request, and review CI. All remain pending.
+Review the complete reconciled diff and high-risk rows, correct the stale PR body wording, confirm the permitted merge method, and explicitly authorize a separate merge task. GitHub reported no configured CI checks or required reviews, but that does not substitute for human diff review.
 
 ## Final Handoff Decision
 
-The release candidate is ready for final human review. This record does not authorize or claim a commit, push, pull request, tag, merge, or release.
+The multi-phase release candidate is reconciled for PR #1 subject to final post-push verification. The pull request remains open and unmerged. This record does not authorize or claim a merge, tag, or GitHub release.

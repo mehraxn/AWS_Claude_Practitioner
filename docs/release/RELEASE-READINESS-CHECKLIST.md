@@ -31,6 +31,31 @@
 - [x] Phase 6 and Phase 7 completion gates remain valid.
 - [x] No duplicate canonical owner or broken primary navigation remains.
 - [x] No real exam question or exam dump was found.
+- [x] Full multi-phase PR manifest classifies every prospective PR path exactly once.
+- [x] Two temporary helper records remain excluded and absent from the net PR diff.
+- [x] Final merge-readiness report and PR review checklist are present.
+- [x] Filename validator permits only the two exact newly mandated `FINAL-*` control records.
+
+## Pull-request technical state
+
+- [x] PR #1 targets `main` from `audit/phase5-official-coverage`.
+- [x] PR #1 is open and not a draft.
+- [x] PR head `c85985e` was reconciled before the documentation-only commit.
+- [x] GitHub and local initial PR path counts agree at 456.
+- [x] GitHub reports clean mergeability and no branch update requirement.
+- [x] Auto-merge is disabled.
+- [x] Public metadata reports `main` as unprotected with no ruleset.
+- [ ] Allowed merge method confirmed.
+- [ ] Stale PR body wording corrected.
+
+## CI and reviews
+
+- [x] GitHub check and status endpoints were reviewed.
+- [x] No configured check run or status context was found.
+- [x] GitHub review and comment endpoints were reviewed.
+- [x] No requested changes or review conversation was found.
+- [ ] Human reviewed the complete reconciled PR diff.
+- [ ] Human merge authorization received for a separate merge task.
 
 ## Human actions
 
@@ -40,9 +65,9 @@
 - [ ] Human confirmed excluded files and temporary-script deletions.
 - [ ] Human confirmed the target branch.
 - [ ] Human confirmed the repository remote.
-- [ ] Human approved commit creation.
-- [ ] Human approved push.
-- [ ] Human approved pull-request creation.
+- [x] Human approved commit creation.
+- [x] Human approved push.
+- [x] Human approved pull-request creation.
 - [ ] Human sampled the CPP and SAA paths and accepted the documented editorial debt.
 - [ ] Human reviewed CI results.
 
