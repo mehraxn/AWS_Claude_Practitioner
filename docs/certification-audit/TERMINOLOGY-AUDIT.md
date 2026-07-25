@@ -12,3 +12,9 @@ Checked: **2026-07-21**. No lesson was edited.
 | AWS CodeCommit | No longer available to new customers; scope relevance requires review | `10-monitoring-management-and-deployment/aws-codecommit/01-overview.md` | medium | Keep supplementary until official scope and service status are reconciled | [CPP scope](https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/clf-02-in-scope-services.html) |
 
 Capitalization and acronym variants are listed per file in the canonical inventory. These findings require source-by-source confirmation before mechanical replacement.
+
+## Phase 6 Batch 9 update — 2026-07-25
+
+- New Batch 9 content uses **Amazon Data Firehose**, the current name for the former Amazon Kinesis Data Firehose.
+- New analytics guidance uses **Amazon Quick** for the broader service and **Amazon Quick Sight** for its business-intelligence capability. The older `amazon-quicksight` path remains unchanged pending a separately authorized rewrite.
+- New AI/ML guidance distinguishes the broader next-generation **Amazon SageMaker** platform from **Amazon SageMaker AI**, the renamed build/train/deploy ML service.

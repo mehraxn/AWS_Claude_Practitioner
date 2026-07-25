@@ -1,6 +1,6 @@
 # Ai Ml Analytics And Other Services
 
-Canonical lessons in this category. Certification relevance is conservative and remains subject to the Phase 5 official exam-guide audit.
+Canonical lessons in this category. Certification relevance follows the reconciled Phase 6 evidence; badges indicate supported depth, while the coverage dashboards retain known gaps.
 
 | Topic | CPP | SAA | Status |
 |---|:---:|:---:|---|
@@ -21,3 +21,11 @@ Canonical lessons in this category. Certification relevance is conservative and 
 | [Aws Amplify](business-applications/aws-amplify/01-overview.md) | Review | Review | Consolidated |
 | [Aws Iot](internet-of-things/aws-iot/01-overview.md) | Review | Review | Consolidated |
 | [Aws Iot Greengrass](internet-of-things/aws-iot-greengrass/01-overview.md) | Review | Review | Consolidated |
+| [Kinesis Data Streams and Amazon Data Firehose](analytics/01-kinesis-and-data-firehose.md) | Awareness | Architecture | Batch 9 complete |
+| [AWS AI and ML Service Recognition](artificial-intelligence-and-machine-learning/01-service-recognition-guide.md) | Awareness | Awareness | Batch 9 complete |
+
+## Local Indexes and Decision Guides
+
+- [Analytics lessons](analytics/README.md)
+- [AI and ML lessons](artificial-intelligence-and-machine-learning/README.md)
+- [AWS analytics service selection](../15-comparisons-and-decision-guides/analytics/02-analytics-service-selection.md)

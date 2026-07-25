@@ -4,6 +4,8 @@ This index describes consolidated existing material; it does not claim complete 
 
 | Service or concept | Canonical location | CPP | SAA | Importance | Related comparisons |
 |---|---|:---:|:---:|---|---|
+| CPP scenario reasoning | [`16-exam-preparation/01-cpp-scenario-reasoning.md`](../16-exam-preparation/01-cpp-scenario-reasoning.md) | Core | — | Batch 10 completed | Cross-domain canonical lesson links |
+| SAA architecture scenario reasoning | [`16-exam-preparation/02-saa-architecture-scenario-reasoning.md`](../16-exam-preparation/02-saa-architecture-scenario-reasoning.md) | — | Core | Batch 10 completed | Cross-domain canonical lesson links |
 | AWS Shared Responsibility Model | [`01-cloud-fundamentals/01-shared-responsibility-model.md`](../01-cloud-fundamentals/01-shared-responsibility-model.md) | Core | Architecture | Batch 1 foundation completed | Service-model comparison in lesson |
 | Cloud Concepts and Benefits | [`01-cloud-fundamentals/02-cloud-concepts-and-benefits.md`](../01-cloud-fundamentals/02-cloud-concepts-and-benefits.md) | Core | Foundation | Batch 1 foundation completed | Concepts compared in lesson |
 | Regions, Availability Zones, and Edge Infrastructure | [`02-global-infrastructure/01-regions-availability-zones-and-edge.md`](../02-global-infrastructure/01-regions-availability-zones-and-edge.md) | Core | Architecture | Batch 1 foundation completed | Multi-AZ, Multi-Region, and edge comparison in lesson |

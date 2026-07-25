@@ -1,6 +1,19 @@
 # AWS CPP and SAA Study Notes
 
-Phase 4 canonical consolidation and legacy retirement is complete. Phase 5 audited the canonical hierarchy against the official CLF-C02 and SAA-C03 guides checked on 2026-07-21. Phase 6 Batches 1 through 6 implemented authorized foundations, core compute and storage, networking and content delivery, databases and caching, serverless application integration, and security, monitoring, and governance. Batch 7 and later gaps remain in the Phase 6 backlog; full certification coverage is not claimed until the backlog is implemented and the repository is re-audited.
+Phase 4 canonical consolidation and legacy retirement is complete. Phase 5 audited the canonical hierarchy against the official CLF-C02 and SAA-C03 guides. Phase 6 Batches 1 through 10 implemented and reconciled all 54 authorized backlog items, including foundations, architecture decisions, cost guidance, analytics and AI/ML recognition, original exam-scenario reasoning, badge review, and final navigation.
+
+Phase 6 backlog completion does **not** mean every official task statement has complete learning depth. The final dashboards retain partial, mention-only, wrong-depth, and missing evidence honestly. These notes support study and architecture practice; they do not guarantee exam success.
+
+## Certification Paths
+
+- **AWS Certified Cloud Practitioner:** begin with cloud fundamentals, global infrastructure, security, service recognition, billing and support, then use the [CPP scenario-reasoning guide](16-exam-preparation/01-cpp-scenario-reasoning.md).
+- **AWS Certified Solutions Architect – Associate:** review core services and decision guides, study the architecture-pattern lessons, then use the [SAA architecture scenario-reasoning guide](16-exam-preparation/02-saa-architecture-scenario-reasoning.md).
+
+## Certification Badges
+
+- The **CPP** badge marks meaningful Cloud Practitioner relevance and foundational or recognition depth.
+- The **SAA** badge marks meaningful Solutions Architect relevance with architecture decisions or scenario depth.
+- A badge is a scope and depth label, not a completeness or exam-outcome claim. See [certification labels](docs/certification-labels.md).
 
 ## Learning Map
 
@@ -33,3 +46,11 @@ Phase 4 canonical consolidation and legacy retirement is complete. Phase 5 audit
 - [Phase 6 content backlog](docs/certification-audit/PHASE-6-CONTENT-BACKLOG.csv)
 - [Phase 6 batch plan](docs/certification-audit/PHASE-6-BATCH-PLAN.md)
 - [Phase 6 implementation records](docs/content-implementation/README.md)
+- [Phase 6 final backlog reconciliation](docs/content-implementation/PHASE-6-FINAL-BACKLOG-RECONCILIATION.csv)
+- [Phase 6 final coverage reconciliation](docs/content-implementation/PHASE-6-FINAL-COVERAGE-RECONCILIATION.md)
+- [Phase 6 final validation](docs/content-implementation/PHASE-6-FINAL-VALIDATION.md)
+- [Phase 6 completion summary](docs/content-implementation/PHASE-6-COMPLETION-SUMMARY.md)
+
+## Validation and Limitations
+
+Repository filename, Markdown-link, duplicate-name, empty-file, badge, backlog, and audit-map results are recorded in the final validation report. Service features, prices, quotas, exam scope, and product availability can change; check the dated official references before relying on a volatile fact.

@@ -1,5 +1,53 @@
 # Content Implementation Records
 
+## Phase 6 Batch 10 and Final Reconciliation
+
+- [Scope](PHASE-6-BATCH-10-SCOPE.csv)
+- [Pre-implementation manifest](PHASE-6-BATCH-10-PRE-IMPLEMENTATION.csv)
+- [Post-implementation manifest](PHASE-6-BATCH-10-POST-IMPLEMENTATION.csv)
+- [Content decisions](PHASE-6-BATCH-10-CONTENT-DECISIONS.md)
+- [Fact corrections](PHASE-6-BATCH-10-FACT-CORRECTIONS.md)
+- [Coverage delta](PHASE-6-BATCH-10-COVERAGE-DELTA.md)
+- [Batch 10 changelog](PHASE-6-BATCH-10-CHANGELOG.md)
+- [Final backlog reconciliation](PHASE-6-FINAL-BACKLOG-RECONCILIATION.csv)
+- [Final coverage reconciliation](PHASE-6-FINAL-COVERAGE-RECONCILIATION.md)
+- [Final validation](PHASE-6-FINAL-VALIDATION.md)
+- [Phase 6 completion summary](PHASE-6-COMPLETION-SUMMARY.md)
+- [Cumulative backlog status](PHASE-6-BACKLOG-STATUS.csv)
+
+## Phase 6 Batch 9
+
+- [Scope](PHASE-6-BATCH-9-SCOPE.csv)
+- [Pre-implementation manifest](PHASE-6-BATCH-9-PRE-IMPLEMENTATION.csv)
+- [Post-implementation manifest](PHASE-6-BATCH-9-POST-IMPLEMENTATION.csv)
+- [Content decisions](PHASE-6-BATCH-9-CONTENT-DECISIONS.md)
+- [Fact corrections](PHASE-6-BATCH-9-FACT-CORRECTIONS.md)
+- [Coverage delta](PHASE-6-BATCH-9-COVERAGE-DELTA.md)
+- [Batch 9 changelog](PHASE-6-BATCH-9-CHANGELOG.md)
+- [Cumulative backlog status](PHASE-6-BACKLOG-STATUS.csv)
+
+## Phase 6 Batch 8
+
+- [Scope](PHASE-6-BATCH-8-SCOPE.csv)
+- [Pre-implementation manifest](PHASE-6-BATCH-8-PRE-IMPLEMENTATION.csv)
+- [Post-implementation manifest](PHASE-6-BATCH-8-POST-IMPLEMENTATION.csv)
+- [Content decisions](PHASE-6-BATCH-8-CONTENT-DECISIONS.md)
+- [Fact corrections](PHASE-6-BATCH-8-FACT-CORRECTIONS.md)
+- [Coverage delta](PHASE-6-BATCH-8-COVERAGE-DELTA.md)
+- [Batch 8 changelog](PHASE-6-BATCH-8-CHANGELOG.md)
+- [Cumulative backlog status](PHASE-6-BACKLOG-STATUS.csv)
+
+## Phase 6 Batch 7
+
+- [Scope](PHASE-6-BATCH-7-SCOPE.csv)
+- [Pre-implementation manifest](PHASE-6-BATCH-7-PRE-IMPLEMENTATION.csv)
+- [Post-implementation manifest](PHASE-6-BATCH-7-POST-IMPLEMENTATION.csv)
+- [Content decisions](PHASE-6-BATCH-7-CONTENT-DECISIONS.md)
+- [Fact corrections](PHASE-6-BATCH-7-FACT-CORRECTIONS.md)
+- [Coverage delta](PHASE-6-BATCH-7-COVERAGE-DELTA.md)
+- [Batch 7 changelog](PHASE-6-BATCH-7-CHANGELOG.md)
+- [Cumulative backlog status](PHASE-6-BACKLOG-STATUS.csv)
+
 This directory records controlled implementation of the official Phase 5 certification-audit backlog. The Phase 5 backlog and batch plan remain the implementation authority; these files record selection, checksums, decisions, evidence, validation, and remaining work.
 
 ## Phase 6 Batch 1

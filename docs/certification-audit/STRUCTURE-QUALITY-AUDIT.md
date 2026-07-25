@@ -14,3 +14,9 @@ No restructuring occurred. The audit inspected 189 canonical Markdown files.
 | Empty directories and numbering inconsistencies | validation required | Existing validation scripts | Do not restructure in Phase 5. |
 
 Phase 4 reports remain provenance. Any future move, merge, rename, or archive must use `git mv` and update the migration log.
+
+## Phase 6 closure update — 2026-07-25
+
+- The existing `16-exam-preparation/` root was retained and expanded from one index to one index plus two canonical guides.
+- Root, category, service-index, repository-map, and implementation-record navigation were refreshed without moving or deleting canonical lessons.
+- Filename, link, duplicate, empty-file, and canonical-owner checks are recorded in `docs/content-implementation/PHASE-6-FINAL-VALIDATION.md`.

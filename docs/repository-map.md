@@ -14,10 +14,10 @@ The numbered hierarchy is the only active learning-material hierarchy. Legacy to
 - `10-monitoring-management-and-deployment/` — 15 Markdown files
 - `11-migration-and-hybrid-cloud/` — 8 Markdown files
 - `12-billing-pricing-and-support/` — 26 Markdown files
-- `13-architecture-and-design-patterns/` — 9 Markdown files
-- `14-ai-ml-analytics-and-other-services/` — 18 Markdown files
-- `15-comparisons-and-decision-guides/` — 25 Markdown files
-- `16-exam-preparation/` — 1 Markdown files
+- `13-architecture-and-design-patterns/` — 13 Markdown files
+- `14-ai-ml-analytics-and-other-services/` — 22 Markdown files
+- `15-comparisons-and-decision-guides/` — 30 Markdown files
+- `16-exam-preparation/` — 3 Markdown files
 - `90-archive/` — 8 Markdown files
 
 Prompt templates are under `docs/templates/aws-study-prompts/`; generated reports are under `reports/generated/`.
@@ -32,3 +32,5 @@ The numbered hierarchy is canonically organized and has been audited against the
 - [Phase 6 content backlog](certification-audit/PHASE-6-CONTENT-BACKLOG.csv)
 - [Phase 6 batch plan](certification-audit/PHASE-6-BATCH-PLAN.md)
 - [Phase 6 implementation records](content-implementation/README.md)
+- [Phase 6 final coverage reconciliation](content-implementation/PHASE-6-FINAL-COVERAGE-RECONCILIATION.md)
+- [Phase 6 final validation](content-implementation/PHASE-6-FINAL-VALIDATION.md)

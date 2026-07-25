@@ -16,6 +16,9 @@ FORBIDDEN_RE = re.compile(
 MANDATED_CONTROL_RECORDS = {
     "docs/content-implementation/PHASE-6-BATCH-2-FINAL-RECONCILIATION.csv",
     "docs/content-implementation/PHASE-6-BATCH-2-FINAL-RECONCILIATION.md",
+    "docs/content-implementation/PHASE-6-FINAL-BACKLOG-RECONCILIATION.csv",
+    "docs/content-implementation/PHASE-6-FINAL-COVERAGE-RECONCILIATION.md",
+    "docs/content-implementation/PHASE-6-FINAL-VALIDATION.md",
 }
 ROOT_FILES = {
     "README.md", "AGENTS.md", "CONTRIBUTING.md", ".gitattributes",
@@ -63,6 +66,7 @@ def validate(path: Path, foundation_only: bool) -> list[str]:
     """Return naming errors for one path."""
     rel = path.relative_to(ROOT)
     errors: list[str] = []
+    mandated_phase7_record = rel.parts[:2] == ("docs", "final-review")
     category_content = bool(rel.parts and is_category(rel.parts[0]))
     for index, part in enumerate(rel.parts):
         if part != part.rstrip():
@@ -71,7 +75,7 @@ def validate(path: Path, foundation_only: bool) -> list[str]:
             errors.append("parentheses in path")
         if "--" in part or "__" in part:
             errors.append("duplicate separator")
-        if FORBIDDEN_RE.search(part) and rel.as_posix() not in MANDATED_CONTROL_RECORDS:
+        if FORBIDDEN_RE.search(part) and rel.as_posix() not in MANDATED_CONTROL_RECORDS and not mandated_phase7_record:
             errors.append("forbidden version marker")
         canonical_segment = category_content and index > 0
         if canonical_segment and part != "README.md" and any(char.isupper() for char in part):

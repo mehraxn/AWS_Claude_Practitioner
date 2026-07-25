@@ -77,3 +77,38 @@ Depth is based on lesson bodies. A service mention does not count as coverage.
 | Monitoring and audit selection | fundamental | scenario-ready | `15-comparisons-and-decision-guides/operations/01-cloudwatch-vs-cloudtrail-vs-config.md` |
 | Multi-account governance | awareness | scenario-ready | `13-architecture-and-design-patterns/security/02-multi-account-governance.md` |
 | AWS Systems Manager | awareness | architecture-and-design | `10-monitoring-management-and-deployment/aws-systems-manager/01-overview.md` |
+
+### Phase 6 Batch 7 implementation update — 2026-07-24
+
+| Topic | CPP depth now evidenced | SAA depth now evidenced | Canonical evidence |
+|---|---|---|---|
+| Highly available web applications | fundamental | scenario-ready | `13-architecture-and-design-patterns/01-highly-available-web-applications.md` |
+| Disaster recovery strategies | fundamental | scenario-ready | `13-architecture-and-design-patterns/02-disaster-recovery-strategies.md` |
+| Event-driven and decoupled systems | fundamental | scenario-ready | `13-architecture-and-design-patterns/03-event-driven-and-decoupled-systems.md` |
+| Serverless application patterns | fundamental | scenario-ready | `13-architecture-and-design-patterns/04-serverless-application-patterns.md` |
+
+### Phase 6 Batch 8 implementation update — 2026-07-25
+
+| Topic | CPP depth now evidenced | SAA depth now evidenced | Canonical evidence |
+|---|---|---|---|
+| AWS pricing fundamentals and purchasing models | fundamental | scenario-ready | `12-billing-pricing-and-support/aws-billing-and-cost-management/02-study-guide.md` |
+| AWS Support plans | fundamental | awareness | `12-billing-pricing-and-support/aws-support/02-support-plans.md` |
+| Cost-management tool selection | fundamental | scenario-ready | `15-comparisons-and-decision-guides/cost/01-cost-management-tool-selection.md` |
+| Data-transfer cost architecture | fundamental | scenario-ready | `12-billing-pricing-and-support/aws-billing-and-cost-management/03-data-transfer-costs.md` |
+
+### Phase 6 Batch 9 implementation update — 2026-07-25
+
+| Topic | CPP depth now evidenced | SAA depth now evidenced | Canonical evidence |
+|---|---|---|---|
+| Kinesis Data Streams and Amazon Data Firehose | awareness | architecture-and-design | `14-ai-ml-analytics-and-other-services/analytics/01-kinesis-and-data-firehose.md` |
+| AWS analytics service selection | fundamental | architecture-and-design | `15-comparisons-and-decision-guides/analytics/02-analytics-service-selection.md` |
+| AWS AI and ML service recognition | fundamental | awareness | `14-ai-ml-analytics-and-other-services/artificial-intelligence-and-machine-learning/01-service-recognition-guide.md` |
+
+### Phase 6 Batch 10 implementation update — 2026-07-25
+
+| Topic | CPP depth now evidenced | SAA depth now evidenced | Canonical evidence |
+|---|---|---|---|
+| CPP cross-domain scenario reasoning | fundamental | not-applicable | `16-exam-preparation/01-cpp-scenario-reasoning.md` |
+| SAA cross-domain architecture reasoning | not-applicable | scenario-ready | `16-exam-preparation/02-saa-architecture-scenario-reasoning.md` |
+
+These guides add study and selection practice; they do not by themselves rescore every official task statement to complete.

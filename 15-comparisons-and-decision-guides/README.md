@@ -1,6 +1,6 @@
 # Comparisons And Decision Guides
 
-Canonical lessons in this category. Certification relevance is conservative and remains subject to the Phase 5 official exam-guide audit.
+Canonical lessons in this category. Certification relevance follows the reconciled Phase 6 evidence; badges indicate supported depth, while the coverage dashboards retain known gaps.
 
 | Topic | CPP | SAA | Status |
 |---|:---:|:---:|---|
@@ -19,3 +19,5 @@ Canonical lessons in this category. Certification relevance is conservative and 
 | [SQS vs SNS vs EventBridge](application-integration/01-sqs-vs-sns-vs-eventbridge.md) | Yes | Yes | Batch 5 complete |
 | [AWS Security Service Selection](security/01-security-service-selection.md) | Yes | Yes | Batch 6 complete |
 | [CloudWatch vs CloudTrail vs AWS Config](operations/01-cloudwatch-vs-cloudtrail-vs-config.md) | Yes | Yes | Batch 6 complete |
+| [AWS Cost Management Tool Selection](cost/01-cost-management-tool-selection.md) | Yes | Yes | Batch 8 complete |
+| [AWS Analytics Service Selection](analytics/02-analytics-service-selection.md) | Yes | Yes | Batch 9 complete |
