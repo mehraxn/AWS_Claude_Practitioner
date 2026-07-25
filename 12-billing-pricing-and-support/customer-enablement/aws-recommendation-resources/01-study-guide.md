@@ -587,14 +587,16 @@ A true AWS Recommendation Service must satisfy **all three** of the following:
 
 ---
 
-### Trap 6 — Trusted Advisor Has a Free Tier Limitation
+### Trap 6 — Trusted Advisor access depends on the Support plan
 
 | Plan | Checks Available |
 |------|-----------------|
-| Basic / Developer Support | ~6 core checks only |
-| Business / Enterprise Support | 400+ checks + API access + weekly reports |
+| Basic Support | Service Limits checks plus selected Security and Fault Tolerance checks |
+| Business Support+, Enterprise Support, or Unified Operations | All Trusted Advisor checks plus documented Trusted Advisor API access |
 
-> ❌ **FALSE:** "Trusted Advisor checks all 5 pillars for free" — full access requires Business or Enterprise Support.
+> ❌ **FALSE:** "Every AWS account receives every Trusted Advisor check." Access depends on the Support plan. This distinction was verified on **2026-07-25**; transition-plan entitlements and check availability can change.
+
+[AWS Trusted Advisor check reference](https://docs.aws.amazon.com/awssupport/latest/user/trusted-advisor-check-reference.html)
 
 ---
 

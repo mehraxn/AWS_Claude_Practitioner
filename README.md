@@ -1,6 +1,6 @@
 # AWS CPP and SAA Study Notes
 
-Phase 4 canonical consolidation and legacy retirement is complete. Phase 5 audited the canonical hierarchy against the official CLF-C02 and SAA-C03 guides. Phase 6 Batches 1 through 10 implemented and reconciled all 54 authorized backlog items, including foundations, architecture decisions, cost guidance, analytics and AI/ML recognition, original exam-scenario reasoning, badge review, and final navigation.
+Phase 4 canonical consolidation and legacy retirement is complete. Phase 5 audited the canonical hierarchy against the official CLF-C02 and SAA-C03 guides. Phase 6 Batches 1 through 10 implemented and reconciled all 54 authorized backlog items. Phase 7 completed final repository QA, learner-path review, and release-candidate documentation; documented limitations still require human review.
 
 Phase 6 backlog completion does **not** mean every official task statement has complete learning depth. The final dashboards retain partial, mention-only, wrong-depth, and missing evidence honestly. These notes support study and architecture practice; they do not guarantee exam success.
 
@@ -50,7 +50,12 @@ Phase 6 backlog completion does **not** mean every official task statement has c
 - [Phase 6 final coverage reconciliation](docs/content-implementation/PHASE-6-FINAL-COVERAGE-RECONCILIATION.md)
 - [Phase 6 final validation](docs/content-implementation/PHASE-6-FINAL-VALIDATION.md)
 - [Phase 6 completion summary](docs/content-implementation/PHASE-6-COMPLETION-SUMMARY.md)
+- [Phase 7 final validation](docs/final-review/PHASE-7-FINAL-VALIDATION.md)
+- [Release notes](docs/release/RELEASE-NOTES.md)
+- [Known limitations](docs/release/KNOWN-LIMITATIONS.md)
+- [Maintenance and freshness guide](docs/release/MAINTENANCE-AND-FRESHNESS-GUIDE.md)
+- [Release-readiness checklist](docs/release/RELEASE-READINESS-CHECKLIST.md)
 
 ## Validation and Limitations
 
-Repository filename, Markdown-link, duplicate-name, empty-file, badge, backlog, and audit-map results are recorded in the final validation report. Service features, prices, quotas, exam scope, and product availability can change; check the dated official references before relying on a volatile fact.
+Repository filename, Markdown-link, duplicate-name, empty-file, badge, backlog, and audit-map results are recorded in the Phase 7 final validation report. Service features, prices, quotas, exam scope, and product availability can change; check the dated official references before relying on a volatile fact.

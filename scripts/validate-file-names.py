@@ -19,6 +19,14 @@ MANDATED_CONTROL_RECORDS = {
     "docs/content-implementation/PHASE-6-FINAL-BACKLOG-RECONCILIATION.csv",
     "docs/content-implementation/PHASE-6-FINAL-COVERAGE-RECONCILIATION.md",
     "docs/content-implementation/PHASE-6-FINAL-VALIDATION.md",
+    "docs/release/FINAL-HANDOFF-BLOCKERS.md",
+    "docs/release/FINAL-HANDOFF-CHANGELOG.md",
+    "docs/release/FINAL-COMMIT-EXECUTION-LOG.md",
+    "docs/release/FINAL-PULL-REQUEST-BODY.md",
+    "docs/release/FINAL-RELEASE-CANDIDATE-HANDOFF.md",
+    "docs/release/FINAL-SECURITY-AND-HYGIENE-REVIEW.md",
+    "docs/release/FINAL-STAGING-MANIFEST.txt",
+    "docs/release/FINAL-VALIDATION-RESULTS.md",
 }
 ROOT_FILES = {
     "README.md", "AGENTS.md", "CONTRIBUTING.md", ".gitattributes",
