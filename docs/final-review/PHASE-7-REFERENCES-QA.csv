@@ -1,0 +1,53 @@
+path,references_required,references_found,official_sources_found,volatile_facts_found,verification_date_found,issue_severity,action_taken,final_status,notes
+01-cloud-fundamentals/01-shared-responsibility-model.md,yes,true,true,reviewed where applicable,true,none,none required,passed,Focused Phase 6 target reference review.
+01-cloud-fundamentals/02-cloud-concepts-and-benefits.md,yes,true,true,reviewed where applicable,true,none,none required,passed,Focused Phase 6 target reference review.
+02-global-infrastructure/01-regions-availability-zones-and-edge.md,yes,true,true,reviewed where applicable,true,none,none required,passed,Focused Phase 6 target reference review.
+03-identity-governance-and-organizations/aws-iam/01-overview.md,yes,true,true,reviewed where applicable,true,none,none required,passed,Focused Phase 6 target reference review.
+04-compute/amazon-ec2/01-overview.md,yes,false,true,reviewed where applicable,true,medium,documented for human source review,passed-with-limitation,Focused Phase 6 target reference review.
+04-compute/aws-lambda/01-overview.md,yes,false,true,reviewed where applicable,true,medium,documented for human source review,passed-with-limitation,Focused Phase 6 target reference review.
+04-compute/containers/01-ecs-eks-and-fargate.md,yes,true,true,reviewed where applicable,true,none,none required,passed,Focused Phase 6 target reference review.
+04-compute/ec2-auto-scaling/01-target-tracking-scaling.md,yes,false,true,reviewed where applicable,true,medium,documented for human source review,passed-with-limitation,Focused Phase 6 target reference review.
+04-compute/elastic-load-balancing/01-overview.md,yes,true,true,reviewed where applicable,true,none,none required,passed,Focused Phase 6 target reference review.
+05-storage/amazon-ebs/01-overview.md,yes,false,true,reviewed where applicable,true,medium,documented for human source review,passed-with-limitation,Focused Phase 6 target reference review.
+05-storage/amazon-efs/01-overview.md,yes,false,true,reviewed where applicable,true,medium,documented for human source review,passed-with-limitation,Focused Phase 6 target reference review.
+05-storage/amazon-fsx/01-family-and-selection.md,yes,true,true,reviewed where applicable,true,none,none required,passed,Focused Phase 6 target reference review.
+05-storage/amazon-s3/01-overview.md,yes,false,true,reviewed where applicable,true,medium,documented for human source review,passed-with-limitation,Focused Phase 6 target reference review.
+05-storage/aws-backup/01-overview.md,yes,true,true,reviewed where applicable,true,none,none required,passed,Focused Phase 6 target reference review.
+05-storage/aws-storage-gateway/01-overview.md,yes,false,true,reviewed where applicable,true,medium,documented for human source review,passed-with-limitation,Focused Phase 6 target reference review.
+05-storage/ec2-instance-store/01-overview.md,yes,false,true,reviewed where applicable,true,medium,documented for human source review,passed-with-limitation,Focused Phase 6 target reference review.
+06-databases/amazon-aurora/01-overview.md,yes,false,true,reviewed where applicable,true,medium,documented for human source review,passed-with-limitation,Focused Phase 6 target reference review.
+06-databases/amazon-dynamodb/01-overview.md,yes,true,true,reviewed where applicable,true,none,none required,passed,Focused Phase 6 target reference review.
+06-databases/amazon-elasticache/01-overview.md,yes,false,true,reviewed where applicable,true,medium,documented for human source review,passed-with-limitation,Focused Phase 6 target reference review.
+06-databases/amazon-rds/01-overview.md,yes,true,true,reviewed where applicable,true,none,none required,passed,Focused Phase 6 target reference review.
+07-networking-and-content-delivery/amazon-vpc/01-overview.md,yes,true,true,reviewed where applicable,true,none,none required,passed,Focused Phase 6 target reference review.
+07-networking-and-content-delivery/amazon-vpc/04-endpoint-services.md,yes,false,true,reviewed where applicable,true,medium,documented for human source review,passed-with-limitation,Focused Phase 6 target reference review.
+07-networking-and-content-delivery/amazon-vpc/09-subnets-route-tables-and-internet-gateways.md,yes,true,true,reviewed where applicable,true,none,none required,passed,Focused Phase 6 target reference review.
+08-serverless-and-application-integration/amazon-api-gateway/01-overview.md,yes,true,true,reviewed where applicable,true,none,none required,passed,Focused Phase 6 target reference review.
+08-serverless-and-application-integration/amazon-eventbridge/01-overview.md,yes,true,true,reviewed where applicable,true,none,none required,passed,Focused Phase 6 target reference review.
+08-serverless-and-application-integration/aws-step-functions/01-overview.md,yes,true,true,reviewed where applicable,true,none,none required,passed,Focused Phase 6 target reference review.
+10-monitoring-management-and-deployment/aws-systems-manager/01-overview.md,yes,true,true,reviewed where applicable,true,none,none required,passed,Focused Phase 6 target reference review.
+12-billing-pricing-and-support/aws-billing-and-cost-management/02-study-guide.md,yes,true,true,reviewed where applicable,true,none,none required,passed,Focused Phase 6 target reference review.
+12-billing-pricing-and-support/aws-billing-and-cost-management/03-data-transfer-costs.md,yes,true,true,reviewed where applicable,true,none,none required,passed,Focused Phase 6 target reference review.
+12-billing-pricing-and-support/aws-support/02-support-plans.md,yes,true,true,reviewed where applicable,true,none,none required,passed,Focused Phase 6 target reference review.
+13-architecture-and-design-patterns/01-highly-available-web-applications.md,yes,true,true,reviewed where applicable,true,none,none required,passed,Focused Phase 6 target reference review.
+13-architecture-and-design-patterns/02-disaster-recovery-strategies.md,yes,true,true,reviewed where applicable,true,none,none required,passed,Focused Phase 6 target reference review.
+13-architecture-and-design-patterns/03-event-driven-and-decoupled-systems.md,yes,true,true,reviewed where applicable,true,none,none required,passed,Focused Phase 6 target reference review.
+13-architecture-and-design-patterns/04-serverless-application-patterns.md,yes,true,true,reviewed where applicable,true,none,none required,passed,Focused Phase 6 target reference review.
+13-architecture-and-design-patterns/aws-well-architected-framework/01-overview.md,yes,true,true,reviewed where applicable,true,none,none required,passed,Focused Phase 6 target reference review.
+13-architecture-and-design-patterns/security/01-data-protection-patterns.md,yes,true,true,reviewed where applicable,true,none,none required,passed,Focused Phase 6 target reference review.
+13-architecture-and-design-patterns/security/02-multi-account-governance.md,yes,true,true,reviewed where applicable,true,none,none required,passed,Focused Phase 6 target reference review.
+14-ai-ml-analytics-and-other-services/analytics/01-kinesis-and-data-firehose.md,yes,true,true,reviewed where applicable,true,none,none required,passed,Focused Phase 6 target reference review.
+14-ai-ml-analytics-and-other-services/artificial-intelligence-and-machine-learning/01-service-recognition-guide.md,yes,true,true,reviewed where applicable,true,none,none required,passed,Focused Phase 6 target reference review.
+15-comparisons-and-decision-guides/analytics/02-analytics-service-selection.md,yes,true,true,reviewed where applicable,true,none,none required,passed,Focused Phase 6 target reference review.
+15-comparisons-and-decision-guides/application-integration/01-sqs-vs-sns-vs-eventbridge.md,yes,true,true,reviewed where applicable,true,none,none required,passed,Focused Phase 6 target reference review.
+15-comparisons-and-decision-guides/compute-and-storage/01-core-selection-guide.md,yes,true,true,reviewed where applicable,true,none,none required,passed,Focused Phase 6 target reference review.
+15-comparisons-and-decision-guides/cost/01-cost-management-tool-selection.md,yes,true,true,reviewed where applicable,true,none,none required,passed,Focused Phase 6 target reference review.
+15-comparisons-and-decision-guides/databases/01-database-selection-guide.md,yes,true,true,reviewed where applicable,true,none,none required,passed,Focused Phase 6 target reference review.
+15-comparisons-and-decision-guides/networking/02-vpc-connectivity-options.md,yes,false,true,reviewed where applicable,true,medium,documented for human source review,passed-with-limitation,Focused Phase 6 target reference review.
+15-comparisons-and-decision-guides/networking/03-security-groups-vs-network-acls.md,yes,true,true,reviewed where applicable,true,none,none required,passed,Focused Phase 6 target reference review.
+15-comparisons-and-decision-guides/networking/04-dns-edge-and-global-routing.md,yes,true,true,reviewed where applicable,true,none,none required,passed,Focused Phase 6 target reference review.
+15-comparisons-and-decision-guides/operations/01-cloudwatch-vs-cloudtrail-vs-config.md,yes,true,true,reviewed where applicable,true,none,none required,passed,Focused Phase 6 target reference review.
+15-comparisons-and-decision-guides/security/01-security-service-selection.md,yes,true,true,reviewed where applicable,true,none,none required,passed,Focused Phase 6 target reference review.
+16-exam-preparation/01-cpp-scenario-reasoning.md,yes,true,true,reviewed where applicable,true,none,none required,passed,Focused Phase 6 target reference review.
+16-exam-preparation/02-saa-architecture-scenario-reasoning.md,yes,true,true,reviewed where applicable,true,none,none required,passed,Focused Phase 6 target reference review.
+README.md,yes,false,false,reviewed where applicable,false,medium,documented for human source review,passed-with-limitation,Focused Phase 6 target reference review.
