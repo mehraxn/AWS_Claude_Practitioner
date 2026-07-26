@@ -1,18 +1,29 @@
-# Migration
+# Migration Decision Guides
 
-## Service Summary
+![CPP](https://img.shields.io/badge/CPP-Cloud%20Practitioner-2EA44F?style=for-the-badge&logo=amazonaws&logoColor=white) ![SAA](https://img.shields.io/badge/SAA-Solutions%20Architect-0969DA?style=for-the-badge&logo=amazonaws&logoColor=white)
 
-This directory contains the canonical lesson sequence for Migration.
+## Purpose
 
-## Lesson Order
+Choose migration and hybrid services from data type, transfer path, downtime, bandwidth, and target environment.
 
-1. [Datasync Vs Dms](01-datasync-vs-dms.md)
-2. [Snowball Edge Vs Outposts](02-snowball-edge-vs-outposts.md)
+## Guide Order
 
-## Certification Relevance
+| Order | Topic | What it covers |
+|---:|---|---|
+| 1 | [AWS DataSync vs AWS Database Migration Service (AWS DMS)](01-datasync-vs-dms.md) | Study notes and decision points for AWS DataSync vs AWS Database Migration Service (AWS DMS). |
+| 2 | [AWS Snowball Edge vs AWS Outposts](02-snowball-edge-vs-outposts.md) | Study notes and decision points for AWS Snowball Edge vs AWS Outposts. |
 
-CPP and SAA relevance is recorded conservatively in the category index and will be checked against official exam guides in Phase 5.
+## Decision Questions
 
-## Navigation
+- Are you moving files, objects, databases, or whole workloads?
+- Is the transfer online, offline, continuous, or one-time?
+- Does the target remain hybrid after migration?
 
-- [Back to category index](../README.md)
+## Recommended Method
+
+1. Extract the requirement and constraints.
+2. Identify two or three plausible services.
+3. Compare them across functionality, availability, security, operations, performance, and cost.
+4. State why the rejected options fail the requirement.
+
+[Back to all comparisons](../README.md) · [Repository home](../../README.md)

@@ -1,42 +1,32 @@
 # Exam Preparation
 
-These canonical guides teach requirement extraction, service selection, distractor elimination, and architecture trade-offs using original scenarios. They do not contain exam dumps or questions recalled from live certification exams.
+![CPP](https://img.shields.io/badge/CPP-Cloud%20Practitioner-2EA44F?style=for-the-badge&logo=amazonaws&logoColor=white) ![SAA](https://img.shields.io/badge/SAA-Solutions%20Architect-0969DA?style=for-the-badge&logo=amazonaws&logoColor=white)
 
-| Topic | CPP | SAA | Status |
-|---|:---:|:---:|---|
-| [CPP scenario reasoning](01-cpp-scenario-reasoning.md) | Core | — | Domain-linked CLF-C02 reasoning and service recognition |
-| [SAA architecture scenario reasoning](02-saa-architecture-scenario-reasoning.md) | — | Core | Constraint-driven SAA-C03 architecture selection |
+Practice original scenario reasoning for AWS Certified Cloud Practitioner and AWS Solutions Architect – Associate without using recalled exam content.
 
-## How to Use These Guides
+## What You Will Learn
 
-1. Review the linked canonical lesson for a weak domain.
-2. Solve scenarios by writing the requirement and constraints before looking at alternatives.
-3. Explain why each rejected option fails a requirement.
-4. Recheck current AWS documentation when a service feature, quota, price, or product name matters.
+- Extract requirements and constraints before choosing a service.
+- Eliminate distractors by explaining why they fail.
+- Create a final review plan from weak domains and decision areas.
 
-Official exam guides and service lists are the scope authority, but AWS describes service lists as non-exhaustive and subject to change. These notes support study; they do not guarantee exam success.
+## Recommended Study Order
 
-## CPP Study Path
+| Order | Topic | What it covers |
+|---:|---|---|
+| 1 | [AWS Certified Cloud Practitioner Scenario Reasoning](01-cpp-scenario-reasoning.md) | Requirement extraction and service recognition for CLF-C02-style scenarios. |
+| 2 | [AWS Solutions Architect Associate Scenario Reasoning](02-saa-architecture-scenario-reasoning.md) | Constraint-driven architecture selection for SAA-C03-style scenarios. |
 
-1. [Cloud fundamentals](../01-cloud-fundamentals/README.md) and [global infrastructure](../02-global-infrastructure/README.md).
-2. [Identity and governance](../03-identity-governance-and-organizations/README.md), then [security and compliance](../09-security-and-compliance/README.md).
-3. [Compute](../04-compute/README.md), [storage](../05-storage/README.md), [databases](../06-databases/README.md), and networking awareness in [networking and content delivery](../07-networking-and-content-delivery/README.md).
-4. [Monitoring and management](../10-monitoring-management-and-deployment/README.md), [billing, pricing, and support](../12-billing-pricing-and-support/README.md), and migration awareness in [migration and hybrid cloud](../11-migration-and-hybrid-cloud/README.md).
-5. Review analytics/AI awareness and the Well-Architected material through the [service index](../docs/service-index.md), then complete the [CPP scenario-reasoning guide](01-cpp-scenario-reasoning.md).
+## Certification Focus
 
-## SAA Study Path
+- **CPP:** Service recognition, cloud concepts, security, billing, and support reasoning.
+- **SAA:** Architecture decisions across resilience, security, performance, and cost.
 
-1. Review identity, governance, compute, storage, databases, and [VPC/networking](../07-networking-and-content-delivery/README.md).
-2. Study [serverless and application integration](../08-serverless-and-application-integration/README.md), security, monitoring, migration/hybrid connectivity, and analytics selection.
-3. Work through [architecture patterns](../13-architecture-and-design-patterns/README.md) for availability, failure behavior, disaster recovery, decoupling, serverless design, and security.
-4. Use the [comparison guides](../15-comparisons-and-decision-guides/README.md) to practice service selection and cost, security, performance, and operational trade-offs.
-5. Complete the [SAA architecture scenario-reasoning guide](02-saa-architecture-scenario-reasoning.md).
+## How to Study This Section
 
-## Final Readiness Checklist
+1. Read the topics in the suggested order.
+2. Write down the problem each service or concept solves.
+3. Compare similar options using the decision guides.
+4. Revisit the official AWS documentation for volatile features, pricing, quotas, or availability.
 
-- [ ] Review the current official exam guide and domain outline.
-- [ ] Revisit every weak area shown in the CPP or SAA coverage dashboard.
-- [ ] Explain why plausible alternatives fail each scenario constraint.
-- [ ] Review security, failure behavior, monitoring, and cost for architecture choices.
-- [ ] Verify volatile service names, pricing, quotas, and Regional availability in current AWS documentation.
-- [ ] Use only original practice material; do not use or share exam dumps.
+[Repository home](../README.md)

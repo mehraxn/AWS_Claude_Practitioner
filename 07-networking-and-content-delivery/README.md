@@ -1,22 +1,37 @@
-# Networking And Content Delivery
+# Networking and Content Delivery
 
-Canonical lessons in this category. Certification relevance follows the reconciled Phase 6 evidence; badges indicate supported depth, while the coverage dashboards retain known gaps.
+![CPP](https://img.shields.io/badge/CPP-Cloud%20Practitioner-2EA44F?style=for-the-badge&logo=amazonaws&logoColor=white) ![SAA](https://img.shields.io/badge/SAA-Solutions%20Architect-0969DA?style=for-the-badge&logo=amazonaws&logoColor=white)
 
-| Topic | CPP | SAA | Status |
-|---|:---:|:---:|---|
-| [Amazon CloudFront](amazon-cloudfront/01-overview.md) | Yes | Yes | Batch 3 decision coverage |
-| [Amazon Route 53](amazon-route-53/01-overview.md) | Yes | Yes | Batch 3 decision coverage |
-| [Amazon VPC foundations](amazon-vpc/01-overview.md) | Yes | Yes | Batch 3 complete |
-| [Security Groups](amazon-vpc/02-security-groups.md) | Review | Review | Consolidated |
-| [Flow Logs](amazon-vpc/03-flow-logs.md) | Review | Review | Consolidated |
-| [VPC endpoints and PrivateLink](amazon-vpc/04-endpoint-services.md) | Awareness | Yes | Batch 3 expanded |
-| [Vpc Peering](amazon-vpc/05-vpc-peering.md) | Review | Review | Consolidated |
-| [Customer Gateway](amazon-vpc/06-customer-gateway.md) | Review | Review | Consolidated |
-| [Virtual Private Gateway](amazon-vpc/07-virtual-private-gateway.md) | Review | Review | Consolidated |
-| [NAT Gateway](amazon-vpc/08-nat-gateway.md) | Yes | Yes | Supporting lesson |
-| [Subnets, route tables, and internet gateways](amazon-vpc/09-subnets-route-tables-and-internet-gateways.md) | Awareness | Yes | Batch 3 complete |
-| [Aws Direct Connect](aws-direct-connect/01-overview.md) | Review | Review | Consolidated |
-| [AWS Global Accelerator](aws-global-accelerator/01-overview.md) | Yes | Yes | Batch 3 decision coverage |
-| [Static Ip Addresses](aws-global-accelerator/02-static-ip-addresses.md) | Review | Review | Consolidated |
-| [Aws Transit Gateway](aws-transit-gateway/01-overview.md) | Review | Review | Consolidated |
-| [Cloud Practitioner Study Guide](networking-guide/01-cloud-practitioner-study-guide.md) | Review | Review | Consolidated |
+Understand how workloads communicate inside AWS, with the internet, and with on-premises environments.
+
+## What You Will Learn
+
+- Design VPC subnets, routes, internet access, and security boundaries.
+- Compare DNS, content delivery, global acceleration, peering, transit, VPN, and dedicated connectivity.
+- Select networking services from latency, bandwidth, resilience, and security requirements.
+
+## Recommended Study Order
+
+| Order | Topic | What it covers |
+|---:|---|---|
+| 1 | [Amazon CloudFront](amazon-cloudfront/) | Content delivery through a global edge network. |
+| 2 | [Amazon Route 53](amazon-route-53/) | DNS, domain registration, health checks, and routing policies. |
+| 3 | [Amazon VPC](amazon-vpc/) | Isolated virtual networks, subnets, routing, security controls, and connectivity. |
+| 4 | [AWS Direct Connect](aws-direct-connect/) | Dedicated private connectivity between on-premises networks and AWS. |
+| 5 | [AWS Global Accelerator](aws-global-accelerator/) | Global anycast entry points that route traffic over the AWS network. |
+| 6 | [AWS Transit Gateway](aws-transit-gateway/) | Central hub connectivity for VPCs and on-premises networks. |
+| 7 | [Networking Study Guide](networking-guide/) | A consolidated networking review for service recognition and architecture decisions. |
+
+## Certification Focus
+
+- **CPP:** Recognize core networking and edge services.
+- **SAA:** Design secure, highly available, and scalable network paths.
+
+## How to Study This Section
+
+1. Read the topics in the suggested order.
+2. Write down the problem each service or concept solves.
+3. Compare similar options using the decision guides.
+4. Revisit the official AWS documentation for volatile features, pricing, quotas, or availability.
+
+[Repository home](../README.md)

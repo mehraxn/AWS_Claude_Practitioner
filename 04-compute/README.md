@@ -1,21 +1,39 @@
 # Compute
 
-Canonical lessons in this category. Certification relevance follows the reconciled Phase 6 evidence; badges indicate supported depth, while the coverage dashboards retain known gaps.
+![CPP](https://img.shields.io/badge/CPP-Cloud%20Practitioner-2EA44F?style=for-the-badge&logo=amazonaws&logoColor=white) ![SAA](https://img.shields.io/badge/SAA-Solutions%20Architect-0969DA?style=for-the-badge&logo=amazonaws&logoColor=white)
 
-| Topic | CPP | SAA | Status |
-|---|:---:|:---:|---|
-| [Amazon EC2](amazon-ec2/01-overview.md) | Yes | Yes | Batch 2 expanded |
-| [Study Guide](amazon-ec2/02-study-guide.md) | Review | Review | Consolidated |
-| [Reserved Instances](amazon-ec2/03-reserved-instances.md) | Review | Review | Consolidated |
-| [Key Pairs](amazon-ec2/04-key-pairs.md) | Review | Review | Consolidated |
-| [Instance Connect](amazon-ec2/05-instance-connect.md) | Review | Review | Consolidated |
-| [Rdp Connections](amazon-ec2/06-rdp-connections.md) | Review | Review | Consolidated |
-| [Placement Groups](amazon-ec2/07-placement-groups.md) | Review | Review | Consolidated |
-| [Amazon Lightsail](amazon-lightsail/01-overview.md) | Review | Review | Consolidated |
-| [Aws Batch](aws-batch/01-overview.md) | Review | Review | Consolidated |
-| [Aws Elastic Beanstalk](aws-elastic-beanstalk/01-overview.md) | Review | Review | Consolidated |
-| [Aws Fargate](aws-fargate/01-overview.md) | Review | Review | Consolidated |
-| [AWS Lambda](aws-lambda/01-overview.md) | Yes | Yes | Batch 2 expanded |
-| [EC2 Auto Scaling](ec2-auto-scaling/01-target-tracking-scaling.md) | Yes | Yes | Batch 2 expanded |
-| [Elastic Load Balancing](elastic-load-balancing/01-overview.md) | Yes | Yes | Batch 2 complete |
-| [ECS, EKS, Fargate, and ECR](containers/01-ecs-eks-and-fargate.md) | Yes | Yes | Batch 2 complete |
+Compare virtual machines, containers, managed platforms, batch processing, and serverless compute.
+
+## What You Will Learn
+
+- Choose a compute model based on control, scaling, operations, and workload shape.
+- Explain EC2 purchasing, connectivity, scaling, and load-balancing concepts.
+- Distinguish ECS, EKS, Fargate, Lambda, Elastic Beanstalk, Lightsail, and Batch.
+
+## Recommended Study Order
+
+| Order | Topic | What it covers |
+|---:|---|---|
+| 1 | [Amazon EC2](amazon-ec2/) | Resizable virtual machines and the purchasing, connectivity, and placement decisions around them. |
+| 2 | [Amazon Lightsail](amazon-lightsail/) | Simplified virtual servers, networking, storage, and bundled pricing for smaller workloads. |
+| 3 | [AWS Batch](aws-batch/) | Managed scheduling and execution of batch computing jobs. |
+| 4 | [AWS Elastic Beanstalk](aws-elastic-beanstalk/) | Application deployment with managed provisioning, scaling, and monitoring. |
+| 5 | [AWS Fargate](aws-fargate/) | Serverless compute for containers without managing worker nodes. |
+| 6 | [AWS Lambda](aws-lambda/) | Event-driven functions that run without provisioning servers. |
+| 7 | [Containers on AWS](containers/) | ECS, EKS, Fargate, and ECR roles in container platforms. |
+| 8 | [Amazon EC2 Auto Scaling](ec2-auto-scaling/) | Automatic capacity adjustment for EC2 fleets. |
+| 9 | [Elastic Load Balancing](elastic-load-balancing/) | Traffic distribution across healthy application targets. |
+
+## Certification Focus
+
+- **CPP:** Recognize compute services and basic pricing or management differences.
+- **SAA:** Design scalable, available, secure, and cost-aware compute layers.
+
+## How to Study This Section
+
+1. Read the topics in the suggested order.
+2. Write down the problem each service or concept solves.
+3. Compare similar options using the decision guides.
+4. Revisit the official AWS documentation for volatile features, pricing, quotas, or availability.
+
+[Repository home](../README.md)

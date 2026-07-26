@@ -1,19 +1,30 @@
-# Identity And Governance
+# Identity and Governance Decision Guides
 
-## Service Summary
+![CPP](https://img.shields.io/badge/CPP-Cloud%20Practitioner-2EA44F?style=for-the-badge&logo=amazonaws&logoColor=white) ![SAA](https://img.shields.io/badge/SAA-Solutions%20Architect-0969DA?style=for-the-badge&logo=amazonaws&logoColor=white)
 
-This directory contains the canonical lesson sequence for Identity And Governance.
+## Purpose
 
-## Lesson Order
+Choose identity and governance constructs from who needs access, where access is granted, and how accounts are controlled.
 
-1. [Root User Vs Iam](01-root-user-vs-iam.md)
-2. [Organizations Vs Control Tower](02-organizations-vs-control-tower.md)
-3. [Users Groups And Roles](03-users-groups-and-roles.md)
+## Guide Order
 
-## Certification Relevance
+| Order | Topic | What it covers |
+|---:|---|---|
+| 1 | [AWS Account Root User vs AWS IAM](01-root-user-vs-iam.md) | Study notes and decision points for AWS Account Root User vs AWS IAM. |
+| 2 | [AWS Organizations vs AWS Control Tower](02-organizations-vs-control-tower.md) | Study notes and decision points for AWS Organizations vs AWS Control Tower. |
+| 3 | [IAM Role vs IAM Group vs IAM User](03-users-groups-and-roles.md) | Study notes and decision points for IAM Role vs IAM Group vs IAM User. |
 
-CPP and SAA relevance is recorded conservatively in the category index and will be checked against official exam guides in Phase 5.
+## Decision Questions
 
-## Navigation
+- Is the identity a person, application, AWS service, or external provider?
+- Is access temporary, cross-account, or centrally governed?
+- Do you need permission assignment or an organization-wide guardrail?
 
-- [Back to category index](../README.md)
+## Recommended Method
+
+1. Extract the requirement and constraints.
+2. Identify two or three plausible services.
+3. Compare them across functionality, availability, security, operations, performance, and cost.
+4. State why the rejected options fail the requirement.
+
+[Back to all comparisons](../README.md) · [Repository home](../../README.md)

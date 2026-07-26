@@ -1,33 +1,43 @@
-# Billing Pricing And Support
+# Billing, Pricing, and Support
 
-Canonical lessons in this category. Certification relevance follows the reconciled Phase 6 evidence; badges indicate supported depth, while the coverage dashboards retain known gaps.
+![CPP](https://img.shields.io/badge/CPP-Cloud%20Practitioner-2EA44F?style=for-the-badge&logo=amazonaws&logoColor=white) ![SAA](https://img.shields.io/badge/SAA-Solutions%20Architect-0969DA?style=for-the-badge&logo=amazonaws&logoColor=white)
 
-| Topic | CPP | SAA | Status |
-|---|:---:|:---:|---|
-| [Aws Billing And Cost Management](aws-billing-and-cost-management/01-overview.md) | Review | Review | Consolidated |
-| [AWS Pricing Fundamentals and Purchasing Models](aws-billing-and-cost-management/02-study-guide.md) | Fundamental | Scenario-ready | Batch 8 complete |
-| [AWS Data Transfer Cost Architecture](aws-billing-and-cost-management/03-data-transfer-costs.md) | Fundamental | Scenario-ready | Batch 8 complete |
-| [Rightsizing](aws-billing-and-cost-management/04-rightsizing.md) | Review | Review | Consolidated |
-| [Aws Billing Conductor](aws-billing-conductor/01-overview.md) | Review | Review | Consolidated |
-| [Aws Budgets](aws-budgets/01-overview.md) | Review | Review | Consolidated |
-| [Aws Cost Allocation Tags](aws-cost-allocation-tags/01-overview.md) | Review | Review | Consolidated |
-| [Aws Cost And Usage Reports](aws-cost-and-usage-reports/01-overview.md) | Review | Review | Consolidated |
-| [Aws Cost Explorer](aws-cost-explorer/01-overview.md) | Review | Review | Consolidated |
-| [Aws Health Dashboard](aws-health-dashboard/01-overview.md) | Review | Review | Consolidated |
-| [Aws Pricing Calculator](aws-pricing-calculator/01-overview.md) | Review | Review | Consolidated |
-| [Aws Repost](aws-repost/01-overview.md) | Review | Review | Consolidated |
-| [Study Guide](aws-savings-plans/02-study-guide.md) | Review | Review | Consolidated |
-| [Aws Support](aws-support/01-overview.md) | Review | Review | Consolidated |
-| [AWS Support Plans](aws-support/02-support-plans.md) | Fundamental | Awareness | Batch 8 complete |
-| [Aws Trusted Advisor](aws-trusted-advisor/01-overview.md) | Review | Review | Consolidated |
-| [Study Guide](customer-enablement/aws-guidance/01-study-guide.md) | Review | Review | Consolidated |
-| [Aws Managed Services](customer-enablement/aws-managed-services/01-overview.md) | Review | Review | Consolidated |
-| [Aws Partner Network](customer-enablement/aws-partner-network/01-overview.md) | Review | Review | Consolidated |
-| [Aws Prescriptive Guidance](customer-enablement/aws-prescriptive-guidance/01-overview.md) | Review | Review | Consolidated |
-| [Aws Professional Services](customer-enablement/aws-professional-services/01-overview.md) | Review | Review | Consolidated |
-| [Study Guide](customer-enablement/aws-recommendation-resources/01-study-guide.md) | Review | Review | Consolidated |
-| [Aws Trust And Safety](customer-enablement/aws-trust-and-safety/01-overview.md) | Review | Review | Consolidated |
+Understand how AWS charges for services, how costs are analyzed, and where customers get technical and operational help.
 
-## Decision Guide
+## What You Will Learn
 
-- [Choose an AWS cost-management tool](../15-comparisons-and-decision-guides/cost/01-cost-management-tool-selection.md)
+- Distinguish estimation, budgeting, allocation, reporting, and optimization tools.
+- Explain major purchasing models and common cost drivers.
+- Recognize Support, Trusted Advisor, Health Dashboard, re:Post, and enablement resources.
+
+## Recommended Study Order
+
+| Order | Topic | What it covers |
+|---:|---|---|
+| 1 | [AWS Billing and Cost Management](aws-billing-and-cost-management/) | Central billing, purchasing models, data transfer costs, and rightsizing concepts. |
+| 2 | [AWS Billing Conductor](aws-billing-conductor/) | Customized billing views and chargeback for organizations. |
+| 3 | [AWS Budgets](aws-budgets/) | Threshold-based cost, usage, and reservation alerts. |
+| 4 | [AWS Cost Allocation Tags](aws-cost-allocation-tags/) | Tag-based organization of cost and usage. |
+| 5 | [AWS Cost and Usage Reports (CUR)](aws-cost-and-usage-reports/) | Detailed cost and usage data for analysis. |
+| 6 | [AWS Cost Explorer](aws-cost-explorer/) | Interactive cost analysis and forecasting. |
+| 7 | [AWS Health Dashboard](aws-health-dashboard/) | Account-specific service events and planned changes. |
+| 8 | [AWS Pricing Calculator](aws-pricing-calculator/) | Pre-deployment cost estimation for AWS architectures. |
+| 9 | [AWS re:Post](aws-repost/) | Community-based technical knowledge and support. |
+| 10 | [AWS Savings Plans](aws-savings-plans/) | Commitment-based discounts for eligible compute usage. |
+| 11 | [AWS Support](aws-support/) | Support plans, cases, response channels, and technical guidance. |
+| 12 | [AWS Trusted Advisor](aws-trusted-advisor/) | Recommendations across cost, performance, security, resilience, and service limits. |
+| 13 | [Customer Enablement](customer-enablement/) | Training, professional services, partners, and adoption resources. |
+
+## Certification Focus
+
+- **CPP:** A major exam area covering pricing, billing, support, and cost tools.
+- **SAA:** Cost-aware architecture, purchasing choices, rightsizing, and operational support.
+
+## How to Study This Section
+
+1. Read the topics in the suggested order.
+2. Write down the problem each service or concept solves.
+3. Compare similar options using the decision guides.
+4. Revisit the official AWS documentation for volatile features, pricing, quotas, or availability.
+
+[Repository home](../README.md)

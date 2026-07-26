@@ -1,30 +1,32 @@
 # Amazon DynamoDB
 
-![CPP](https://img.shields.io/badge/CPP-Cloud%20Practitioner-2EA44F?style=for-the-badge&logo=amazonaws&logoColor=white)
-![SAA](https://img.shields.io/badge/SAA-Solutions%20Architect-0969DA?style=for-the-badge&logo=amazonaws&logoColor=white)
+![CPP](https://img.shields.io/badge/CPP-Cloud%20Practitioner-2EA44F?style=for-the-badge&logo=amazonaws&logoColor=white) ![SAA](https://img.shields.io/badge/SAA-Solutions%20Architect-0969DA?style=for-the-badge&logo=amazonaws&logoColor=white)
 
-## Overview and Learning Objectives
+## Overview
 
-Learn DynamoDB recognition and access-pattern, key, capacity, consistency, indexing, recovery, multi-Region, and caching decisions.
+Study a serverless key-value and document database designed for predictable low-latency access.
+
+## Learning Objectives
+
+- Explain tables, items, keys, capacity, and common access patterns.
+- Recognize serverless scaling and operational characteristics.
+- Compare DynamoDB with relational databases and caches.
 
 ## Lesson Order
 
-| Order | Lesson | Focus |
+| Order | Topic | What it covers |
 |---:|---|---|
-| 1 | [Amazon DynamoDB overview](01-overview.md) | Model, keys, capacity, consistency, indexes, Streams, backup, Global Tables, DAX, and scenarios |
+| 1 | [Amazon DynamoDB](01-overview.md) | Study notes and decision points for Amazon DynamoDB. |
 
 ## Certification Focus
 
-- **CPP:** managed NoSQL purpose, serverless benefits, capacity, pricing, and comparisons.
-- **SAA:** access patterns, hot-key avoidance, consistency, indexes, recovery, multi-Region, security, and cost.
+- **CPP:** NoSQL and serverless database recognition.
+- **SAA:** Data-model, access-pattern, scaling, availability, and consistency decisions.
 
-## Related Services, Comparisons, and Patterns
+## Study Tips
 
-- [Database selection guide](../../15-comparisons-and-decision-guides/databases/01-database-selection-guide.md)
-- [Amazon ElastiCache](../amazon-elasticache/01-overview.md)
-- [VPC endpoints](../../07-networking-and-content-delivery/amazon-vpc/04-endpoint-services.md)
-- [Back to databases](../README.md)
+- Focus on the service purpose before memorizing features.
+- Note the requirements that make this service a better or worse choice than alternatives.
+- Review security, availability, operations, and cost together.
 
-## Official References
-
-- [Amazon DynamoDB documentation](https://docs.aws.amazon.com/dynamodb/)
+[Back to category](../README.md) · [Repository home](../../README.md)

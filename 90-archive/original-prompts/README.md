@@ -1,5 +1,14 @@
 # Original Prompts
 
-Original authoring prompts may be retained here for provenance after an approved move. They are not canonical study lessons. No existing prompt is moved here during Phase 2.
+> [!WARNING]
+> This folder is historical. Do not use it as the primary source for current CPP or SAA study.
+
+Historical generation prompts retained for provenance. They are not study content.
+
+## Archive Policy
+
+- Canonical learning material belongs in the numbered active categories.
+- Archived files are retained for provenance, comparison, or manual review.
+- Do not restore an archived note without verifying it and assigning a canonical owner.
 
 [Back to archive](../README.md) · [Repository home](../../README.md)

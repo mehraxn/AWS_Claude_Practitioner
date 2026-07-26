@@ -1,27 +1,37 @@
-# Identity Governance And Organizations
+# Identity, Governance, and Organizations
 
-Canonical lessons in this category. Certification relevance follows the reconciled Phase 6 evidence; badges indicate supported depth, while the coverage dashboards retain known gaps.
+![CPP](https://img.shields.io/badge/CPP-Cloud%20Practitioner-2EA44F?style=for-the-badge&logo=amazonaws&logoColor=white) ![SAA](https://img.shields.io/badge/SAA-Solutions%20Architect-0969DA?style=for-the-badge&logo=amazonaws&logoColor=white)
 
-| Topic | CPP | SAA | Status |
-|---|:---:|:---:|---|
-| [Aws Control Tower](aws-control-tower/01-overview.md) | Review | Review | Consolidated |
-| [Aws Directory Service](aws-directory-service/01-overview.md) | Review | Review | Consolidated |
-| [AWS IAM](aws-iam/01-overview.md) | Core | Architecture | Batch 1 foundation completed |
-| [Users](aws-iam/02-users.md) | Review | Review | Consolidated |
-| [Groups](aws-iam/03-groups.md) | Review | Review | Consolidated |
-| [Roles](aws-iam/04-roles.md) | Review | Review | Consolidated |
-| [Customer Managed Policies](aws-iam/05-customer-managed-policies.md) | Review | Review | Consolidated |
-| [Inline Policies](aws-iam/06-inline-policies.md) | Review | Review | Consolidated |
-| [Read Only Access Policy](aws-iam/07-read-only-access-policy.md) | Review | Review | Consolidated |
-| [Administrator Access Policy](aws-iam/08-administrator-access-policy.md) | Review | Review | Consolidated |
-| [Access Analyzer](aws-iam/09-access-analyzer.md) | Review | Review | Consolidated |
-| [Root User](aws-iam/10-root-user.md) | Review | Review | Consolidated |
-| [Aws Iam Identity Center](aws-iam-identity-center/01-overview.md) | Review | Review | Consolidated |
-| [Aws Organizations](aws-organizations/01-overview.md) | Review | Review | Consolidated |
-| [Service Control Policies](aws-organizations/02-service-control-policies.md) | Review | Review | Consolidated |
-| [Aws Resource Access Manager](aws-resource-access-manager/01-overview.md) | Review | Review | Consolidated |
-| [Aws Service Catalog](aws-service-catalog/01-overview.md) | Review | Review | Consolidated |
+Build a clear model of identities, permissions, account boundaries, and organization-wide governance.
 
-## Batch 6 Architecture
+## What You Will Learn
 
-- [Multi-account governance](../13-architecture-and-design-patterns/security/02-multi-account-governance.md)
+- Distinguish users, groups, roles, policies, and identity federation.
+- Explain account-level governance with AWS Organizations and Control Tower.
+- Select centralized access and resource-sharing tools for multi-account environments.
+
+## Recommended Study Order
+
+| Order | Topic | What it covers |
+|---:|---|---|
+| 1 | [Aws Control Tower](aws-control-tower/) | Study notes and decision points for Aws Control Tower. |
+| 2 | [Aws Directory Service](aws-directory-service/) | Study notes and decision points for Aws Directory Service. |
+| 3 | [Aws Iam](aws-iam/) | Study notes and decision points for Aws Iam. |
+| 4 | [Aws Iam Identity Center](aws-iam-identity-center/) | Study notes and decision points for Aws Iam Identity Center. |
+| 5 | [Aws Organizations](aws-organizations/) | Study notes and decision points for Aws Organizations. |
+| 6 | [Aws Resource Access Manager](aws-resource-access-manager/) | Study notes and decision points for Aws Resource Access Manager. |
+| 7 | [Aws Service Catalog](aws-service-catalog/) | Study notes and decision points for Aws Service Catalog. |
+
+## Certification Focus
+
+- **CPP:** Identity basics, least privilege, root-user protection, and governance recognition.
+- **SAA:** Cross-account access, federation, permission boundaries, and multi-account design.
+
+## How to Study This Section
+
+1. Read the topics in the suggested order.
+2. Write down the problem each service or concept solves.
+3. Compare similar options using the decision guides.
+4. Revisit the official AWS documentation for volatile features, pricing, quotas, or availability.
+
+[Repository home](../README.md)

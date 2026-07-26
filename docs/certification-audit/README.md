@@ -1,20 +1,45 @@
 # Certification Audit
 
-Phase 5 compares canonical lesson bodies with the official CLF-C02 and SAA-C03 guides checked **2026-07-21**. Domain/task coverage and service representation are separate measures: listing a service is not proof that a task is taught. CPP needs beginner-friendly fundamentals; SAA needs architecture decisions and trade-offs.
+These records compare the canonical repository against the documented CLF-C02 and SAA-C03 scope. They report evidence honestly; a completed backlog does not imply complete depth for every task statement.
 
-Primary sources: [CPP guide](https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02.html), [CPP technologies](https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/clf-technologies-concepts.html), [CPP scope](https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/clf-02-in-scope-services.html), [CPP out-of-scope list](https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/clf-02-out-of-scope-services.html), [SAA guide](https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-associate-03.html), [SAA scope](https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-associate-03/saa-03-in-scope-services.html), and [SAA out-of-scope list](https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-associate-03/saa-03-out-of-scope-services.html). Official service lists are non-exhaustive and subject to change.
+## Official baselines
 
-Statuses: complete, partial, mention-only, wrong-depth, missing, misplaced, outdated, over-scoped, duplicate-or-overlapping, fact-review-required, and not-applicable. Priorities run P0 blocking through P4 supplementary/archive.
+- [CPP Official Baseline](CPP-OFFICIAL-BASELINE.md)
+- [SAA Official Baseline](SAA-OFFICIAL-BASELINE.md)
 
-## Artifact Guide
+## Coverage and depth
 
-- Baselines record official tasks, requirements, concepts, and scope.
-- Inventory records every canonical Markdown file exactly once.
-- Task maps connect each paraphrased knowledge/skill statement to body evidence.
-- Service/concept/depth/badge matrices separate representation from correct depth.
-- Quality audits cover terminology, pricing, fundamentals, architecture, structure, scope, and prior claims.
-- Dashboards report separate evidence measures, never a guaranteed readiness score.
-- `PHASE-6-CONTENT-BACKLOG.csv` is implementation authority; filter its `batch` column.
-- `PHASE-6-BATCH-PLAN.md` defines batch boundaries, dependencies, validation, and done criteria.
+- [CPP Coverage Dashboard](CPP-COVERAGE-DASHBOARD.md)
+- [SAA Coverage Dashboard](SAA-COVERAGE-DASHBOARD.md)
+- [CPP and SAA Depth Matrix](CPP-SAA-DEPTH-MATRIX.md)
+- [CPP-TASK-STATEMENT-MAP.csv](CPP-TASK-STATEMENT-MAP.csv)
+- [SAA-TASK-MAP.csv](SAA-TASK-MAP.csv)
 
-Previous completeness claims are superseded where they conflict with this body-based, current-guide audit. Re-audit after the backlog is implemented.
+## Quality and scope audits
+
+- [CPP Fundamentals Quality Audit](CPP-FUNDAMENTALS-QUALITY-AUDIT.md)
+- [SAA Architecture Quality Audit](SAA-ARCHITECTURE-QUALITY-AUDIT.md)
+- [BADGE-ACCURACY-AUDIT.csv](BADGE-ACCURACY-AUDIT.csv)
+- [SERVICE-SCOPE-MATRIX.csv](SERVICE-SCOPE-MATRIX.csv)
+- [TECHNOLOGIES-AND-CONCEPTS-MATRIX.csv](TECHNOLOGIES-AND-CONCEPTS-MATRIX.csv)
+- [OUT-OF-SCOPE-AND-SUPPLEMENTARY-AUDIT.csv](OUT-OF-SCOPE-AND-SUPPLEMENTARY-AUDIT.csv)
+
+## Freshness and terminology
+
+- [Pricing and Support Freshness Audit](PRICING-AND-SUPPORT-FRESHNESS-AUDIT.md)
+- [Terminology Audit](TERMINOLOGY-AUDIT.md)
+
+## Phase summaries
+
+- [Phase 5 Official CPP and SAA Coverage Audit](PHASE-5-OFFICIAL-COVERAGE-AUDIT.md)
+- [PHASE-6-CONTENT-BACKLOG.csv](PHASE-6-CONTENT-BACKLOG.csv)
+- [Phase 6 Batch Plan](PHASE-6-BATCH-PLAN.md)
+
+## How to Read the Audit
+
+- Use the dashboards for a summary of current evidence depth.
+- Use task maps and matrices for row-level traceability.
+- Treat partial, mention-only, wrong-depth, and missing classifications as active limitations.
+- Recheck official exam guides and current AWS documentation before making time-sensitive claims.
+
+[Back to documentation](../README.md) · [Repository home](../../README.md)

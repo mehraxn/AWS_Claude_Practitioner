@@ -1,20 +1,37 @@
 # Repository Documentation
 
-This directory contains repository navigation, authoring policies, validation guidance, and reorganization records.
+This directory contains the technical records that support the learner-facing AWS notes. Use it for repository governance, coverage analysis, validation, maintenance, and release evidence.
 
-| Document | Purpose |
+## Quick Navigation
+
+| Area | Purpose |
 |---|---|
-| [Repository map](repository-map.md) | Category ownership and migration status |
-| [Certification labels](certification-labels.md) | CPP and SAA badge classification |
-| [Content standards](content-standards.md) | Lesson depth and quality requirements |
-| [File naming standard](file-naming-standard.md) | Canonical path conventions |
-| [Source policy](source-policy.md) | Verification and citation rules |
-| [Phase 7 final review](final-review/PHASE-7-FINAL-VALIDATION.md) | Release-readiness QA and remaining issues |
-| [Release notes](release/RELEASE-NOTES.md) | Phase 7 release-candidate summary |
-| [Known limitations](release/KNOWN-LIMITATIONS.md) | Explicit coverage, freshness, and learning limitations |
-| [Maintenance guide](release/MAINTENANCE-AND-FRESHNESS-GUIDE.md) | Ongoing source and audit maintenance workflow |
-| [Phase 2 changelog](reorganization/PHASE-2-CHANGELOG.md) | Foundation implementation audit |
-| [Phase 3 migration log](reorganization/PHASE-3-MIGRATION-LOG.md) | Controlled migration batches, results, and safety audit |
-| [Phase 3 unresolved files](reorganization/PHASE-3-UNRESOLVED-FILES.md) | Notes deferred for duplicate, terminology, or manual review |
+| [Repository map](repository-map.md) | Category ownership and high-level repository structure |
+| [Service index](service-index.md) | Fast lookup for services and concepts |
+| [Certification labels](certification-labels.md) | Meaning and depth of CPP and SAA badges |
+| [Content standards](content-standards.md) | Expected lesson structure and quality |
+| [File naming standard](file-naming-standard.md) | Canonical path and filename rules |
+| [Source policy](source-policy.md) | Verification and citation expectations |
+
+## Documentation Groups
+
+| Directory | What it contains |
+|---|---|
+| [Certification audit](certification-audit/) | Official-scope baselines, task maps, dashboards, terminology, and quality audits |
+| [Content implementation](content-implementation/) | Scope, decisions, deltas, and validation records for implementation batches |
+| [Final review](final-review/) | Repository-wide QA and learner-path review |
+| [Release](release/) | Release notes, limitations, security review, manifest, handoff, and merge-readiness evidence |
+| [Reorganization](reorganization/) | Canonical consolidation, migration, and retirement records |
+| [Templates](templates/) | Reusable content and study-prompt templates |
+
+## Most Useful Release Records
+
+- [Release notes](release/RELEASE-NOTES.md)
+- [Known limitations](release/KNOWN-LIMITATIONS.md)
+- [Maintenance and freshness guide](release/MAINTENANCE-AND-FRESHNESS-GUIDE.md)
+- [Final validation results](release/FINAL-VALIDATION-RESULTS.md)
+- [Final merge-readiness report](release/FINAL-MERGE-READINESS-REPORT.md)
+- [Final pull-request review checklist](release/FINAL-PR-REVIEW-CHECKLIST.md)
+- [Release-readiness checklist](release/RELEASE-READINESS-CHECKLIST.md)
 
 [Back to repository home](../README.md)

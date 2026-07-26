@@ -1,23 +1,41 @@
-# Comparisons And Decision Guides
+# Comparisons and Decision Guides
 
-Canonical lessons in this category. Certification relevance follows the reconciled Phase 6 evidence; badges indicate supported depth, while the coverage dashboards retain known gaps.
+![CPP](https://img.shields.io/badge/CPP-Cloud%20Practitioner-2EA44F?style=for-the-badge&logo=amazonaws&logoColor=white) ![SAA](https://img.shields.io/badge/SAA-Solutions%20Architect-0969DA?style=for-the-badge&logo=amazonaws&logoColor=white)
 
-| Topic | CPP | SAA | Status |
-|---|:---:|:---:|---|
-| [Emr Vs Redshift](analytics/01-emr-vs-redshift.md) | Review | Review | Consolidated |
-| [Root User Vs Iam](identity-and-governance/01-root-user-vs-iam.md) | Review | Review | Consolidated |
-| [Organizations Vs Control Tower](identity-and-governance/02-organizations-vs-control-tower.md) | Review | Review | Consolidated |
-| [Users Groups And Roles](identity-and-governance/03-users-groups-and-roles.md) | Review | Review | Consolidated |
-| [Datasync Vs Dms](migration/01-datasync-vs-dms.md) | Review | Review | Consolidated |
-| [Snowball Edge Vs Outposts](migration/02-snowball-edge-vs-outposts.md) | Review | Review | Consolidated |
-| [Cloudfront Vs Global Accelerator](networking/01-cloudfront-vs-global-accelerator.md) | Review | Review | Consolidated |
-| [Vpc Connectivity Options](networking/02-vpc-connectivity-options.md) | Review | Review | Consolidated |
-| [File Gateway Vs Volume Gateway](storage/01-file-gateway-vs-volume-gateway.md) | Review | Review | Consolidated |
-| [Storage Gateway Family](storage/02-storage-gateway-family.md) | Review | Review | Consolidated |
-| [Core Compute and Storage Selection](compute-and-storage/01-core-selection-guide.md) | Yes | Yes | Batch 2 complete |
-| [Database Selection Guide](databases/01-database-selection-guide.md) | Yes | Yes | Batch 4 complete |
-| [SQS vs SNS vs EventBridge](application-integration/01-sqs-vs-sns-vs-eventbridge.md) | Yes | Yes | Batch 5 complete |
-| [AWS Security Service Selection](security/01-security-service-selection.md) | Yes | Yes | Batch 6 complete |
-| [CloudWatch vs CloudTrail vs AWS Config](operations/01-cloudwatch-vs-cloudtrail-vs-config.md) | Yes | Yes | Batch 6 complete |
-| [AWS Cost Management Tool Selection](cost/01-cost-management-tool-selection.md) | Yes | Yes | Batch 8 complete |
-| [AWS Analytics Service Selection](analytics/02-analytics-service-selection.md) | Yes | Yes | Batch 9 complete |
+Use these guides after learning individual services. The goal is to select the best option from requirements—not merely memorize definitions.
+
+## What You Will Learn
+
+- Translate scenario wording into technical constraints.
+- Compare plausible services across cost, scale, availability, security, and operations.
+- Explain why rejected alternatives fail the stated requirements.
+
+## Recommended Study Order
+
+| Order | Topic | What it covers |
+|---:|---|---|
+| 1 | [Analytics](analytics/) | Data ingestion, processing, querying, warehousing, and visualization services. |
+| 2 | [Application Integration](application-integration/) | Choosing among queues, pub/sub, event buses, and workflows. |
+| 3 | [Compute and Storage](compute-and-storage/) | Cross-service choices involving compute platforms and storage models. |
+| 4 | [Cost Management](cost/) | Selecting the right cost estimation, monitoring, allocation, and optimization tool. |
+| 5 | [Databases](databases/) | Selecting relational, NoSQL, caching, and analytics data services. |
+| 6 | [Identity and Governance](identity-and-governance/) | Choosing identities, permission models, and multi-account governance tools. |
+| 7 | [Migration](migration/) | Selecting online transfer, database migration, offline transfer, and hybrid options. |
+| 8 | [Networking](networking/) | Choosing DNS, edge, acceleration, connectivity, and network security controls. |
+| 9 | [Operations](operations/) | Distinguishing monitoring, auditing, configuration, and operational services. |
+| 10 | [Security Architecture Patterns](security/) | Selecting security services based on the protected resource and threat type. |
+| 11 | [Storage](storage/) | Choosing storage models and hybrid gateway modes. |
+
+## Certification Focus
+
+- **CPP:** Improve service recognition and eliminate obvious distractors.
+- **SAA:** Practice architecture trade-offs and requirement-driven selection.
+
+## How to Study This Section
+
+1. Read the topics in the suggested order.
+2. Write down the problem each service or concept solves.
+3. Compare similar options using the decision guides.
+4. Revisit the official AWS documentation for volatile features, pricing, quotas, or availability.
+
+[Repository home](../README.md)

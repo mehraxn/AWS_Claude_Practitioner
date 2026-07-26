@@ -1,35 +1,36 @@
 # Serverless and Application Integration
 
-![CPP](https://img.shields.io/badge/CPP-Cloud%20Practitioner-2EA44F?style=for-the-badge&logo=amazonaws&logoColor=white)
-![SAA](https://img.shields.io/badge/SAA-Solutions%20Architect-0969DA?style=for-the-badge&logo=amazonaws&logoColor=white)
+![CPP](https://img.shields.io/badge/CPP-Cloud%20Practitioner-2EA44F?style=for-the-badge&logo=amazonaws&logoColor=white) ![SAA](https://img.shields.io/badge/SAA-Solutions%20Architect-0969DA?style=for-the-badge&logo=amazonaws&logoColor=white)
 
-## Overview and Learning Objectives
+Connect applications using APIs, functions, queues, events, email, GraphQL, and managed workflows.
 
-Learn managed APIs, queues, event routing, and workflow orchestration; distinguish delivery, ordering, retries, fanout, security, failure isolation, and cost.
+## What You Will Learn
 
-## Lesson Order
+- Explain synchronous, asynchronous, event-driven, and workflow-based integration.
+- Choose SQS, EventBridge, Step Functions, API Gateway, AppSync, SES, or Lambda.
+- Design decoupled systems with retries, buffering, and failure handling.
 
-| Order | Topic | CPP | SAA | Status |
-|---:|---|:---:|:---:|---|
-| 1 | [Amazon API Gateway](amazon-api-gateway/01-overview.md) | Yes | Yes | Batch 5 expanded |
-| 2 | [Amazon SQS](amazon-sqs/01-overview.md) | Yes | Yes | Existing owner |
-| 3 | [Amazon EventBridge](amazon-eventbridge/01-overview.md) | Yes | Yes | Batch 5 complete |
-| 4 | [AWS Step Functions](aws-step-functions/01-overview.md) | Yes | Yes | Batch 5 complete |
-| 5 | [Amazon SES](amazon-ses/01-overview.md) | Review | Review | Existing |
-| 6 | [AWS AppSync](aws-appsync/01-overview.md) | Review | Review | Existing |
+## Recommended Study Order
+
+| Order | Topic | What it covers |
+|---:|---|---|
+| 1 | [Amazon API Gateway](amazon-api-gateway/) | Managed REST, HTTP, and WebSocket API front doors. |
+| 2 | [Amazon EventBridge](amazon-eventbridge/) | Event routing between applications, AWS services, and SaaS sources. |
+| 3 | [Amazon Simple Email Service (SES)](amazon-ses/) | Managed email sending and receiving. |
+| 4 | [Amazon Simple Queue Service (SQS)](amazon-sqs/) | Durable message queues for decoupling application components. |
+| 5 | [AWS AppSync](aws-appsync/) | Managed GraphQL APIs with real-time and offline capabilities. |
+| 6 | [AWS Step Functions](aws-step-functions/) | Visual workflow orchestration for distributed applications. |
 
 ## Certification Focus
 
-- **CPP:** recognize queue, event bus, workflow orchestration, and managed API services.
-- **SAA:** select delivery, ordering, retry, fanout, API, and orchestration patterns with security and cost trade-offs.
+- **CPP:** Recognize serverless and messaging services.
+- **SAA:** Select integration patterns for decoupling, resilience, scalability, and operations.
 
-## Related Services and Comparisons
+## How to Study This Section
 
-- [SQS vs SNS vs EventBridge](../15-comparisons-and-decision-guides/application-integration/01-sqs-vs-sns-vs-eventbridge.md)
-- [AWS Lambda](../04-compute/aws-lambda/01-overview.md)
-- [VPC endpoints](../07-networking-and-content-delivery/amazon-vpc/04-endpoint-services.md)
-- [Back to learning map](../README.md)
+1. Read the topics in the suggested order.
+2. Write down the problem each service or concept solves.
+3. Compare similar options using the decision guides.
+4. Revisit the official AWS documentation for volatile features, pricing, quotas, or availability.
 
-## Official References
-
-- [AWS application integration](https://aws.amazon.com/products/application-integration/)
+[Repository home](../README.md)

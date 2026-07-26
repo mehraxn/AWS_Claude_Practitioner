@@ -1,5 +1,14 @@
 # Duplicate Versions
 
-Duplicate versions may be moved here only after comparison, useful-content consolidation, validation, and migration-log entry. This directory does not decide which source is canonical and is empty during Phase 2.
+> [!WARNING]
+> This folder is historical. Do not use it as the primary source for current CPP or SAA study.
+
+Older or overlapping versions retained only for historical comparison.
+
+## Archive Policy
+
+- Canonical learning material belongs in the numbered active categories.
+- Archived files are retained for provenance, comparison, or manual review.
+- Do not restore an archived note without verifying it and assigning a canonical owner.
 
 [Back to archive](../README.md) · [Repository home](../../README.md)
