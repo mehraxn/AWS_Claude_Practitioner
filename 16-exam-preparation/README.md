@@ -14,8 +14,9 @@ Practice original scenario reasoning for AWS Certified Cloud Practitioner and AW
 
 | Order | Topic | What it covers |
 |---:|---|---|
-| 1 | [AWS Certified Cloud Practitioner Scenario Reasoning](01-cpp-scenario-reasoning.md) | Requirement extraction and service recognition for CLF-C02-style scenarios. |
-| 2 | [AWS Solutions Architect Associate Scenario Reasoning](02-saa-architecture-scenario-reasoning.md) | Constraint-driven architecture selection for SAA-C03-style scenarios. |
+| 1 | [Cloud Practitioner Start Here](cloud-practitioner/) | Essential CLF-C02 path, supporting material, practice status, and weak-domain review. |
+| 2 | [AWS Certified Cloud Practitioner Scenario Reasoning](01-cpp-scenario-reasoning.md) | Requirement extraction and service recognition for CLF-C02-style scenarios. |
+| 3 | [AWS Solutions Architect Associate Scenario Reasoning](02-saa-architecture-scenario-reasoning.md) | Constraint-driven architecture selection for SAA-C03-style scenarios. |
 
 ## Certification Focus
 

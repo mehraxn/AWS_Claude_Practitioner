@@ -10,6 +10,7 @@ This directory contains the technical records that support the learner-facing AW
 | [Service index](service-index.md) | Fast lookup for services and concepts |
 | [Certification labels](certification-labels.md) | Meaning and depth of CPP and SAA badges |
 | [Content standards](content-standards.md) | Expected lesson structure and quality |
+| [CPP content and style standard](content-standards/CPP-CONTENT-AND-STYLE-STANDARD.md) | Enforceable CLF-C02 depth, lesson, comparison, and knowledge-check rules |
 | [File naming standard](file-naming-standard.md) | Canonical path and filename rules |
 | [Source policy](source-policy.md) | Verification and citation expectations |
 

@@ -28,16 +28,21 @@ Read the full [certification-label policy](docs/certification-labels.md).
 
 ### Cloud Practitioner Path
 
-1. [Cloud Fundamentals](01-cloud-fundamentals/)
-2. [Global Infrastructure](02-global-infrastructure/)
-3. [Identity, Governance, and Organizations](03-identity-governance-and-organizations/)
-4. [Compute](04-compute/)
-5. [Storage](05-storage/)
-6. [Databases](06-databases/)
-7. [Networking and Content Delivery](07-networking-and-content-delivery/)
-8. [Security and Compliance](09-security-and-compliance/)
-9. [Billing, Pricing, and Support](12-billing-pricing-and-support/)
-10. [CPP Scenario Reasoning](16-exam-preparation/01-cpp-scenario-reasoning.md)
+Start with the dedicated [CLF-C02 start-here and study-path guide](16-exam-preparation/cloud-practitioner/). It separates essential CPP lessons, useful supporting material, optional SAA-depth reading, comparisons, practice, and final review.
+
+The essential sequence is:
+
+1. Cloud fundamentals
+2. Global infrastructure
+3. Security and Shared Responsibility
+4. Core AWS services
+5. Billing, pricing, and support
+6. Service comparisons
+7. Domain quizzes
+8. Full mock exams
+9. Final review
+
+Domain quizzes and full mock exams are planned but not yet present. The guide points to current lesson-level checks and scenario practice in the meantime.
 
 ### Solutions Architect – Associate Path
 
